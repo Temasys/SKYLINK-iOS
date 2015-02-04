@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.name             = "SKYLINK"
   s.version          = "0.9.0"
   s.summary          = "SKYLINK.framework distribution"
-  s.description      = "SKYLINK.framework distribution"
+  s.description      = "SKYLINK.framework distribution for iOS"
   s.homepage         = "https://github.com/temahussain/SKYLINK-iOS"
   s.license          = 'MIT'
   s.author           = { "Temasys Communications" => "shussain@temasys.com" }
