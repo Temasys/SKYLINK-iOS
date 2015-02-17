@@ -261,19 +261,26 @@ typedef enum SKYLINKAssetType {
  @discussion Changes in config after creating the object won't effect the connection itself.
  @param config The connection configuration object.
  @param apiKey API key.
- @param secret API secret.
  */
-- (id)initWithConfig:(SKYLINKConnectionConfig*)config apiKey:(NSString*)apiKey secret:(NSString*)secret;
+- (id)initWithConfig:(SKYLINKConnectionConfig*)config apiKey:(NSString*)apiKey;
 
-/** Join the room specifiying the name, starting time of the call and its duration in hours.
- @discussion Future meating support is coming soon. For now we encourage to pass any arbitrary NSDate object and any arbitrary positive value for 'startTime' and 'duration' respectively.
+/** Join the room specifiying the shared secret, room name and user info.
+ @discussion We recommend using connectToRoomWithCredentials:roomName:userInfo: but if the client application has no server implementation then one may better use this one.
+ @param secret Shared secret.
  @param roomName Name of the room to join.
  @param userInfo User defined information. May be an NSString, NSDictionary or NSArray.
- @param startTime Start time of the conversation, it will impact only if the user is the initiator of the conversation.
- @param duration Duration of the call, it will impact only if the user is the initiator of the conversation.
  @return NO if a connection is already established.
  */
-- (BOOL)connectToRoom:(NSString*)roomName userInfo:(id)userInfo startTime:(NSDate*)startTime duration:(CGFloat)duration;
+- (BOOL)connectToRoomWithSecret:(NSString*)secret roomName:(NSString*)roomName userInfo:(id)userInfo;
+
+/** Join the room specifiying the calculated credential info, room name and user info.
+ @discussion The dictionary 'credInfo' is supposed to have 3 non-Null parameters an NSString type 'credential', an NSDate type 'startTime' and a float type 'duration' in hours. The 'startTime' must be a correct time of the client application's timezone. Both the 'startTime' and 'duration' must be the same as the ones that were used to calculate the credentils. Failing to provide any of them will result in a connection denial.
+ @param credInfo A dictionary containing a credential, startTime and duration.
+ @param roomName Name of the room to join.
+ @param userInfo User defined information. May be an NSString, NSDictionary or NSArray.
+ @return nil if connection can be established otherwise a message specifying reason for connection denial.
+ */
+- (NSString*)connectToRoomWithCredentials:(NSDictionary*)credInfo roomName:(NSString*)roomName userInfo:(id)userInfo;
 
 /** Leave the room.
  */
@@ -362,5 +369,18 @@ typedef enum SKYLINKAssetType {
  @return User defined information. May be an NSString, NSDictionary or NSArray.
  */
 - (id)getUserInfo:(NSString*)peerId;
+
+/**
+ @name Utility
+ */
+
+/** Calculate credentials to be used by the connection.
+ @param roomName Name of the room.
+ @param duration Duration of the call in hours.
+ @param startTime Start time of the call as per client application time zone.
+ @param secret The shared secret.
+ @return The calculated credentials.
+ */
++ (NSString*)calculateCredentials:(NSString*)roomName duration:(CGFloat)duration startTime:(NSDate*)startTime secret:(NSString*)secret;
 
 @end
