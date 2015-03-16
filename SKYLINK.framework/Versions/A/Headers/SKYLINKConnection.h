@@ -5,6 +5,8 @@
 //  Copyright (c) 2015 TemaSys. All rights reserved.
 //
 
+#import <CoreGraphics/CoreGraphics.h>
+
 /**
  @typedef SKYLINKAssetType
  @brief Asset types to help the framework read the the files.
@@ -146,6 +148,13 @@ typedef enum SKYLINKAssetType {
  @param peerId The unique id of the peer.
  */
 - (void)connection:(SKYLINKConnection*)connection didReceiveDCMessage:(id)message public:(BOOL)isPublic peerId:(NSString*)peerId;
+
+/** Upon receiving binary data on data channel.
+ @param connection The underlying connection object.
+ @param data Binary data.
+ @param peerId The unique id of the peer.
+ */
+- (void)connection:(SKYLINKConnection*)connection didReceiveBinaryData:(NSData*)data peerId:(NSString*)peerId;
 
 @end
 
@@ -318,6 +327,13 @@ typedef enum SKYLINKAssetType {
  */
 - (void)sendDCMessage:(id)message peerId:(NSString*)peerId;
 
+/** Send binary data via data channel.
+ @discussion The data will be broadcasted to all the users if the remotePeerId is sent as 'nil'. If the caller passes data object exceeding the maximum length i.e. 65456 excess bytes are truncated to the limit before sending the data on the channel.
+ @param data Binary data to be sent to the peer. The maximum size the method expects is 65456 bytes.
+ @param peerId The unique id of the peer to whome the message would be sent.
+ */
+- (void)sendBinaryData:(NSData*)data peerId:(NSString*)peerId;
+
 /**
  @name File Transfer
  */
@@ -373,6 +389,11 @@ typedef enum SKYLINKAssetType {
 /**
  @name Utility
  */
+
+/** Enable/diable verbose logs for all the connections.
+ @param verbose enable/disable verbose logs. It is FALSE by default.
+ */
++ (void)setVerbose:(BOOL)verbose;
 
 /** Calculate credentials to be used by the connection.
  @param roomName Name of the room.
