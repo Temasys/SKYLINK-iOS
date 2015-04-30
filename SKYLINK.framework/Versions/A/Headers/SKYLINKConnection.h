@@ -9,7 +9,7 @@
 
 /**
  @typedef SKYLINKAssetType
- @brief Asset types to help the framework read the the files.
+ @brief Asset types to help the framework read the files.
  @constant SKYLINKAssetTypeFile Files within the app sandbox.
  @constant SKYLINKAssetTypeMusic Files from the music library.
  @constant SKYLINKAssetTypePhoto Photo and Video content from the Photo Library.
@@ -22,6 +22,7 @@ typedef enum SKYLINKAssetType {
 
 @class UIView;
 @class SKYLINKConnection;
+@class SKYLINKPeerMediaProperties;
 
 // All the messages of the following protocols are sent on the main thread
 
@@ -45,7 +46,14 @@ typedef enum SKYLINKAssetType {
  */
 - (void)connection:(SKYLINKConnection*)connection didRenderUserVideo:(UIView*)userVideoView;
 
-/** When a peer receives a warning from the underlying system.
+/** When a remote peer locks/unlocks the room.
+ @param connection The underlying connection object.
+ @param lockStatus The status of the lock.
+ @param peerId The unique id of the peer who originated the action.
+ */
+- (void)connection:(SKYLINKConnection*)connection didLockTheRoom:(BOOL)lockStatus peerId:(NSString*)peerId;
+
+/** When a warning is received from the underlying system.
  @param connection The underlying connection object.
  @param message Warning message from the underlying system.
  */
@@ -71,7 +79,7 @@ typedef enum SKYLINKAssetType {
  @param userInfo User defined information. May be an NSString, NSDictionary or NSArray.
  @param peerId The unique id of the joining peer.
  */
-- (void)connection:(SKYLINKConnection*)connection didJoinPeer:(id)userInfo peerId:(NSString*)peerId;
+- (void)connection:(SKYLINKConnection*)connection didJoinPeer:(id)userInfo mediaProperties:(SKYLINKPeerMediaProperties*)pmProperties peerId:(NSString*)peerId;
 
 /** Upon receiving a remote video stream.
  @param connection The underlying connection object.
@@ -165,16 +173,16 @@ typedef enum SKYLINKAssetType {
 
 @optional
 
-/** Upon receiving a file transfer request from the peer.
+/** Upon receiving a file transfer request from a peer.
  @param connection The underlying connection object.
  @param filename The name of the file in request.
  @param peerId The unique id of the peer.
  */
 - (void)connection:(SKYLINKConnection*)connection didReceiveRequest:(NSString*)filename peerId:(NSString*)peerId;
 
-/** Upon receiving a file transfer permission from the peer.
+/** Upon receiving a file transfer permission from a peer.
  @param connection The underlying connection object.
- @param isPermitted Flag to specify whether the the request was accepted.
+ @param isPermitted Flag to specify whether the request was accepted.
  @param filename The name of the file in request.
  @param peerId The unique id of the peer.
  */
@@ -200,6 +208,52 @@ typedef enum SKYLINKAssetType {
 @end
 
 /**
+ @discussion The class representing the handshaking peer settings.
+ */
+@interface SKYLINKPeerMediaProperties : NSObject
+
+/**
+ @brief whether the peer has audio.
+ */
+@property (nonatomic, unsafe_unretained) BOOL hasAudio;
+/**
+ @brief is audio stereo.
+ @discussion if 'hasAudio' returns false then this property is insignificant.
+ */
+@property (nonatomic, unsafe_unretained) BOOL isAudioStereo;
+/**
+ @brief is audio muted.
+ @discussion if 'hasAudio' returns false then this property is insignificant.
+ */
+@property (nonatomic, unsafe_unretained) BOOL isAudioMuted;
+/**
+ @brief whether the peer has video
+ */
+@property (nonatomic, unsafe_unretained) BOOL hasVideo;
+/**
+ @brief is video muted.
+ @discussion if 'hasVideo' returns false then this property is insignificant.
+ */
+@property (nonatomic, unsafe_unretained) BOOL isVideoMuted;
+/**
+ @brief width of the video frame.
+ @discussion if 'hasVideo' returns false then this property is insignificant.
+ */
+@property (nonatomic, unsafe_unretained) NSInteger videoWidth;
+/**
+ @brief height of the video frame.
+ @discussion if 'hasVideo' returns false then this property is insignificant.
+ */
+@property (nonatomic, unsafe_unretained) NSInteger videoHeight;
+/**
+ @brief frame rate of the video.
+ @discussion if 'hasVideo' returns false then this property is insignificant.
+ */
+@property (nonatomic, unsafe_unretained) NSInteger videoFrameRate;
+
+@end
+
+/**
  @discussion The class representing the conversation configuration.
  */
 @interface SKYLINKConnectionConfig : NSObject
@@ -221,12 +275,12 @@ typedef enum SKYLINKAssetType {
  */
 @property (nonatomic, unsafe_unretained) BOOL fileTransfer;
 /**
- @brief Number of seconds for file transfer timeout.
+ @brief number of seconds for file transfer timeout.
  */
 @property (nonatomic, unsafe_unretained) NSInteger timeout;
 /**
- @brief Configuration for advanced users.
- @discussion For now the system accepts turning on/off STUN and TURN servers via STUN=true/false and TURN=true/false. Transport can be set as transport=TCP/UDP.
+ @brief configuration for advanced users.
+ @discussion for now the system accepts turning on/off STUN and TURN servers via STUN=true/false and TURN=true/false. Transport can be set as transport=TCP/UDP.
  */
 @property (nonatomic, weak) NSDictionary *userInfo;
 
@@ -269,12 +323,12 @@ typedef enum SKYLINKAssetType {
 /** Initialize and return a newly allocated connection object.
  @discussion Changes in config after creating the object won't effect the connection itself.
  @param config The connection configuration object.
- @param apiKey API key.
+ @param appKey APP key.
  */
-- (id)initWithConfig:(SKYLINKConnectionConfig*)config apiKey:(NSString*)apiKey;
+- (id)initWithConfig:(SKYLINKConnectionConfig*)config appKey:(NSString*)appKey;
 
 /** Join the room specifiying the shared secret, room name and user info.
- @discussion We recommend using connectToRoomWithCredentials:roomName:userInfo: but if the client application has no server implementation then one may better use this one.
+ @discussion It is recommended to use connectToRoomWithCredentials:roomName:userInfo: but if the client application has no server implementation then this one should be used.
  @param secret Shared secret.
  @param roomName Name of the room to join.
  @param userInfo User defined information. May be an NSString, NSDictionary or NSArray.
@@ -283,7 +337,7 @@ typedef enum SKYLINKAssetType {
 - (BOOL)connectToRoomWithSecret:(NSString*)secret roomName:(NSString*)roomName userInfo:(id)userInfo;
 
 /** Join the room specifiying the calculated credential info, room name and user info.
- @discussion The dictionary 'credInfo' is supposed to have 3 non-Null parameters an NSString type 'credential', an NSDate type 'startTime' and a float type 'duration' in hours. The 'startTime' must be a correct time of the client application's timezone. Both the 'startTime' and 'duration' must be the same as the ones that were used to calculate the credentils. Failing to provide any of them will result in a connection denial.
+ @discussion The dictionary 'credInfo' is expected to have 3 non-Null parameters: an NSString type 'credential', an NSDate type 'startTime' and a float type 'duration' in hours. The 'startTime' must be a correct time of the client application's timezone. Both the 'startTime' and 'duration' must be the same as the ones that were used to calculate the credentil. Failing to provide any of them will result in a connection denial.
  @param credInfo A dictionary containing a credential, startTime and duration.
  @param roomName Name of the room to join.
  @param userInfo User defined information. May be an NSString, NSDictionary or NSArray.
@@ -295,16 +349,34 @@ typedef enum SKYLINKAssetType {
  */
 - (void)disconnect;
 
+/** 
+ @name Room Control.
+ */
+
+/** Refresh peer connection with a specified peer.
+ @discussion This method is provided as a convenience method. So that one can call if a peer streams are not behaving correctly.
+ @param peerId The unique id of the peer with whom the connection is being refreshed.
+ */
+- (void)refreshConnection:(NSString*)peerId;
+
+/** Lock the room.
+ */
+- (void)lockTheRoom;
+
+/** Unlock the room.
+ */
+- (void)unlockTheRoom;
+
 /**
  @name Media
  */
 
-/** Mutes own audio and triggers mute audio call back at all participants.
+/** Mute own audio and trigger mute audio call back for all other peers.
  @param isMuted Flag to impare muted audio condition.
  */
 - (void)muteAudio:(BOOL)isMuted;
 
-/** Mutes own video and triggers mute video call back at all participants.
+/** Mute own video and trigger mute video call back for all other peers.
  @param isMuted Flag to impare muted video condition.
  */
 - (void)muteVideo:(BOOL)isMuted;
@@ -313,24 +385,24 @@ typedef enum SKYLINKAssetType {
  @name Messaging
  */
 
-/** Send a custom message (dictionary, array or string) to a remotePeer.
- @discussion If the 'remotePeerId' is not given it will be assumed as a broadcast message to all users.
- @param message User defined message to be sent to the peer. May be an NSString, NSDictionary or NSArray.
- @param peerId The unique id of the peer to whom the message would be sent.
+/** Send a custom message (dictionary, array or string) to a peer via signaling server.
+ @discussion If the 'peerId' is not given then the message is broadcasted to all the peers.
+ @param message User defined message to be sent. May be an NSString, NSDictionary or NSArray.
+ @param peerId The unique id of the peer to whom the message is sent.
  */
 - (void)sendCustomMessage:(id)message peerId:(NSString*)peerId;
 
-/** Send a message via data channel. 
- @discussion The message will be broadcasted to all the users if the remotePeerId is sent as 'nil'.
- @param message User defined message to be sent to the peer. May be an NSString, NSDictionary, NSArray.
- @param peerId The unique id of the peer to whome the message would be sent.
+/** Send a message (dictionary, array or string) to a peer via data channel.
+ @discussion If the 'peerId' is not given then the message is broadcasted to all the peers.
+ @param message User defined message to be sent. May be an NSString, NSDictionary, NSArray.
+ @param peerId The unique id of the peer to whom the message is sent.
  */
 - (void)sendDCMessage:(id)message peerId:(NSString*)peerId;
 
-/** Send binary data via data channel.
- @discussion The data will be broadcasted to all the users if the remotePeerId is sent as 'nil'. If the caller passes data object exceeding the maximum length i.e. 65456 excess bytes are truncated to the limit before sending the data on the channel.
+/** Send binary data to a peer via data channel.
+ @discussion If the 'peerId' is not given then the data is sent to all the peers. If the caller passes data object exceeding the maximum length i.e. 65456, excess bytes are truncated to the limit before sending the data on to the channel.
  @param data Binary data to be sent to the peer. The maximum size the method expects is 65456 bytes.
- @param peerId The unique id of the peer to whome the message would be sent.
+ @param peerId The unique id of the peer to whom the data is sent.
  */
 - (void)sendBinaryData:(NSData*)data peerId:(NSString*)peerId;
 
@@ -338,7 +410,7 @@ typedef enum SKYLINKAssetType {
  @name File Transfer
  */
 
-/** This will trigger a file permission event on the remote peer.
+/** This will trigger a file permission event at a peer.
  @param fileURL The url of the file to send.
  @param assetType The type of the asset to send.
  @param peerId The unique id of the peer to whom the file would be sent.
@@ -346,23 +418,23 @@ typedef enum SKYLINKAssetType {
  */
 - (void)sendFileTransferRequest:(NSURL*)fileURL assetType:(SKYLINKAssetType)assetType peerId:(NSString*)peerId;
 
-/** This will trigger a broadcast file permission event on the remote peer.
- @discussion If all the data channel connections are busy in some file transfer then this message will be ignored. If one or more data channel connections are not busy in some file transfer then this will trigger a broadcast file permission event on the available remote peers.
+/** This will trigger a broadcast file permission event at a peer.
+ @discussion If all the data channel connections are busy in some file transfer then this message will be ignored. If one or more data channel connections are not busy in some file transfer then this will trigger a broadcast file permission event at the available peers.
  @param fileURL The url of the file to send.
  @param assetType The type of the asset to send.
  */
 - (void)sendFileTransferRequest:(NSURL*)fileURL assetType:(SKYLINKAssetType)assetType;
 
-/** Accept or reject the file transfer request from the peer.
+/** Accept or reject the file transfer request from a peer.
  @param accept Flag to specify whether the request is accepted.
  @param filename The name of the file in request.
- @param peerId The unique id of the peer from whom the file data would be coming.
+ @param peerId The unique id of the peer who sent the file transfer request.
  */
 - (void)acceptFileTransfer:(BOOL)accept filename:(NSString*)filename peerId:(NSString*)peerId;
 
 /** Cancel the existing on going transfer at anytime.
  @param filename The name of the file in request.
- @param peerId The unique id of the peer from whom the file data is coming.
+ @param peerId The unique id of the peer with whom file is being transmitted.
  */
 - (void)cancelFileTransfer:(NSString*)filename peerId:(NSString*)peerId;
 
@@ -370,13 +442,13 @@ typedef enum SKYLINKAssetType {
  @name Miscellaneous
  */
 
-/** Updates user information for every peer and triggers user info call back at remote peer's end.
+/** Update user information for every other peer and triggers user info call back at all the other peer's end.
  @param userInfo User defined information. May be an NSString, NSDictionary or NSArray.
  */
 - (void)sendUserInfo:(id)userInfo;
 
 /** Let the SDK know that the interface orientation of the application has been changed.
- @discussion One should call this function to let the SDK know about the interface rotation changes so that the SDK can adjust the self video capturing accordingly.
+ @discussion This function should be called to let the SDK know about the interface rotation changes so that the SDK can adjust the self video capturing accordingly.
  */
 - (void)reportRotation;
 
@@ -400,7 +472,7 @@ typedef enum SKYLINKAssetType {
  @param duration Duration of the call in hours.
  @param startTime Start time of the call as per client application time zone.
  @param secret The shared secret.
- @return The calculated credentials.
+ @return The calculated credential string.
  */
 + (NSString*)calculateCredentials:(NSString*)roomName duration:(CGFloat)duration startTime:(NSDate*)startTime secret:(NSString*)secret;
 
