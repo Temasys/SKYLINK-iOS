@@ -77,6 +77,7 @@ typedef enum SKYLINKAssetType {
 /** When a remote peer joins the room.
  @param connection The underlying connection object.
  @param userInfo User defined information. May be an NSString, NSDictionary or NSArray.
+ @param pmProperties An object defining peer media properties of the joining peer.
  @param peerId The unique id of the joining peer.
  */
 - (void)connection:(SKYLINKConnection*)connection didJoinPeer:(id)userInfo mediaProperties:(SKYLINKPeerMediaProperties*)pmProperties peerId:(NSString*)peerId;
