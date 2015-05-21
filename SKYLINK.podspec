@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SKYLINK"
-  s.version          = "1.0.3"
+  s.version          = "1.0.4"
   s.summary          = "SKYLINK.framework distribution"
   s.description      = "SKYLINK.framework distribution for iOS"
   s.homepage         = "https://github.com/temahussain/SKYLINK-iOS"
@@ -20,10 +20,10 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.frameworks = 'UIKit', 'MapKit', 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'Foundation', 'GLKit', 'OpenGLES', 'QuartzCore', 'Security', 'SystemConfiguration'
+  s.frameworks = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreAudio', 'CoreGraphics', 'CoreMedia', 'Foundation', 'GLKit', 'UIKit'
   s.dependency 'SocketRocket', '~> 0.3.1-beta2'
   s.dependency 'tema-ios-ntp', '~> 1.0.0'
-  s.libraries = 'icucore', 'm', 'sqlite3', 'stdc++'
+  s.libraries = 'c', 'icucore', 'sqlite3', 'stdc++'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.vendored_frameworks = 'SKYLINK.framework'
   s.vendored_libraries = 'libtemasys.a'

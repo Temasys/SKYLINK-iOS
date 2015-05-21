@@ -318,6 +318,15 @@ typedef enum SKYLINKAssetType {
 @property(nonatomic, weak) id<SKYLINKConnectionFileTransferDelegate> fileTransferDelegate;
 
 /**
+ @name Peer Id
+ */
+
+/**
+ @brief peer id of the current user
+ */
+@property(nonatomic, readonly) NSString *myPeerId;
+
+/**
  @name Lifecycle
  */
 
@@ -381,6 +390,10 @@ typedef enum SKYLINKAssetType {
  @param isMuted Flag to impare muted video condition.
  */
 - (void)muteVideo:(BOOL)isMuted;
+
+/** Switches between front and back camera. By default the front camera input is captured.
+ */
+- (void)switchCamera;
 
 /**
  @name Messaging
@@ -447,11 +460,6 @@ typedef enum SKYLINKAssetType {
  @param userInfo User defined information. May be an NSString, NSDictionary or NSArray.
  */
 - (void)sendUserInfo:(id)userInfo;
-
-/** Let the SDK know that the interface orientation of the application has been changed.
- @discussion This function should be called to let the SDK know about the interface rotation changes so that the SDK can adjust the self video capturing accordingly.
- */
-- (void)reportRotation;
 
 /** Get the cached user info for a particular peer.
  @param peerId The unique id of the peer.
