@@ -281,7 +281,7 @@ typedef enum SKYLINKAssetType {
 @property (nonatomic, unsafe_unretained) NSInteger timeout;
 /**
  @brief configuration for advanced users.
- @discussion for now the system accepts turning on/off STUN and TURN servers via STUN=true/false and TURN=true/false. Transport can be set as transport=TCP/UDP.
+ @discussion for now the system accepts turning on/off STUN and TURN servers via STUN=true/false and TURN=true/false. Transport can be set as transport=TCP/UDP. Preferred audio codec can be set as audio=Opus/iLBC.
  */
 @property (nonatomic, weak) NSDictionary *userInfo;
 
