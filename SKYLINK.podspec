@@ -9,13 +9,13 @@
 
 Pod::Spec.new do |s|
   s.name             = "SKYLINK"
-  s.version          = "1.0.5.1"
+  s.version          = "1.0.6"
   s.summary          = "SKYLINK.framework distribution"
   s.description      = "SKYLINK.framework distribution for iOS"
   s.homepage         = "https://github.com/temahussain/SKYLINK-iOS"
   s.license          = 'MIT'
   s.author           = { "Temasys Communications" => "shussain@temasys.com" }
-  s.source           = { :git => "https://github.com/temahussain/SKYLINK-iOS.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/Temasys/SKYLINK-iOS.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
