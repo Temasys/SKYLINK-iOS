@@ -9,18 +9,18 @@
 
 Pod::Spec.new do |s|
   s.name             = "SKYLINK"
-  s.version          = "1.0.6"
+  s.version          = "1.0.7"
   s.summary          = "SKYLINK.framework distribution"
   s.description      = "SKYLINK.framework distribution for iOS"
   s.homepage         = "https://github.com/Temasys/SKYLINK-iOS"
   s.license          = 'MIT'
-  s.author           = { "Temasys Communications" => "shussain@temasys.com" }
+  s.author           = { "Temasys Communications" => "xiangrong@temasys.com.sg" }
   s.source           = { :git => "https://github.com/Temasys/SKYLINK-iOS.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.frameworks = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreAudio', 'CoreGraphics', 'CoreMedia', 'Foundation', 'GLKit', 'UIKit'
+  s.frameworks = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreAudio', 'CoreGraphics', 'CoreMedia', 'Foundation', 'GLKit', 'UIKit', 'VideoToolbox'
   s.dependency 'SocketRocket', '~> 0.3.1-beta2'
   s.dependency 'tema-ios-ntp', '~> 1.0.0'
   s.libraries = 'c', 'icucore', 'sqlite3', 'stdc++'
