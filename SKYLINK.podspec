@@ -26,6 +26,5 @@ Pod::Spec.new do |s|
   s.libraries = 'c', 'icucore', 'sqlite3', 'stdc++'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.vendored_frameworks = 'SKYLINK.framework'
-  s.vendored_libraries = 'libtemasys.a'
   s.preserve_paths = 'SKYLINK.framework'
 end
