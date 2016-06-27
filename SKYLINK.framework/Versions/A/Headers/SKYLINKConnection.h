@@ -407,7 +407,7 @@ typedef enum SKYLINKAssetType {
 
 /**
  @brief Join the room specifiying the calculated credential info, room name and user info.
- @discussion The dictionary 'credInfo' is expected to have 3 non-Null parameters: an NSString type 'credential', an NSDate type 'startTime' and a NSString type 'duration' in hours. The 'startTime' must be a correct time of the client application's timezone. Both the 'startTime' and 'duration' must be the same as the ones that were used to calculate the credentil. Failing to provide any of them will result in a connection denial.
+ @discussion The dictionary 'credInfo' is expected to have 3 non-Null parameters: an NSString type 'credential', an NSDate type 'startTime' and an NSNumber type 'duration' in hours. The 'startTime' must be a correct time of the client application's timezone. Both the 'startTime' and 'duration' must be the same as the ones that were used to calculate the credential. Failing to provide any of them will result in a connection denial.
  @param credInfo A dictionary containing a credential, startTime and duration.
  @param roomName Name of the room to join.
  @param userInfo User defined information (relating to oneself). May be an NSString, NSDictionary or NSArray.
@@ -579,17 +579,10 @@ typedef enum SKYLINKAssetType {
 /*!
  * @brief Enable/disable verbose logs for all the connections.
  * @warning You should always disable logs in RELEASE mode.
- * @param verbose enable/disable verbose logs. It is NO by default.
- * @deprecated This method is deprecated, please use setEnableLog: instead
+ * @param verbose enable/disable verbose logs. Default is NO.
  */
-+ (void)setVerbose:(BOOL)verbose __deprecated_msg("use +(void)setEnableLog:(BOOL)enableLog; instead");
++ (void)setVerbose:(BOOL)verbose;
 
-/*!
- * @brief Enable/disable verbose logs for all the connections.
- * @warning You should always disable logs in RELEASE mode.
- * @param enableLog enable/disable verbose logs. Default is NO.
- */
-+ (void)setEnableLog:(BOOL)enableLog;
 
 /**
  @brief Calculate credentials to be used by the connection.
@@ -599,6 +592,6 @@ typedef enum SKYLINKAssetType {
  @param secret The shared secret.
  @return The calculated credential string.
  */
-+ (NSString*)calculateCredentials:(NSString*)roomName duration:(NSString*)duration startTime:(NSDate*)startTime secret:(NSString*)secret;
++ (NSString*)calculateCredentials:(NSString*)roomName duration:(NSNumber*)duration startTime:(NSDate*)startTime secret:(NSString*)secret;
 
 @end
