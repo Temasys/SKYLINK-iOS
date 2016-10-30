@@ -17,7 +17,7 @@ To install it, simply add the following line to your Podfile:
 
     pod "SKYLINK"
 
-> To use this SDK, you need to **get you API key** at http://developer.temasys.com.sg/register
+> To use this SDK, you need to **get you API key** at http://developer.temasys.io/register
 
 
 ### Use SkylinkSDK for iOS in a Swift project
@@ -51,6 +51,9 @@ SkylinkSDK for iOS is designed to be simple to use. The main idea when using it 
 
 To learn more, please consult the follwing ressources:
 
+### Documentation
+Framework documentation: https://cdn.temasys.com.sg/skylink/skylinksdk/ios/latest/docs/index.html
+
 ### Sample App
 Be sure to check out our sample app to get usage instructions and examples: http://github.com/Temasys/SkylinkSDK-iOS-Sample
 
@@ -76,6 +79,7 @@ Check our company websites:
 - By **Temasys**: http://temasys.com.sg
 Also checkout our Skylink SDKs for [Web](http://skylink.io/web/) and [Android](http://skylink.io/android)
 
+You can subscribe to SKYLINK releases notes: http://support.temasys.com.sg/support/solutions/articles/12000012359-how-can-i-subscribe-to-release-notes-for-skylink-
 
 **License**
 ==========================
