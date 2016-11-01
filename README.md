@@ -5,7 +5,7 @@
 
 ## Documentation
 
-SkylinkSDK for iOS 1.0.9 documentation is available here: https://cdn.temasys.com.sg/skylink/skylinksdk/ios/1.0.9/docs/index.html
+SkylinkSDK for iOS 1.0.10 documentation is available here: https://cdn.temasys.com.sg/skylink/skylinksdk/ios/1.0.10/docs/index.html
 
 ## Requirements
 Your project should use ARC and target iOS 7 or higher.
