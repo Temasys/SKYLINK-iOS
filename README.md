@@ -68,7 +68,7 @@ Be sure to check out our sample app to get usage instructions and examples: http
 
 Support portal
 -------
-If you encounter any issues or have any enquiries regarding Temasys iOS SDK, drop us a note on our [support portal](http://support.temasys.io/support/login) and we would be happy to help! 
+If you encounter any issues or have any enquiries regarding the Temasys iOS SDK, drop us a note on our [support portal](http://support.temasys.io/support/login) and we would be happy to help! 
 
 
 You can subscribe to Temasys iOS SDK releases notes: http://support.temasys.io/support/solutions/articles/12000012359-how-can-i-subscribe-to-release-notes-for-skylink-
