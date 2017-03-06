@@ -247,6 +247,23 @@ typedef enum SKYLINKAssetType {
 @end
 
 /**
+ @brief Protocol to receive events related to stats.
+ @discussion Delegate methods are called on the main thread.
+ */
+@protocol SKYLINKConnectionStatsDelegate <NSObject>
+@optional
+/**
+ @brief Called upon webRTC stats delivery.
+ @param connection The underlying connection object.
+ @param stats A dictionary with stats name as keys and values as NSString values.
+ @param peerId The unique id of the peer.
+ @param mediaDirection int indicating the related media direction (mediaSent: 1, mediaReceived: 2).
+ */
+-(void)connection:(SKYLINKConnection *)connection didGetWebRTCStats:(NSDictionary *)stats forPeerId:(NSString *)peerId mediaDirection:(int)mediaDirection;
+@end
+
+
+/**
  @brief Protocol to receive backend events related to room recording (BETA).
  @discussion Delegate methods are called on the main thread.
  */
@@ -283,11 +300,11 @@ typedef enum SKYLINKAssetType {
  @brief Called upon recording completion event.
  @warning This feature is in BETA.
  @param connection The underlying connection object.
- @param recordingID The id of the recording.
- @param recordingURL The mixing recording URL as a string.
- @param peersRecordingURLs A dictionnary containing peer ids (including the local peer) as keys (strings) and the related url as value (string). This parameter might be nil.
+ @param recordingId The id of the recording.
+ @param videoLink The mixing recording URL as a string.
+ @param peerId The peerId who's recording the link is for. If nil then the URL is a mixin recording link.
  */
-- (void)connection:(SKYLINKConnection*)connection recording:(NSString *)recordingID didCompleteWithMixingURL:(NSString *)recordingURL peersURLs:(NSDictionary *)peersRecordingURLs;
+- (void)connection:(SKYLINKConnection*)connection recordingVideoLink:(NSString *)videoLink peerId:(NSString *)peerId recordingId:(NSString *)recordingId;
 
 @end
 
@@ -389,11 +406,27 @@ typedef enum SKYLINKAssetType {
  @discussion Default value is 60.
  */
 @property (nonatomic, unsafe_unretained) NSInteger timeout;
+/**
+ @brief Used to limit remote peers audio media bitrate.
+ @discussion Default value is 0, meaning not bitrate limit.
+ */
+@property (nonatomic, unsafe_unretained) NSInteger maxAudioBitrate;
+/**
+ @brief Used to limit remote peers video media bitrate.
+ @discussion Default value is 512.
+ */
+@property (nonatomic, unsafe_unretained) NSInteger maxVideoBitrate;
+/**
+ @brief Used to limit remote peers data bitrate.
+ @discussion Default value is 0, meaning not bitrate limit.
+ */
+@property (nonatomic, unsafe_unretained) NSInteger maxDataBitrate;
 /*!
  * @brief Optional configuration for advanced users.
  * @discussion The userInfo dictionnary key and associated settings are:
  * @"STUN" key (NSNumber value): set @"STUN" to @YES to DISABLE STUN server.
  * @"TURN" key (NSNumber value): set @"TURN" to @YES to DISABLE TURN server.
+ * @"disableHOST" key, set @YES to disable HOST.
  * @"transport" key (NSString value): expected values are @"TCP" or @"UDP".
  * @"audio" key (NSString value): preferred audio codec, expected values are @"Opus" or @"iLBC".
  * @param userInfo NSDictionary carrying the desired settings. Read the discussion for details.
@@ -406,6 +439,7 @@ typedef enum SKYLINKAssetType {
  * @discussion The settingKey and associated settings values are:
  * @"STUN" key, (NSNumber value): set @"disableSTUN" to @YES to disable STUN server.
  * @"TURN" key, (NSNumber value): set @"disableTURN" to @YES to disable TURN server.
+ * @"disableHOST" key, set @YES to disable HOST.
  * @"transport" key, (NSString value): expected values are @"TCP" or @"UDP".
  * @"audio" key, (NSString value): preferred audio codec, expected values are @"Opus" or @"iLBC".
  * @"startWithBackCamera" key, (NSNumber value): if you send the camera, this will determine the local camera to start the video capture. Default is @NO (ie: use front camera)
@@ -451,6 +485,10 @@ typedef enum SKYLINKAssetType {
  @brief delegate related to room recording, implementing the SKYLINKConnectionRecordingDelegate protocol.
  */
 @property(nonatomic, weak) id<SKYLINKConnectionRecordingDelegate> recordingDelegate;
+/**
+ @brief delegate related to stats providing, implementing the SkylinkStatsDelegate protocol.
+ */
+@property(nonatomic, weak) id<SKYLINKConnectionStatsDelegate> statsDelegate;
 
 /**
  @name Peer Id
@@ -670,6 +708,15 @@ typedef enum SKYLINKAssetType {
  @return User defined information. May be an NSString, NSDictionary or NSArray.
  */
 - (id)getUserInfo:(NSString*)peerId;
+
+/**
+ @brief Get webRTC stats.
+ @warning This feature is in BETA.
+ @param peerId the peerId for which connection you want the stats
+ @param mediaDirection used to specify whether you want upload or download stats, or both (Both:0, mediaSent: 1, mediaReceived: 2).
+ @discussion Stats are returned within the SKYLINKConnectionStatsDelegate
+ */
+- (void)getWebRTCStatsForPeerId:(NSString *)peerId mediaDirection:(int)mediaDirection;
 
 /**
  @name Utility

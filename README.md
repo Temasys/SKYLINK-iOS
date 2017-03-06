@@ -3,12 +3,17 @@
 
 The **Temasys iOS SDK** lets you build real time webRTC applications with voice calling, video chat, P2P file sharing or data and messages exchange. Go multi-platform with our [Web](http://skylink.io/web/) and [Android](http://skylink.io/android) SDKs.
 
-## Documentation
+## Documentation & Sample App
 
-Temasys iOS SDK 1.0.10 documentation is available here: https://cdn.temasys.io/skylink/skylinksdk/ios/1.0.10/docs/index.html
+Check out the documentation and our sample app to get usage instructions and examples.
+
+| Description | Link |
+| --- | --- |
+| Temasys iOS SDK documentation | https://cdn.temasys.io/skylink/skylinksdk/ios/latest/docs/index.html |
+| Sample App (Github) | http://github.com/Temasys/SkylinkSDK-iOS-Sample |
 
 ## Requirements
-Your project should use ARC and target iOS 7 or higher.
+Your project should use ARC and target iOS 8 or higher.
 
 ## Installation
 
@@ -49,17 +54,14 @@ You should be able to run your project after this, and use Temasys iOS SDK with 
 
 The Temasys iOS SDK is designed to be simple to use. The main idea when using it is to prepare and create a connection to a "room" via the Temasys platform. After that, you will be able to send messages to the connection and implement the desired protocols to control what happens between the local device and the peers connected to the same "room".
 
-To learn more, please consult the follwing ressources:
-
-### Documentation
-Framework documentation: https://cdn.temasys.io/skylink/skylinksdk/ios/latest/docs/index.html
-
-### Sample App
-Be sure to check out our sample app to get usage instructions and examples: http://github.com/Temasys/SkylinkSDK-iOS-Sample
+To learn even more, please consult the follwing ressources:
 
 ### Tutorials
-- Getting started with Temasys iOS SDK for iOS http://temasys.io/getting-started-skylinksdk-ios/
-- Handle the video view stretching: http://temasys.io/a-simple-solution-for-video-stretching/
+ 
+| Tutorial | Link |
+| --- | --- |
+| Getting started with Temasys iOS SDK for iOS | http://temasys.io/getting-started-skylinksdk-ios/ |
+| Handle the video view stretching | http://temasys.io/a-simple-solution-for-video-stretching/ |
 
 ----------
 
