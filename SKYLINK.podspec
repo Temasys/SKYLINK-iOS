@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
   s.description      = "SKYLINK.framework distribution for iOS"
   s.homepage         = "https://github.com/Temasys/SKYLINK-iOS"
   s.license          = 'MIT'
-  s.author           = { "Temasys Communications" => "xiangrong@temasys.io", "Temasys Communications" => "romain.pellen@temasys.io"}
-  s.source           = { :git => "https://github.com/Temasys/SKYLINK-iOS.git", :tag => s.version.to_s }
+  s.author           = { "Temasys Communications XR" => "xiangrong@temasys.io", "Temasys Communications RP" => "romain.pellen@temasys.io"}
+  s.source           = { :git => "https://github.com/Temasys/SKYLINK-iOS.git", :branch => "master" }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
