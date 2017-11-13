@@ -5,7 +5,7 @@
 # Any lines starting with a # are optional, but encouraged
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#    :tag => "1.1.1"
+#   :branch => "master" 
  
 Pod::Spec.new do |s|
   s.name             = "SKYLINK"
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/Temasys/SKYLINK-iOS"
   s.license          = 'MIT'
   s.author           = { "Temasys Communications XR" => "xiangrong@temasys.io", "Temasys Communications RP" => "romain.pellen@temasys.io"}
-  s.source           = { :git => "https://github.com/Temasys/SKYLINK-iOS.git", :branch => "master" }
+  s.source           = { :git => "https://github.com/Temasys/SKYLINK-iOS.git", :tag => "1.1.1" }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
