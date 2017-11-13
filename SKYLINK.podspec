@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.dependency 'tema-ios-ntp', '~> 1.0.0'
   s.dependency 'Socket.IO-Client-Swift', '~> 12.1.2'
   s.libraries = 'c', 'icucore', 'sqlite3', 'stdc++'
-  s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC', 'SWIFT_VERSION' => '4.0' }
   s.vendored_frameworks = 'SKYLINK.framework'
   s.preserve_paths = 'SKYLINK.framework'
 end
