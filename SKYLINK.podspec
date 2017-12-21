@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/Temasys/SKYLINK-iOS"
   s.license          = 'MIT'
   s.author           = { "Temasys Communications XR" => "xiangrong@temasys.io", "Temasys Communications RP" => "romain.pellen@temasys.io"}
-  s.source           = { :git => "https://github.com/Temasys/SKYLINK-iOS.git", :tag => "1.1.1" }
+  s.source           = { :git => "https://github.com/Temasys/SKYLINK-iOS.git", :tag => "1.1.2" }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
