@@ -65,6 +65,9 @@ To learn even more, please consult the follwing ressources:
 
 ----------
 
+###### Problem if you are creating a project with Objective-C:
+You may have a compiling error if you create an Objective-C project and integrate our SDK, it could be something like "unspecified version of Swift", if this happens, you may just go to the ""Pods" ---> "Targets", select "Starcream", then ---> "Build Settings", search "Swift", and you will find the ""Swift Language Version", change it from "unspecified" to "4.0"
+
 **Other Resources**
 ==========================
 
