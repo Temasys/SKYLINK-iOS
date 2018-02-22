@@ -72,6 +72,18 @@
 		<data>
 		qPS2xMTGDwG+mpJ/YY3AV+7/9Zc=
 		</data>
+		<key>WebRTC.framework/Info.plist</key>
+		<data>
+		893QWc8zDjn+GQH+9Mkqwv9jbbU=
+		</data>
+		<key>WebRTC.framework/LICENSE.html</key>
+		<data>
+		xV/gbjHvs64mYJDj0Xd/ruiY/T4=
+		</data>
+		<key>WebRTC.framework/WebRTC</key>
+		<data>
+		QImsYkp9OmmMWeBztIe6td9AM+A=
+		</data>
 		<key>libWebRTC_release.a</key>
 		<data>
 		QImsYkp9OmmMWeBztIe6td9AM+A=
@@ -261,6 +273,39 @@
 			<key>hash2</key>
 			<data>
 			4UmWvLKirFELAHRgrKUbzLPw+/tD7hQhC5xh8ffmGl4=
+			</data>
+		</dict>
+		<key>WebRTC.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			893QWc8zDjn+GQH+9Mkqwv9jbbU=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZOVwdGX7hfLhqyQXrfvhtLtlBEwvhNfHA2zbOqxr+5c=
+			</data>
+		</dict>
+		<key>WebRTC.framework/LICENSE.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xV/gbjHvs64mYJDj0Xd/ruiY/T4=
+			</data>
+			<key>hash2</key>
+			<data>
+			xXt4R+KoTBrGHOdgH0ANS1qeX8HWg4SmEUfXJWNv+L4=
+			</data>
+		</dict>
+		<key>WebRTC.framework/WebRTC</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QImsYkp9OmmMWeBztIe6td9AM+A=
+			</data>
+			<key>hash2</key>
+			<data>
+			J6Dx7uFnEg9zEVHMM075AUqi7xy0cVOYESWhRV3Y9T0=
 			</data>
 		</dict>
 		<key>libWebRTC_release.a</key>
