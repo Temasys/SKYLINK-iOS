@@ -24,7 +24,6 @@ Pod::Spec.new do |s|
   s.dependency 'SocketRocket', '~> 0.5.1'
   s.dependency 'tema-ios-ntp', '~> 1.0.0'
   s.dependency 'Socket.IO-Client-Swift', '~> 12.1.3'
-  s.dependency 'WebRTC'
   s.libraries = 'c', 'icucore', 'sqlite3', 'stdc++'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.vendored_frameworks = 'SKYLINK.framework'
