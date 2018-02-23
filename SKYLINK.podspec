@@ -23,7 +23,8 @@ Pod::Spec.new do |s|
   s.frameworks = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreAudio', 'CoreGraphics', 'CoreMedia', 'Foundation', 'GLKit', 'UIKit', 'VideoToolbox'
   s.dependency 'SocketRocket', '~> 0.5.1'
   s.dependency 'tema-ios-ntp', '~> 1.0.0'
-  s.dependency 'Socket.IO-Client-Swift', '~> 12.1.2'
+  s.dependency 'Socket.IO-Client-Swift', '~> 12.1.3'
+  s.dependency 'WebRTC', :commit => '146a48b0fabef7e74f2a2b62fb5cb45f9b393408'
   s.libraries = 'c', 'icucore', 'sqlite3', 'stdc++'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.vendored_frameworks = 'SKYLINK.framework'
