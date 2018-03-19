@@ -325,7 +325,7 @@ extern NSString * _Nonnull const SKYLINKRequiresPermissionNotification;
  */
 @property (nonatomic, assign) BOOL isAudioMuted;
 /**
- @brief whether the peer has video
+ @brief whether the peer has video 
  */
 @property (nonatomic, assign) BOOL hasVideo;
 /**
