@@ -292,15 +292,6 @@ extern NSString * _Nonnull const SKYLINKRequiresPermissionNotification;
  */
 - (void)connection:(nonnull SKYLINKConnection *)connection recordingVideoLink:(null_unspecified NSString *)videoLink peerId:(null_unspecified NSString *)peerId recordingId:(null_unspecified NSString *)recordingId;
 
-#warning Add this or not
-/**
- <#Description#>
-
- @param connection <#connection description#>
- @param recordingID <#recordingID description#>
- @param didCompleteWithURLs <#didCompleteWithURLs description#>
- */
-- (void)connection:(nonnull SKYLINKConnection *)connection recording:(null_unspecified NSString *)recordingID didCompleteWithURLs:(null_unspecified NSArray *)didCompleteWithURLs;
 @end
 
 
