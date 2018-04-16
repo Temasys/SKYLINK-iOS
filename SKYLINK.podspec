@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.frameworks = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreAudio', 'CoreGraphics', 'CoreMedia', 'Foundation', 'GLKit', 'UIKit', 'VideoToolbox'
-  s.dependency 'SocketRocket', '~> 0.5.1'
+  #s.dependency 'SocketRocket', '~> 0.5.1'
   s.dependency 'tema-ios-ntp', '~> 1.0.0'
   s.dependency 'Socket.IO-Client-Swift', '~> 12.1.3'
   s.libraries = 'c', 'icucore', 'sqlite3', 'stdc++'
