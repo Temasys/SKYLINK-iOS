@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SKYLINKConnection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SKYLINKConnection</TokenIdentifier>
+			<Abstract type="html">The class representing the connection to the room.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/setLifeCycleDelegate:</TokenIdentifier>
+			<Abstract type="html">delegate related to life cycle, implementing the SKYLINKConnectionLifeCycleDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionLifeCycleDelegate&gt; _Null_unspecified lifeCycleDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/lifeCycleDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/lifeCycleDelegate</TokenIdentifier>
+			<Abstract type="html">delegate related to life cycle, implementing the SKYLINKConnectionLifeCycleDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionLifeCycleDelegate&gt; _Null_unspecified lifeCycleDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/lifeCycleDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnection/lifeCycleDelegate</TokenIdentifier>
+			<Abstract type="html">delegate related to life cycle, implementing the SKYLINKConnectionLifeCycleDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionLifeCycleDelegate&gt; _Null_unspecified lifeCycleDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/lifeCycleDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/setRemotePeerDelegate:</TokenIdentifier>
+			<Abstract type="html">delegate related to remote peer activities, implementing the SKYLINKConnectionRemotePeerDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionRemotePeerDelegate&gt; _Null_unspecified remotePeerDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/remotePeerDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/remotePeerDelegate</TokenIdentifier>
+			<Abstract type="html">delegate related to remote peer activities, implementing the SKYLINKConnectionRemotePeerDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionRemotePeerDelegate&gt; _Null_unspecified remotePeerDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/remotePeerDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnection/remotePeerDelegate</TokenIdentifier>
+			<Abstract type="html">delegate related to remote peer activities, implementing the SKYLINKConnectionRemotePeerDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionRemotePeerDelegate&gt; _Null_unspecified remotePeerDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/remotePeerDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/setMediaDelegate:</TokenIdentifier>
+			<Abstract type="html">delegate related to audio/video media, implementing the SKYLINKConnectionMediaDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionMediaDelegate&gt; _Null_unspecified mediaDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/mediaDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/mediaDelegate</TokenIdentifier>
+			<Abstract type="html">delegate related to audio/video media, implementing the SKYLINKConnectionMediaDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionMediaDelegate&gt; _Null_unspecified mediaDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/mediaDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnection/mediaDelegate</TokenIdentifier>
+			<Abstract type="html">delegate related to audio/video media, implementing the SKYLINKConnectionMediaDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionMediaDelegate&gt; _Null_unspecified mediaDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/mediaDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/setMessagesDelegate:</TokenIdentifier>
+			<Abstract type="html">delegate related to various type of custom messages, implementing the SKYLINKConnectionMessagesDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionMessagesDelegate&gt; _Null_unspecified messagesDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/messagesDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/messagesDelegate</TokenIdentifier>
+			<Abstract type="html">delegate related to various type of custom messages, implementing the SKYLINKConnectionMessagesDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionMessagesDelegate&gt; _Null_unspecified messagesDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/messagesDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnection/messagesDelegate</TokenIdentifier>
+			<Abstract type="html">delegate related to various type of custom messages, implementing the SKYLINKConnectionMessagesDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionMessagesDelegate&gt; _Null_unspecified messagesDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/messagesDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/setFileTransferDelegate:</TokenIdentifier>
+			<Abstract type="html">delegate related to file transfer, implementing the SKYLINKConnectionFileTransferDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionFileTransferDelegate&gt; _Null_unspecified fileTransferDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/fileTransferDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/fileTransferDelegate</TokenIdentifier>
+			<Abstract type="html">delegate related to file transfer, implementing the SKYLINKConnectionFileTransferDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionFileTransferDelegate&gt; _Null_unspecified fileTransferDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/fileTransferDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnection/fileTransferDelegate</TokenIdentifier>
+			<Abstract type="html">delegate related to file transfer, implementing the SKYLINKConnectionFileTransferDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionFileTransferDelegate&gt; _Null_unspecified fileTransferDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/fileTransferDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/setRecordingDelegate:</TokenIdentifier>
+			<Abstract type="html">delegate related to room recording, implementing the SKYLINKConnectionRecordingDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionRecordingDelegate&gt; _Null_unspecified recordingDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/recordingDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/recordingDelegate</TokenIdentifier>
+			<Abstract type="html">delegate related to room recording, implementing the SKYLINKConnectionRecordingDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionRecordingDelegate&gt; _Null_unspecified recordingDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/recordingDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnection/recordingDelegate</TokenIdentifier>
+			<Abstract type="html">delegate related to room recording, implementing the SKYLINKConnectionRecordingDelegate protocol.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;SKYLINKConnectionRecordingDelegate&gt; _Null_unspecified recordingDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/recordingDelegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/setMyPeerId:</TokenIdentifier>
+			<Abstract type="html">peer id of the current local user</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *myPeerId</Declaration>
+			
+			
+			<Anchor>//api/name/myPeerId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/myPeerId</TokenIdentifier>
+			<Abstract type="html">peer id of the current local user</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *myPeerId</Declaration>
+			
+			
+			<Anchor>//api/name/myPeerId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnection/myPeerId</TokenIdentifier>
+			<Abstract type="html">peer id of the current local user</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *myPeerId</Declaration>
+			
+			
+			<Anchor>//api/name/myPeerId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/setMaxPeerCount:</TokenIdentifier>
+			<Abstract type="html">Maximun number of peers.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger maxPeerCount</Declaration>
+			
+			
+			<Anchor>//api/name/maxPeerCount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/maxPeerCount</TokenIdentifier>
+			<Abstract type="html">Maximun number of peers.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger maxPeerCount</Declaration>
+			
+			
+			<Anchor>//api/name/maxPeerCount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnection/maxPeerCount</TokenIdentifier>
+			<Abstract type="html">Maximun number of peers.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger maxPeerCount</Declaration>
+			
+			
+			<Anchor>//api/name/maxPeerCount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/initWithConfig:appKey:</TokenIdentifier>
+			<Abstract type="html">Initialize and return a newly allocated connection object.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (null_unspecified id)initWithConfig:(null_unspecified SKYLINKConnectionConfig *)config appKey:(null_unspecified NSString *)appKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>config</Name>
+					<Abstract type="html">The connection configuration object.</Abstract>
+				</Parameter><Parameter>
+					<Name>appKey</Name>
+					<Abstract type="html">APP key.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithConfig:appKey:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/connectToRoomWithSecret:roomName:userInfo:</TokenIdentifier>
+			<Abstract type="html">Join the room specifiying the shared secret, room name and user info.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)connectToRoomWithSecret:(null_unspecified NSString *)secret roomName:(null_unspecified NSString *)roomName userInfo:(null_unspecified id)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>secret</Name>
+					<Abstract type="html">Shared secret.</Abstract>
+				</Parameter><Parameter>
+					<Name>roomName</Name>
+					<Abstract type="html">Name of the room to join.</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">User defined information (relating to oneself). May be an NSString, NSDictionary or NSArray.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">NO if a connection is already established.</Abstract></ReturnValue>
+			<Anchor>//api/name/connectToRoomWithSecret:roomName:userInfo:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/connectToRoomWithCredentials:roomName:userInfo:</TokenIdentifier>
+			<Abstract type="html">Join the room specifiying the calculated credential info, room name and user info.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (nonnull NSString *)connectToRoomWithCredentials:(null_unspecified NSDictionary *)credInfo roomName:(null_unspecified NSString *)roomName userInfo:(null_unspecified id)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>credInfo</Name>
+					<Abstract type="html">A dictionary containing a credential, startTime and duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>roomName</Name>
+					<Abstract type="html">Name of the room to join.</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">User defined information (relating to oneself). May be an NSString, NSDictionary or NSArray.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">nil if connection can be established otherwise a message specifying reason for connection denial.</Abstract></ReturnValue>
+			<Anchor>//api/name/connectToRoomWithCredentials:roomName:userInfo:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/connectToRoomWithStringURL:userInfo:</TokenIdentifier>
+			<Abstract type="html">Join the room specifiying the calculated string URL and user info.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)connectToRoomWithStringURL:(null_unspecified NSString *)stringURL userInfo:(null_unspecified id)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>stringURL</Name>
+					<Abstract type="html">Generated with room name, appKey, secret, startTime and duration. Typed NSString (not NSURL).</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">User defined information (relating to oneself). May be an NSString, NSDictionary or NSArray.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES (success) if connection can be established. NO if a connection is already established.</Abstract></ReturnValue>
+			<Anchor>//api/name/connectToRoomWithStringURL:userInfo:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/disconnect:</TokenIdentifier>
+			<Abstract type="html">Leave the room.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)disconnect:(void ( ^ _Null_unspecified ) ( void ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">The completion block called on the UI thread after leaving the room. This block is a good place to deallocate SKYLINKConnection if desired. Leave as empty block if not required.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/disconnect:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/refreshConnection:</TokenIdentifier>
+			<Abstract type="html">Refresh peer connection with a specified peer.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)refreshConnection:(null_unspecified NSString *)peerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>peerId</Name>
+					<Abstract type="html">The unique id of the peer with whom the connection is being refreshed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/refreshConnection:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/lockTheRoom</TokenIdentifier>
+			<Abstract type="html">Lock the room.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)lockTheRoom</Declaration>
+			
+			
+			<Anchor>//api/name/lockTheRoom</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/unlockTheRoom</TokenIdentifier>
+			<Abstract type="html">Unlock the room.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)unlockTheRoom</Declaration>
+			
+			
+			<Anchor>//api/name/unlockTheRoom</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/muteAudio:</TokenIdentifier>
+			<Abstract type="html">Mute/unmute own audio and trigger mute/unmute audio call back for all other peers.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)muteAudio:(BOOL)isMuted</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isMuted</Name>
+					<Abstract type="html">Flag to set if audio should be muted. Set to true to mute and false to unmute.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/muteAudio:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/muteVideo:</TokenIdentifier>
+			<Abstract type="html">Mute/unmute own video and trigger mute/unmute video call back for all other peers.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)muteVideo:(BOOL)isMuted</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>isMuted</Name>
+					<Abstract type="html">Flag to set if video should be muted. Set to true to mute and false to unmute.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/muteVideo:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/isAudioMuted</TokenIdentifier>
+			<Abstract type="html">Checks if own audio is currently muted.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isAudioMuted</Declaration>
+			
+			<ReturnValue><Abstract type="html">true if audio is muted and false otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/isAudioMuted</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/isVideoMuted</TokenIdentifier>
+			<Abstract type="html">Checks if own video is currently muted.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isVideoMuted</Declaration>
+			
+			<ReturnValue><Abstract type="html">true if video is muted and false otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/isVideoMuted</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/switchCamera</TokenIdentifier>
+			<Abstract type="html">Switches between front and back camera. By default the front camera input is captured.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)switchCamera</Declaration>
+			
+			
+			<Anchor>//api/name/switchCamera</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/startRecording</TokenIdentifier>
+			<Abstract type="html">Start the recording of the room.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (nullable NSString *)startRecording</Declaration>
+			
+			<ReturnValue><Abstract type="html">The NSString return value is an error description. A nil value means no error occured.</Abstract></ReturnValue>
+			<Anchor>//api/name/startRecording</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/stopRecording</TokenIdentifier>
+			<Abstract type="html">Stop the recording of the room.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (nullable NSString *)stopRecording</Declaration>
+			
+			<ReturnValue><Abstract type="html">The NSString return value is an error description. A nil value means no error occured.</Abstract></ReturnValue>
+			<Anchor>//api/name/stopRecording</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/sendCustomMessage:peerId:</TokenIdentifier>
+			<Abstract type="html">Send a custom message (dictionary, array or string) to a peer via signaling server.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)sendCustomMessage:(null_unspecified id)message peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">User defined message to be sent. May be an NSString, NSDictionary or NSArray.</Abstract>
+				</Parameter><Parameter>
+					<Name>peerId</Name>
+					<Abstract type="html">The unique id of the peer to whom the message is sent.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendCustomMessage:peerId:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/sendDCMessage:peerId:</TokenIdentifier>
+			<Abstract type="html">Send a message (dictionary, array or string) to a peer via data channel.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sendDCMessage:(null_unspecified id)message peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">User defined message to be sent. May be an NSString, NSDictionary, NSArray.</Abstract>
+				</Parameter><Parameter>
+					<Name>peerId</Name>
+					<Abstract type="html">The unique id of the peer to whom the message is sent.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the message has been succesfully sent to all targeted peers, if NO is returned and verbose is enabled then informations will be logged.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendDCMessage:peerId:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/sendBinaryData:peerId:</TokenIdentifier>
+			<Abstract type="html">Send binary data to a peer via data channel.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)sendBinaryData:(null_unspecified NSData *)data peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">Binary data to be sent to the peer. The maximum size the method expects is 65456 bytes.</Abstract>
+				</Parameter><Parameter>
+					<Name>peerId</Name>
+					<Abstract type="html">The unique id of the peer to whom the data is sent.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendBinaryData:peerId:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/sendFileTransferRequest:assetType:peerId:</TokenIdentifier>
+			<Abstract type="html">This will trigger a file permission event at a peer.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)sendFileTransferRequest:(null_unspecified NSURL *)fileURL assetType:(SKYLINKAssetType)assetType peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fileURL</Name>
+					<Abstract type="html">The url of the file to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>assetType</Name>
+					<Abstract type="html">The type of the asset to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>peerId</Name>
+					<Abstract type="html">The unique id of the peer to whom the file would be sent.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendFileTransferRequest:assetType:peerId:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/sendFileTransferRequest:assetType:</TokenIdentifier>
+			<Abstract type="html">This will trigger a broadcast file permission event at all peers in the room.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)sendFileTransferRequest:(null_unspecified NSURL *)fileURL assetType:(SKYLINKAssetType)assetType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fileURL</Name>
+					<Abstract type="html">The url of the file to send.</Abstract>
+				</Parameter><Parameter>
+					<Name>assetType</Name>
+					<Abstract type="html">The type of the asset to send.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendFileTransferRequest:assetType:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/acceptFileTransfer:filename:peerId:</TokenIdentifier>
+			<Abstract type="html">Accept or reject the file transfer request from a peer.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)acceptFileTransfer:(BOOL)accept filename:(null_unspecified NSString *)filename peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>accept</Name>
+					<Abstract type="html">Flag to specify whether the request is accepted.</Abstract>
+				</Parameter><Parameter>
+					<Name>filename</Name>
+					<Abstract type="html">The name of the file in request.</Abstract>
+				</Parameter><Parameter>
+					<Name>peerId</Name>
+					<Abstract type="html">The unique id of the peer who sent the file transfer request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/acceptFileTransfer:filename:peerId:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/cancelFileTransfer:peerId:</TokenIdentifier>
+			<Abstract type="html">Cancel the existing on going transfer at anytime.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelFileTransfer:(null_unspecified NSString *)filename peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filename</Name>
+					<Abstract type="html">The name of the file in request (optional).</Abstract>
+				</Parameter><Parameter>
+					<Name>peerId</Name>
+					<Abstract type="html">The unique id of the peer with whom file is being transmitted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/cancelFileTransfer:peerId:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/sendUserInfo:</TokenIdentifier>
+			<Abstract type="html">Update user information for every other peer and triggers user info call back at all the other peer&apos;s end.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)sendUserInfo:(null_unspecified id)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">User defined information. May be an NSString, NSDictionary or NSArray.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendUserInfo:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/getUserInfo:</TokenIdentifier>
+			<Abstract type="html">Get the cached user info for a particular peer.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (nonnull id)getUserInfo:(null_unspecified NSString *)peerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>peerId</Name>
+					<Abstract type="html">The unique id of the peer.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">User defined information. May be an NSString, NSDictionary or NSArray.</Abstract></ReturnValue>
+			<Anchor>//api/name/getUserInfo:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/roomId</TokenIdentifier>
+			<Abstract type="html">Get room ID.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (nonnull NSString *)roomId</Declaration>
+			
+			<ReturnValue><Abstract type="html">Room ID.</Abstract></ReturnValue>
+			<Anchor>//api/name/roomId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SKYLINKConnection/getSkylinkVersion</TokenIdentifier>
+			<Abstract type="html">Get the version string of this Skylink SDK for iOS.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>+ (nonnull NSString *)getSkylinkVersion</Declaration>
+			
+			<ReturnValue><Abstract type="html">Version string of this Skylink SDK for iOS.</Abstract></ReturnValue>
+			<Anchor>//api/name/getSkylinkVersion</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SKYLINKConnection/setVerbose:</TokenIdentifier>
+			<Abstract type="html">Enable/disable verbose logs for all the connections.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>+ (void)setVerbose:(BOOL)verbose</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>verbose</Name>
+					<Abstract type="html">enable/disable verbose logs. Default is NO.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setVerbose:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SKYLINKConnection/calculateCredentials:duration:startTime:secret:</TokenIdentifier>
+			<Abstract type="html">Calculate credentials to be used by the connection.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>+ (nonnull NSString *)calculateCredentials:(null_unspecified NSString *)roomName duration:(null_unspecified NSNumber *)duration startTime:(null_unspecified NSDate *)startTime secret:(null_unspecified NSString *)secret</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>roomName</Name>
+					<Abstract type="html">Name of the room.</Abstract>
+				</Parameter><Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Duration of the call in hours.</Abstract>
+				</Parameter><Parameter>
+					<Name>startTime</Name>
+					<Abstract type="html">Start time of the call as per client application time zone.</Abstract>
+				</Parameter><Parameter>
+					<Name>secret</Name>
+					<Abstract type="html">The shared secret.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The calculated credential string.</Abstract></ReturnValue>
+			<Anchor>//api/name/calculateCredentials:duration:startTime:secret:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SKYLINKConnectionLifeCycleDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">SKYLINK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Temasys Communications</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/connection:didConnectWithMessage:success:">- connection:didConnectWithMessage:success:</option>
+		
+		<option value="//api/name/connection:didDisconnectWithMessage:">- connection:didDisconnectWithMessage:</option>
+		
+		<option value="//api/name/connection:didLockTheRoom:peerId:">- connection:didLockTheRoom:peerId:</option>
+		
+		<option value="//api/name/connection:didReceiveWarning:">- connection:didReceiveWarning:</option>
+		
+		<option value="//api/name/connection:didRenderUserVideo:">- connection:didRenderUserVideo:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SKYLINKConnectionLifeCycleDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SKYLINKConnection.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Delegate methods are called on the main thread.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/connection:didConnectWithMessage:success:" title="connection:didConnectWithMessage:success:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didConnectWithMessage:success:">&ndash;&nbsp;connection:didConnectWithMessage:success:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>First delegate method called on the delegate upon successful or unsuccessful connection.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didConnectWithMessage:(null_unspecified NSString *)<em>errorMessage</em> success:(BOOL)<em>isSuccess</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorMessage</code></th>
+						<td><p>Error message in case the connection is unsuccessful.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isSuccess</code></th>
+						<td><p>Flag to specify whether the connection was successful.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If the connection is successfull, this method gets called just before the connection notifies the other peers in the room that the local user entered it.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didRenderUserVideo:" title="connection:didRenderUserVideo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didRenderUserVideo:">&ndash;&nbsp;connection:didRenderUserVideo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called upon successful capturing and rendering of the local front camera.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didRenderUserVideo:(null_unspecified UIView *)<em>userVideoView</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userVideoView</code></th>
+						<td><p>The video view of the connecting client.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didLockTheRoom:peerId:" title="connection:didLockTheRoom:peerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didLockTheRoom:peerId:">&ndash;&nbsp;connection:didLockTheRoom:peerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when a remote peer locks/unlocks the room.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didLockTheRoom:(BOOL)<em>lockStatus</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lockStatus</code></th>
+						<td><p>The status of the lock.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>peerId</code></th>
+						<td><p>The unique id of the peer who originated the action.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didReceiveWarning:" title="connection:didReceiveWarning:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveWarning:">&ndash;&nbsp;connection:didReceiveWarning:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when a warning is received from the underlying system.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveWarning:(null_unspecified NSString *)<em>message</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>Warning message from the underlying system.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didDisconnectWithMessage:" title="connection:didDisconnectWithMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didDisconnectWithMessage:">&ndash;&nbsp;connection:didDisconnectWithMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the client is disconnected from the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didDisconnectWithMessage:(null_unspecified NSString *)<em>errorMessage</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorMessage</code></th>
+						<td><p>Message specifying the reason of disconnection.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Temasys Communications. All rights reserved. Updated: 2018-04-18</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

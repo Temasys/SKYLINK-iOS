@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SKYLINKConnectionMediaDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionMediaDelegate</TokenIdentifier>
+			<Abstract type="html">Protocol to receive events related to media i.e. audio/video.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didChangeVideoSize:videoView:</TokenIdentifier>
+			<Abstract type="html">Called when the dimensions of the video view are changed.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didChangeVideoSize:(CGSize)videoSize videoView:(null_unspecified UIView *)videoView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>videoSize</Name>
+					<Abstract type="html">The size of the respective video.</Abstract>
+				</Parameter><Parameter>
+					<Name>videoView</Name>
+					<Abstract type="html">The video view for which the size was sent.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didChangeVideoSize:videoView:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didToggleAudio:peerId:</TokenIdentifier>
+			<Abstract type="html">Called when a peer mutes/unmutes its audio.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didToggleAudio:(BOOL)isMuted peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>isMuted</Name>
+					<Abstract type="html">Flag to specify whether the audio is muted.</Abstract>
+				</Parameter><Parameter>
+					<Name>peerId</Name>
+					<Abstract type="html">The unique id of the peer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didToggleAudio:peerId:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didToggleVideo:peerId:</TokenIdentifier>
+			<Abstract type="html">Called when a peer mutes/unmutes its video.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didToggleVideo:(BOOL)isMuted peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>isMuted</Name>
+					<Abstract type="html">Flat to specify whether the video is muted.</Abstract>
+				</Parameter><Parameter>
+					<Name>peerId</Name>
+					<Abstract type="html">The unique id of the peer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didToggleVideo:peerId:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
