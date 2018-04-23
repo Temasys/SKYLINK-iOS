@@ -13,7 +13,7 @@ Check out the documentation and our sample app to get usage instructions and exa
 | Sample App (Github) | http://github.com/Temasys/SkylinkSDK-iOS-Sample |
 
 ## Requirements
-Your project should use ARC and target iOS 8 or higher.
+Your project should use ARC and target iOS 9 or higher.
 
 ## Installation
 
@@ -49,6 +49,7 @@ You should be able to run your project after this, and use Temasys iOS SDK with 
 - For each target planned to use Temasys iOS SDK, go to Build settings  (make sure “all” is selected) > Build Options > Enable bit code and set it to NO. This will avoid the “…does not contain bitcode” message
 - If you get the error “The resource could not be loaded because the App Transport Security policy requires the use of a secure connection”, edit your info.plist by adding a NSAppTransportSecurity key as Dictionary, and add a sub-key named NSAllowsArbitraryLoads as boolean set to YES.
 - Optionally, if you want your app to be able to process audio even when the users leaves the app or locks the device, just enable the VoIP background capability or the audio background capability in the target’s “capabilities” tab.
+- You might need to specify the swift language version in some pod targets. Use Swift 4.
 
 ## Start coding !
 
