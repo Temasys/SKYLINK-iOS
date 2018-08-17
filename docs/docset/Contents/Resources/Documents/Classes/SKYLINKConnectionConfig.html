@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SKYLINKConnectionConfig Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">SKYLINK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Temasys Communications</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/)">)</option>
+		
+		<option value="//api/name/audio">audio</option>
+		
+		<option value="//api/name/dataChannel">dataChannel</option>
+		
+		<option value="//api/name/fileTransfer">fileTransfer</option>
+		
+		<option value="//api/name/maxAudioBitrate">maxAudioBitrate</option>
+		
+		<option value="//api/name/maxDataBitrate">maxDataBitrate</option>
+		
+		<option value="//api/name/maxVideoBitrate">maxVideoBitrate</option>
+		
+		<option value="//api/name/receiveAudio">receiveAudio</option>
+		
+		<option value="//api/name/receiveVideo">receiveVideo</option>
+		
+		<option value="//api/name/sendAudio">sendAudio</option>
+		
+		<option value="//api/name/sendVideo">sendVideo</option>
+		
+		<option value="//api/name/timeout">timeout</option>
+		
+		<option value="//api/name/video">video</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/advancedSettingKey:setValue:">- advancedSettingKey:setValue:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SKYLINKConnectionConfig Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SKYLINKConnection.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@class</p><p>The class representing the conversation configuration.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/audio" title="audio"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audio">&nbsp;&nbsp;audio</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>enable/disable audio.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL audio</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Default value is NO. This is a convinience property to set both <a href="#//api/name/sendAudio">sendAudio</a> and <a href="#//api/name/receiveAudio">receiveAudio</a> to the same value.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/video" title="video"></a>
+	<h3 class="method-title"><code><a href="#//api/name/video">&nbsp;&nbsp;video</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>enable/disable video.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL video</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Default value is NO. This is a convinience property to set both <a href="#//api/name/sendVideo">sendVideo</a> and <a href="#//api/name/receiveVideo">receiveVideo</a> to the same value.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendAudio" title="sendAudio"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendAudio">&nbsp;&nbsp;sendAudio</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>enable/disable sending <a href="#//api/name/audio">audio</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL sendAudio</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Default value is NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/receiveAudio" title="receiveAudio"></a>
+	<h3 class="method-title"><code><a href="#//api/name/receiveAudio">&nbsp;&nbsp;receiveAudio</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>enable/disable sending <a href="#//api/name/audio">audio</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL receiveAudio</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Default value is NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendVideo" title="sendVideo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendVideo">&nbsp;&nbsp;sendVideo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>enable/disable sending <a href="#//api/name/video">video</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL sendVideo</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Default value is NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/receiveVideo" title="receiveVideo"></a>
+	<h3 class="method-title"><code><a href="#//api/name/receiveVideo">&nbsp;&nbsp;receiveVideo</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>enable/disable receiving <a href="#//api/name/video">video</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL receiveVideo</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Default value is NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dataChannel" title="dataChannel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dataChannel">&nbsp;&nbsp;dataChannel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>enable/disable dataChannel.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL dataChannel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Default value is NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fileTransfer" title="fileTransfer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fileTransfer">&nbsp;&nbsp;fileTransfer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>enable/disable file transfer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL fileTransfer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Default value is NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/timeout" title="timeout"></a>
+	<h3 class="method-title"><code><a href="#//api/name/timeout">&nbsp;&nbsp;timeout</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>number of seconds for file transfer timeout.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger timeout</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Default value is 60.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxAudioBitrate" title="maxAudioBitrate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxAudioBitrate">&nbsp;&nbsp;maxAudioBitrate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Used to limit remote peers <a href="#//api/name/audio">audio</a> media bitrate.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger maxAudioBitrate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Default value is 0, meaning not bitrate limit.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxVideoBitrate" title="maxVideoBitrate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxVideoBitrate">&nbsp;&nbsp;maxVideoBitrate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Used to limit remote peers <a href="#//api/name/video">video</a> media bitrate.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger maxVideoBitrate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Default value is 512.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/maxDataBitrate" title="maxDataBitrate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxDataBitrate">&nbsp;&nbsp;maxDataBitrate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Used to limit remote peers data bitrate.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger maxDataBitrate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Default value is 0, meaning not bitrate limit.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/)" title=")"></a>
+	<h3 class="method-title"><code><a href="#//api/name/)">&nbsp;&nbsp;)</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Optional configuration for advanced users. (<b class="deprecated">Deprecated:</b><span class="deprecated"> Use -(BOOL)advancedSetting:(NSString *)settingKey setValue:(id)value instead.</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) NSDictionary *userInfo DEPRECATED_MSG_ATTRIBUTE ( &quot;Use -(BOOL)advancedSetting:(NSString *)settingKey setValue:(id)value instead.&quot; )</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The userInfo dictionnary key and associated settings are:
+&ldquo;STUN&rdquo; key (NSNumber value): set @&ldquo;STUN&rdquo; to @YES to DISABLE STUN server.
+&ldquo;TURN&rdquo; key (NSNumber value): set @&ldquo;TURN&rdquo; to @YES to DISABLE TURN server.
+&ldquo;disableHOST&rdquo; key, set @YES to disable HOST.
+&ldquo;transport&rdquo; key (NSString value): expected values are @&ldquo;TCP&rdquo; or @&ldquo;UDP&rdquo;.
+&ldquo;audio&rdquo; key (NSString value): preferred <a href="#//api/name/audio">audio</a> codec, expected values are @&ldquo;Opus&rdquo; or @&ldquo;iLBC&rdquo;.
+@description userInfo NSDictionary carrying the desired settings. Read the discussion for details.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/advancedSettingKey:setValue:" title="advancedSettingKey:setValue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/advancedSettingKey:setValue:">&ndash;&nbsp;advancedSettingKey:setValue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Optional configuration for advanced users.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)advancedSettingKey:(null_unspecified NSString *)<em>settingKey</em> setValue:(null_unspecified id)<em>settingValue</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>settingKey</code></th>
+						<td><p>the key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>settingValue</code></th>
+						<td><p>the bool value</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the setting was sucessfully set (valid setting key and associated value).</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The settingKey and associated settings values are:
+&ldquo;STUN&rdquo; key, (NSNumber value): set @&ldquo;disableSTUN&rdquo; to @YES to disable STUN server.
+&ldquo;TURN&rdquo; key, (NSNumber value): set @&ldquo;disableTURN&rdquo; to @YES to disable TURN server.
+&ldquo;disableHOST&rdquo; key, set @YES to disable HOST.
+&ldquo;transport&rdquo; key, (NSString value): expected values are @&ldquo;TCP&rdquo; or @&ldquo;UDP&rdquo;.
+&ldquo;audio&rdquo; key, (NSString value): preferred <a href="#//api/name/audio">audio</a> codec, expected values are @&ldquo;Opus&rdquo; or @&ldquo;iLBC&rdquo;.
+&ldquo;startWithBackCamera&rdquo; key, (NSNumber value): if you send the camera, this will determine the local camera to start the <a href="#//api/name/video">video</a> capture. Default is @NO (ie: use front camera)
+&ldquo;preferedCaptureSessionPresets&rdquo; key, (NSArray value): ordered array of AVCaptureSessionPreset for the <a href="#//api/name/video">video</a> capture, the first if any that can be used for the device will be picked.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Temasys Communications. All rights reserved. Updated: 2018-08-16</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
