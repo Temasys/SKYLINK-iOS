@@ -11,6 +11,7 @@ Check out the documentation and our sample app to get usage instructions and exa
 | --- | --- |
 | Temasys iOS SDK documentation | https://cdn.temasys.io/skylink/skylinksdk/ios/latest/docs/index.html |
 | Sample App (Github) | http://github.com/Temasys/SkylinkSDK-iOS-Sample |
+| Sample App Swift(Github) | https://github.com/Temasys/SkylinkSDK_iOS_SampleApp_Swift4 |
 
 ## Requirements
 Your project should use ARC and target iOS 9 or higher.
