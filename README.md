@@ -9,7 +9,7 @@ Check out the documentation and our sample app to get usage instructions and exa
 
 | Description | Link |
 | --- | --- |
-| Temasys iOS SDK documentation | https://cdn.temasys.io/skylink/skylinksdk/ios/latest/docs/index.html |
+| Temasys iOS SDK documentation | https://cdn.temasys.io/skylink/skylinksdk/ios/latest/docs/html/index.html |
 | Sample App (Github) | http://github.com/Temasys/SkylinkSDK-iOS-Sample |
 | Sample App Swift(Github) | https://github.com/Temasys/SkylinkSDK_iOS_SampleApp_Swift4 |
 
