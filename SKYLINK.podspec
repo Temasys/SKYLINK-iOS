@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.frameworks = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreAudio', 'CoreGraphics', 'CoreMedia', 'Foundation', 'GLKit', 'UIKit', 'VideoToolbox'
-  s.dependency 'WebRTC', :commit => 'ad5465b443cc5fda563dca4b40e52580e14cb621'
+  s.dependency 'WebRTC', :git => 'WebRTC', :commit => 'ad5465b443cc5fda563dca4b40e52580e14cb621'
   s.libraries = 'c', 'icucore', 'sqlite3', 'stdc++'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.vendored_frameworks = 'SKYLINK.framework'
