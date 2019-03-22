@@ -4,3 +4,8 @@ framework module SKYLINK {
   export *
   module * { export * }
 }
+
+module SKYLINK.Swift {
+    header "SKYLINK-Swift.h"
+    requires objc
+}
