@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
   #s.dependency 'WebRTC', :git => 'https://github.com/lyx501135/WebRTC.git'
   s.libraries = 'c', 'icucore', 'sqlite3', 'stdc++'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
-  s.vendored_frameworks = 'SKYLINK.framework'
+  s.vendored_frameworks = 'SKYLINK.framework', 'WebRTC.framework'
   s.preserve_paths = 'SKYLINK.framework'
 end
