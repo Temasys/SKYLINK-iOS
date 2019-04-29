@@ -5,6 +5,8 @@
  */
 #import <CoreGraphics/CoreGraphics.h>
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 /*!
  @enum
@@ -19,6 +21,11 @@ typedef enum SKYLINKAssetType {
     SKYLINKAssetTypeMusic,
     SKYLINKAssetTypePhoto
 } SKYLINKAssetType;
+
+typedef enum SKYLINKVideoDevice {
+    SKYLINKVideoDeviceFrontCamera = 1,
+    SKYLINKVideoDeviceBackCamera
+} SKYLINKVideoDevice;
 
 extern NSString * _Nonnull const SKYLINKRequiresPermissionNotification;
 
@@ -337,6 +344,23 @@ extern NSString * _Nonnull const SKYLINKRequiresPermissionNotification;
 
 @end
 
+@protocol SKYLINKConnectionStatsDelegate <NSObject>
+@optional
+
+/**
+ <#Description#>
+ 
+ @param connection <#connection description#>
+ @param statsDict <#statsDict description#>
+ */
+- (void)connection:(nonnull SKYLINKConnection *)connection didChangeStats:(nonnull NSDictionary<NSString *, id> *)statsDict ofPeerID:(nonnull NSString *)peerID;
+
+- (void)connection:(nonnull SKYLINKConnection *)connection didInputVideoResolutionChange:(nonnull NSDictionary<NSString *, id> *)statsDict width:(NSInteger)width height:(NSInteger)height fps:(NSInteger)fps ofPeerID:(nonnull NSString *)peerID;
+
+- (void)connection:(nonnull SKYLINKConnection *)connection didReceivedVideoResolutionChange:(nonnull NSDictionary<NSString *, id> *)statsDict width:(NSInteger)width height:(NSInteger)height fps:(NSInteger)fps ofPeerID:(nonnull NSString *)peerID;
+
+- (void)connection:(nonnull SKYLINKConnection *)connection didSentVideoResolutionChange:(nonnull NSDictionary<NSString *, id> *)statsDict width:(NSInteger)width height:(NSInteger)height fps:(NSInteger)fps ofPeerID:(nonnull NSString *)peerID;
+@end
 
 /*!
  @class
@@ -503,6 +527,17 @@ extern NSString * _Nonnull const SKYLINKRequiresPermissionNotification;
  */
 -(BOOL)advancedSettingKey:(null_unspecified NSString *)settingKey setValue:(null_unspecified id)settingValue;
 
+@property (nonatomic, assign) BOOL autoGetStats;
+
+@property (nonatomic, assign) SKYLINKVideoDevice defaultVideoDevice;
+
+@property (nonatomic, assign) BOOL audioAutoGainControl;
+
+@property (nonatomic, assign) BOOL audioEchoCancellation;
+
+@property (nonatomic, assign) BOOL audioHighPassFilter;
+
+@property (nonatomic, assign) BOOL audioNoiseSuppression;
 
 @end
 
@@ -547,7 +582,10 @@ extern NSString * _Nonnull const SKYLINKRequiresPermissionNotification;
  @abstract delegate related to room recording, implementing the SKYLINKConnectionRecordingDelegate protocol.
  */
 @property(nonatomic, weak) id<SKYLINKConnectionRecordingDelegate> _Null_unspecified recordingDelegate;
-
+/**
+ 
+ */
+@property(nonatomic, weak) id<SKYLINKConnectionStatsDelegate> _Null_unspecified statsDelegate;
 /*!
  @name Peer Id
  */
@@ -833,5 +871,35 @@ extern NSString * _Nonnull const SKYLINKRequiresPermissionNotification;
  @return The calculated credential string.
  */
 + (nonnull NSString *)calculateCredentials:(null_unspecified NSString *)roomName duration:(null_unspecified NSNumber *)duration startTime:(null_unspecified NSDate *)startTime secret:(null_unspecified NSString *)secret;
+
+- (void)setInputVideoResolutionToWidth:(NSUInteger)width height:(NSUInteger)height fps:(NSUInteger)fps callback:(void (^ _Null_unspecified) (void))callback;
+
+- (void)getInputVideoResolutionCallback:(void (^ _Null_unspecified) (id _Nonnull responseObject, NSInteger width, NSInteger height, NSInteger fps))callback;
+
+- (void)getReceivedVideoResolutionOfPeerID:(nullable NSString *)peerID callback:(void (^ _Null_unspecified) (id _Nonnull responseObject, NSInteger width, NSInteger height, NSInteger fps))callback;
+
+- (void)getSentVideoResolutionOfPeerID:(nullable NSString *)peerID callback:(void (^ _Null_unspecified) (id _Nonnull responseObject, NSInteger width, NSInteger height, NSInteger fps))callback;
+
+- (void)getCaptureFormatCallback:(void (^ _Null_unspecified) (AVCaptureDeviceFormat * _Null_unspecified format))callback;
+
+- (void)getCaptureFormatsCallback:(void (^ _Null_unspecified) (NSArray<AVCaptureDeviceFormat *> * _Null_unspecified formats))callback;
+
+- (void)getCurrentVideoDeviceCallback:(void (^ _Null_unspecified) (AVCaptureDevice * _Null_unspecified device))callback;
+
+- (void)getCurrentCameraNameCallback:(void (^ _Null_unspecified) (NSString * _Null_unspecified name))callback;
+
+- (void)getFullStatsReportOfPeerID:(nullable NSString *)peerID callback:(void (^ _Null_unspecified) (id _Nonnull responseObject))callback;
+
+- (void)startInAppScreenSharingFromViewController:(UIViewController * _Nonnull)viewController callback:(void (^ _Null_unspecified) (NSError * _Nullable error))callback;
+
+- (void)stopInAppScreenSharingWithCallback:(void (^ _Null_unspecified) (NSError * _Nullable error))callback;
+
+- (void)startFullSystemScreenSharingFromViewController:(UIViewController * _Nonnull)viewController callback:(void (^ _Null_unspecified) (NSError * _Nullable error))callback;
+
+- (void)startScreenSharingFromViewController:(UIViewController * _Nonnull)viewController callback:(void (^ _Null_unspecified) (NSError * _Nullable error))callback;;
+
+- (void)stopFullSystemScreenSharingWithCallback:(void (^ _Null_unspecified) (NSError * _Nullable error))callback;
+
+- (void)processSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer;
 
 @end
