@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreAudio', 'CoreGraphics', 'CoreMedia', 'Foundation', 'GLKit', 'UIKit', 'VideoToolbox'
   s.dependency 'Socket.IO-Client-Swift', '~> 12.1.3'
-  s.libraries = 'c', 'icucore', 'sqlite3', 'stdc++'
+  s.libraries = 'c', 'icucore', 'sqlite3', 'c++'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.vendored_frameworks = 'SKYLINK.framework'
   s.preserve_paths = 'SKYLINK.framework'
