@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SKYLINKConnectionLifeCycleDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionLifeCycleDelegate</TokenIdentifier>
+			<Abstract type="html">Protocol to receive events related to the lifecycle of the connection.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didConnectWithMessage:success:</TokenIdentifier>
+			<Abstract type="html">First delegate method called on the delegate upon successful or unsuccessful connection.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didConnectWithMessage:(null_unspecified NSString *)errorMessage success:(BOOL)isSuccess</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>errorMessage</Name>
+					<Abstract type="html">Error message in case the connection is unsuccessful.</Abstract>
+				</Parameter><Parameter>
+					<Name>isSuccess</Name>
+					<Abstract type="html">Flag to specify whether the connection was successful.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didConnectWithMessage:success:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didRenderUserVideo:</TokenIdentifier>
+			<Abstract type="html">Called upon successful capturing and rendering of the local front camera.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didRenderUserVideo:(null_unspecified UIView *)userVideoView</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>userVideoView</Name>
+					<Abstract type="html">The video view of the connecting client.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didRenderUserVideo:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didLockTheRoom:peerId:</TokenIdentifier>
+			<Abstract type="html">Called when a remote peer locks/unlocks the room.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didLockTheRoom:(BOOL)lockStatus peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>lockStatus</Name>
+					<Abstract type="html">The status of the lock.</Abstract>
+				</Parameter><Parameter>
+					<Name>peerId</Name>
+					<Abstract type="html">The unique id of the peer who originated the action.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didLockTheRoom:peerId:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didReceiveWarning:</TokenIdentifier>
+			<Abstract type="html">Called when a warning is received from the underlying system.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveWarning:(null_unspecified NSString *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">Warning message from the underlying system.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didReceiveWarning:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didDisconnectWithMessage:</TokenIdentifier>
+			<Abstract type="html">Called when the client is disconnected from the server.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didDisconnectWithMessage:(null_unspecified NSString *)errorMessage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>errorMessage</Name>
+					<Abstract type="html">Message specifying the reason of disconnection.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didDisconnectWithMessage:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

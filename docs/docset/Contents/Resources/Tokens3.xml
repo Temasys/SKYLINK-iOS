@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SKYLINKPeerMediaProperties.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SKYLINKPeerMediaProperties</TokenIdentifier>
+			<Abstract type="html">Class representing the handshaking peer properties.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setHasAudio:</TokenIdentifier>
+			<Abstract type="html">whether the peer has audio.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL hasAudio</Declaration>
+			
+			
+			<Anchor>//api/name/hasAudio</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/hasAudio</TokenIdentifier>
+			<Abstract type="html">whether the peer has audio.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL hasAudio</Declaration>
+			
+			
+			<Anchor>//api/name/hasAudio</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/hasAudio</TokenIdentifier>
+			<Abstract type="html">whether the peer has audio.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL hasAudio</Declaration>
+			
+			
+			<Anchor>//api/name/hasAudio</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setIsAudioStereo:</TokenIdentifier>
+			<Abstract type="html">is audio stereo.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isAudioStereo</Declaration>
+			
+			
+			<Anchor>//api/name/isAudioStereo</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/isAudioStereo</TokenIdentifier>
+			<Abstract type="html">is audio stereo.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isAudioStereo</Declaration>
+			
+			
+			<Anchor>//api/name/isAudioStereo</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/isAudioStereo</TokenIdentifier>
+			<Abstract type="html">is audio stereo.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isAudioStereo</Declaration>
+			
+			
+			<Anchor>//api/name/isAudioStereo</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setIsAudioMuted:</TokenIdentifier>
+			<Abstract type="html">is audio muted.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isAudioMuted</Declaration>
+			
+			
+			<Anchor>//api/name/isAudioMuted</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/isAudioMuted</TokenIdentifier>
+			<Abstract type="html">is audio muted.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isAudioMuted</Declaration>
+			
+			
+			<Anchor>//api/name/isAudioMuted</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/isAudioMuted</TokenIdentifier>
+			<Abstract type="html">is audio muted.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isAudioMuted</Declaration>
+			
+			
+			<Anchor>//api/name/isAudioMuted</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setHasVideo:</TokenIdentifier>
+			<Abstract type="html">whether the peer has video</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL hasVideo</Declaration>
+			
+			
+			<Anchor>//api/name/hasVideo</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/hasVideo</TokenIdentifier>
+			<Abstract type="html">whether the peer has video</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL hasVideo</Declaration>
+			
+			
+			<Anchor>//api/name/hasVideo</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/hasVideo</TokenIdentifier>
+			<Abstract type="html">whether the peer has video</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL hasVideo</Declaration>
+			
+			
+			<Anchor>//api/name/hasVideo</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setIsVideoMuted:</TokenIdentifier>
+			<Abstract type="html">is video muted.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isVideoMuted</Declaration>
+			
+			
+			<Anchor>//api/name/isVideoMuted</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/isVideoMuted</TokenIdentifier>
+			<Abstract type="html">is video muted.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isVideoMuted</Declaration>
+			
+			
+			<Anchor>//api/name/isVideoMuted</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/isVideoMuted</TokenIdentifier>
+			<Abstract type="html">is video muted.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isVideoMuted</Declaration>
+			
+			
+			<Anchor>//api/name/isVideoMuted</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setVideoWidth:</TokenIdentifier>
+			<Abstract type="html">width of the video frame.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoWidth</Declaration>
+			
+			
+			<Anchor>//api/name/videoWidth</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/videoWidth</TokenIdentifier>
+			<Abstract type="html">width of the video frame.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoWidth</Declaration>
+			
+			
+			<Anchor>//api/name/videoWidth</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/videoWidth</TokenIdentifier>
+			<Abstract type="html">width of the video frame.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoWidth</Declaration>
+			
+			
+			<Anchor>//api/name/videoWidth</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setVideoHeight:</TokenIdentifier>
+			<Abstract type="html">height of the video frame.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoHeight</Declaration>
+			
+			
+			<Anchor>//api/name/videoHeight</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/videoHeight</TokenIdentifier>
+			<Abstract type="html">height of the video frame.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoHeight</Declaration>
+			
+			
+			<Anchor>//api/name/videoHeight</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/videoHeight</TokenIdentifier>
+			<Abstract type="html">height of the video frame.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoHeight</Declaration>
+			
+			
+			<Anchor>//api/name/videoHeight</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setVideoFrameRate:</TokenIdentifier>
+			<Abstract type="html">frame rate of the video.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoFrameRate</Declaration>
+			
+			
+			<Anchor>//api/name/videoFrameRate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/videoFrameRate</TokenIdentifier>
+			<Abstract type="html">frame rate of the video.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoFrameRate</Declaration>
+			
+			
+			<Anchor>//api/name/videoFrameRate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/videoFrameRate</TokenIdentifier>
+			<Abstract type="html">frame rate of the video.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoFrameRate</Declaration>
+			
+			
+			<Anchor>//api/name/videoFrameRate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
