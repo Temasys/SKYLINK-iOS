@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/SKYLINKConnectionConfig</TokenIdentifier>
-			<Abstract type="html">@class</Abstract>
+			<Abstract type="html">The class representing the conversation configuration.</Abstract>
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
             
 			
@@ -450,7 +450,12 @@
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, weak) NSDictionary *userInfo DEPRECATED_MSG_ATTRIBUTE ( &quot;Use -(BOOL)advancedSetting:(NSString *)settingKey setValue:(id)value instead.&quot; )</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">NSDictionary carrying the desired settings. Read the discussion for details.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/)</Anchor>
             <NodeRef refid="2"/>
@@ -462,7 +467,12 @@
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, weak) NSDictionary *userInfo DEPRECATED_MSG_ATTRIBUTE ( &quot;Use -(BOOL)advancedSetting:(NSString *)settingKey setValue:(id)value instead.&quot; )</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">NSDictionary carrying the desired settings. Read the discussion for details.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/)</Anchor>
             <NodeRef refid="2"/>
@@ -474,7 +484,12 @@
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, weak) NSDictionary *userInfo DEPRECATED_MSG_ATTRIBUTE ( &quot;Use -(BOOL)advancedSetting:(NSString *)settingKey setValue:(id)value instead.&quot; )</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">NSDictionary carrying the desired settings. Read the discussion for details.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/)</Anchor>
             <NodeRef refid="2"/>
@@ -486,15 +501,7 @@
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (BOOL)advancedSettingKey:(null_unspecified NSString *)settingKey setValue:(null_unspecified id)settingValue</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>settingKey</Name>
-					<Abstract type="html">the key</Abstract>
-				</Parameter><Parameter>
-					<Name>settingValue</Name>
-					<Abstract type="html">the bool value</Abstract>
-				</Parameter>
-			</Parameters>
+			
 			<ReturnValue><Abstract type="html">YES if the setting was sucessfully set (valid setting key and associated value).</Abstract></ReturnValue>
 			<Anchor>//api/name/advancedSettingKey:setValue:</Anchor>
             <NodeRef refid="2"/>

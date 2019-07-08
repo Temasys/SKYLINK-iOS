@@ -126,7 +126,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>@class</p><p>The class representing the conversation configuration.</p>
+						<p>The class representing the conversation configuration.</p>
 					</div>
 					
 					
@@ -714,6 +714,18 @@
 
 		    
 			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>NSDictionary carrying the desired settings. Read the discussion for details.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
 
 			
 
@@ -723,12 +735,11 @@
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The userInfo dictionnary key and associated settings are:
-&ldquo;STUN&rdquo; key (NSNumber value): set @&ldquo;STUN&rdquo; to @YES to DISABLE STUN server.
-&ldquo;TURN&rdquo; key (NSNumber value): set @&ldquo;TURN&rdquo; to @YES to DISABLE TURN server.
-&ldquo;disableHOST&rdquo; key, set @YES to disable HOST.
-&ldquo;transport&rdquo; key (NSString value): expected values are @&ldquo;TCP&rdquo; or @&ldquo;UDP&rdquo;.
-&ldquo;audio&rdquo; key (NSString value): preferred <a href="#//api/name/audio">audio</a> codec, expected values are @&ldquo;Opus&rdquo; or @&ldquo;iLBC&rdquo;.
-@description userInfo NSDictionary carrying the desired settings. Read the discussion for details.</p>
+@&ldquo;STUN&rdquo; key (NSNumber value): set @&ldquo;STUN&rdquo; to @YES to DISABLE STUN server.
+@&ldquo;TURN&rdquo; key (NSNumber value): set @&ldquo;TURN&rdquo; to @YES to DISABLE TURN server.
+@&ldquo;disableHOST&rdquo; key, set @YES to disable HOST.
+@&ldquo;transport&rdquo; key (NSString value): expected values are @&ldquo;TCP&rdquo; or @&ldquo;UDP&rdquo;.
+@&ldquo;audio&rdquo; key (NSString value): preferred <a href="#//api/name/audio">audio</a> codec, expected values are @&ldquo;Opus&rdquo; or @&ldquo;iLBC&rdquo;.</p>
 			</div>
 			
 
@@ -766,23 +777,6 @@
 
 		    
 			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>settingKey</code></th>
-						<td><p>the key</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>settingValue</code></th>
-						<td><p>the bool value</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
 
 			
 			<div class="method-subsection return">
@@ -797,13 +791,13 @@
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>The settingKey and associated settings values are:
-&ldquo;STUN&rdquo; key, (NSNumber value): set @&ldquo;disableSTUN&rdquo; to @YES to disable STUN server.
-&ldquo;TURN&rdquo; key, (NSNumber value): set @&ldquo;disableTURN&rdquo; to @YES to disable TURN server.
-&ldquo;disableHOST&rdquo; key, set @YES to disable HOST.
-&ldquo;transport&rdquo; key, (NSString value): expected values are @&ldquo;TCP&rdquo; or @&ldquo;UDP&rdquo;.
-&ldquo;audio&rdquo; key, (NSString value): preferred <a href="#//api/name/audio">audio</a> codec, expected values are @&ldquo;Opus&rdquo; or @&ldquo;iLBC&rdquo;.
-&ldquo;startWithBackCamera&rdquo; key, (NSNumber value): if you send the camera, this will determine the local camera to start the <a href="#//api/name/video">video</a> capture. Default is @NO (ie: use front camera)
-&ldquo;preferedCaptureSessionPresets&rdquo; key, (NSArray value): ordered array of AVCaptureSessionPreset for the <a href="#//api/name/video">video</a> capture, the first if any that can be used for the device will be picked.</p>
+@&ldquo;STUN&rdquo; key, (NSNumber value): set @&ldquo;disableSTUN&rdquo; to @YES to disable STUN server.
+@&ldquo;TURN&rdquo; key, (NSNumber value): set @&ldquo;disableTURN&rdquo; to @YES to disable TURN server.
+@&ldquo;disableHOST&rdquo; key, set @YES to disable HOST.
+@&ldquo;transport&rdquo; key, (NSString value): expected values are @&ldquo;TCP&rdquo; or @&ldquo;UDP&rdquo;.
+@&ldquo;audio&rdquo; key, (NSString value): preferred <a href="#//api/name/audio">audio</a> codec, expected values are @&ldquo;Opus&rdquo; or @&ldquo;iLBC&rdquo;.
+@&ldquo;startWithBackCamera&rdquo; key, (NSNumber value): if you send the camera, this will determine the local camera to start the <a href="#//api/name/video">video</a> capture. Default is @NO (ie: use front camera)
+@&ldquo;preferedCaptureSessionPresets&rdquo; key, (NSArray value): ordered array of AVCaptureSessionPreset for the <a href="#//api/name/video">video</a> capture, the first if any that can be used for the device will be picked.</p>
 			</div>
 			
 
@@ -835,7 +829,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Temasys Communications. All rights reserved. Updated: 2018-09-21</p>
+						<p class="copyright">Copyright &copy; 2019 Temasys Communications. All rights reserved. Updated: 2019-07-08</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
