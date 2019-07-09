@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SKYLINK-Swift.h</key>
 		<data>
-		fe6q+8IO6rJT6T5KcxDdQKS/Yo4=
+		B87/iSY1Bqveu970G/QEAhUaLTI=
 		</data>
 		<key>Headers/SKYLINK.h</key>
 		<data>
@@ -23,6 +23,14 @@
 		<key>LICENSE</key>
 		<data>
 		uOOe5c8Oe1kZu9eUvG24mYDjGGY=
+		</data>
+		<key>Modules/SKYLINK.swiftmodule/i386.swiftdoc</key>
+		<data>
+		Q6v4OX2RHcYXXy5IKsFj2gFMr8s=
+		</data>
+		<key>Modules/SKYLINK.swiftmodule/i386.swiftmodule</key>
+		<data>
+		rBVfTFjetLr0J5RU/lNscDqfIVc=
 		</data>
 		<key>Modules/SKYLINK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -51,11 +59,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fe6q+8IO6rJT6T5KcxDdQKS/Yo4=
+			B87/iSY1Bqveu970G/QEAhUaLTI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yy7n1k2P4ZroAA79JTiEn5jwuP/XgRBEz8txXwuE7WM=
+			sLp/kJHXCnH1tlqRrBftQnadNdA9O9lscG4GTqWIdMw=
 			</data>
 		</dict>
 		<key>Headers/SKYLINK.h</key>
@@ -89,6 +97,28 @@
 			<key>hash2</key>
 			<data>
 			IadC3YzO67HV33xvlFx1zPGtTw1MF+QEUXUAwafehqQ=
+			</data>
+		</dict>
+		<key>Modules/SKYLINK.swiftmodule/i386.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q6v4OX2RHcYXXy5IKsFj2gFMr8s=
+			</data>
+			<key>hash2</key>
+			<data>
+			+aWVe0DiaeNJ/b4hcwqG36qRepBgQSbkG1U0+y5tUAU=
+			</data>
+		</dict>
+		<key>Modules/SKYLINK.swiftmodule/i386.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rBVfTFjetLr0J5RU/lNscDqfIVc=
+			</data>
+			<key>hash2</key>
+			<data>
+			Dp8thQSEpN1pxr+lvVUytBz8LHk6OxcKcTZqdlYueQU=
 			</data>
 		</dict>
 		<key>Modules/SKYLINK.swiftmodule/x86_64.swiftdoc</key>
