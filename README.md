@@ -7,7 +7,7 @@ The **Temasys iOS SDK** lets you build real time webRTC applications with voice 
 
 Check out the documentation and our sample app to get usage instructions and examples.
 
-| Description | Link | 
+| Description | Link |  
 | --- | --- |
 | Temasys iOS SDK documentation | https://cdn.temasys.io/skylink/skylinksdk/ios/latest/docs/html/index.html |
 | Sample App (Github) | http://github.com/Temasys/SkylinkSDK-iOS-Sample |
