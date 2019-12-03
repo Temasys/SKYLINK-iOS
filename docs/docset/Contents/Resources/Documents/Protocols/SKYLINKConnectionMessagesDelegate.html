@@ -60,11 +60,11 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/connection:didReceiveBinaryData:peerId:">- connection:didReceiveBinaryData:peerId:</option>
+		<option value="//api/name/connection:didReceiveData:remotePeerId:">- connection:didReceiveData:remotePeerId:</option>
 		
-		<option value="//api/name/connection:didReceiveCustomMessage:public:peerId:">- connection:didReceiveCustomMessage:public:peerId:</option>
+		<option value="//api/name/connection:didReceiveP2PMessage:isPublic:remotePeerId:">- connection:didReceiveP2PMessage:isPublic:remotePeerId:</option>
 		
-		<option value="//api/name/connection:didReceiveDCMessage:public:peerId:">- connection:didReceiveDCMessage:public:peerId:</option>
+		<option value="//api/name/connection:didReceiveServerMessage:isPublic:remotePeerId:">- connection:didReceiveServerMessage:isPublic:remotePeerId:</option>
 		
 	</optgroup>
 	
@@ -100,7 +100,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Delegate methods are called on the main thread.</p>
+						<p>@protocol</p><p>Delegate methods are called on the main thread.</p>
 					</div>
 					
 					
@@ -116,8 +116,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/connection:didReceiveCustomMessage:public:peerId:" title="connection:didReceiveCustomMessage:public:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveCustomMessage:public:peerId:">&ndash;&nbsp;connection:didReceiveCustomMessage:public:peerId:</a></code>
+	<a name="//api/name/connection:didReceiveServerMessage:isPublic:remotePeerId:" title="connection:didReceiveServerMessage:isPublic:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveServerMessage:isPublic:remotePeerId:">&ndash;&nbsp;connection:didReceiveServerMessage:isPublic:remotePeerId:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -127,12 +127,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Called upon receiving a private or public message.</p>
+				<p>Called upon receiving a socket message (Signalling).</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveCustomMessage:(null_unspecified id)<em>message</em> public:(BOOL)<em>isPublic</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveServerMessage:(null_unspecified id)<em>message</em> isPublic:(BOOL)<em>isPublic</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
 
 		    
 			
@@ -156,7 +156,7 @@
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
 						<td><p>The unique id of the peer.</p></td>
 					</tr>
 				
@@ -184,8 +184,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/connection:didReceiveDCMessage:public:peerId:" title="connection:didReceiveDCMessage:public:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveDCMessage:public:peerId:">&ndash;&nbsp;connection:didReceiveDCMessage:public:peerId:</a></code>
+	<a name="//api/name/connection:didReceiveP2PMessage:isPublic:remotePeerId:" title="connection:didReceiveP2PMessage:isPublic:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveP2PMessage:isPublic:remotePeerId:">&ndash;&nbsp;connection:didReceiveP2PMessage:isPublic:remotePeerId:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -195,12 +195,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Called upon receiving a data channel chat message.</p>
+				<p>Called upon receiving a P2P message (DataChannel).</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveDCMessage:(null_unspecified id)<em>message</em> public:(BOOL)<em>isPublic</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveP2PMessage:(null_unspecified id)<em>message</em> isPublic:(BOOL)<em>isPublic</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
 
 		    
 			
@@ -224,7 +224,7 @@
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
 						<td><p>The unique id of the peer.</p></td>
 					</tr>
 				
@@ -252,8 +252,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/connection:didReceiveBinaryData:peerId:" title="connection:didReceiveBinaryData:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveBinaryData:peerId:">&ndash;&nbsp;connection:didReceiveBinaryData:peerId:</a></code>
+	<a name="//api/name/connection:didReceiveData:remotePeerId:" title="connection:didReceiveData:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveData:remotePeerId:">&ndash;&nbsp;connection:didReceiveData:remotePeerId:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -268,7 +268,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveBinaryData:(null_unspecified NSData *)<em>data</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveData:(null_unspecified NSData *)<em>data</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
 
 		    
 			
@@ -287,8 +287,8 @@
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the peer.</p></td>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the remote peer.</p></td>
 					</tr>
 				
 				</table>
@@ -329,7 +329,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Temasys Communications. All rights reserved. Updated: 2019-07-08</p>
+						<p class="copyright">Copyright &copy; 2019 Temasys Communications. All rights reserved. Updated: 2019-12-03</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
