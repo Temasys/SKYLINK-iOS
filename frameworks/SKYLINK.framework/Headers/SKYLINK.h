@@ -1,9 +1,6 @@
-//
-//  SKYLINK.h
-//  SKYLINK
-//
-//  Created by macbookpro on 18/05/2015.
-//  Copyright (c) 2015 Pristine, Inc. All rights reserved.
-//
-
+/*!
+ @header SKYLINK.h
+ @abstract Copyright (c) 2015 Temasys. All rights reserved.
+ @author Temasys
+ */
 #import "SKYLINKConnection.h"
