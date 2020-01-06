@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
 Path: /Users/yuxi/Library/Developer/Shared/Documentation/DocSets/com.temasys.SKYLINK.docset
-Time: 2019-12-03 03:20:13 +0000
+Time: 2020-01-06 04:23:22 +0000
