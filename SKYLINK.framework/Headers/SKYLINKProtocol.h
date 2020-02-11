@@ -279,7 +279,7 @@
  @param isPublic Flag to specify whether the message was a broadcast.
  @param remotePeerId The unique id of the peer.
  */
-- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveServerMessage:(null_unspecified id)message isPublic:(BOOL)isPublic remotePeerId:(null_unspecified NSString *)remotePeerId;
+- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveServerMessage:(null_unspecified id)message isPublic:(BOOL)isPublic timeStamp:(long long)timeStamp remotePeerId:(null_unspecified NSString *)remotePeerId;
 
 /*!
  @method
@@ -289,7 +289,7 @@
  @param isPublic Flag to specify whether the message was a broadcast.
  @param remotePeerId The unique id of the peer.
  */
-- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveP2PMessage:(null_unspecified id)message isPublic:(BOOL)isPublic remotePeerId:(null_unspecified NSString *)remotePeerId;
+- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveP2PMessage:(null_unspecified id)message isPublic:(BOOL)isPublic timeStamp:(long long)timeStamp remotePeerId:(null_unspecified NSString *)remotePeerId;
 
 
 /*!
