@@ -113,6 +113,13 @@ typedef void (^ResolutionResultBlock)(NSInteger width, NSInteger height, NSInteg
 */
 @property(nonatomic, assign) BOOL enableLogs;
 
+/*!
+ @property
+ @abstract Encryption key used for SDK encryption.
+ @discussion SDK now allows AES encryption/decryption of certain user provided information.
+*/
+@property(nonatomic, copy) NSString * _Nullable encryptSecret;
+
 #pragma mark - Lifecycle
 /*!
  @name Lifecycle
@@ -493,7 +500,13 @@ typedef void (^ResolutionResultBlock)(NSInteger width, NSInteger height, NSInteg
  */
 - (void)sendP2PMessage:(null_unspecified id)message toRemotePeerId:(nullable NSString *)remotePeerId callback:(nullable ErrorBlock)callback;
 
-
+/*!
+@method
+@abstract The sending Peer sends this to get messageHistory of the room
+@discussion Can only get all public messages
+@return The message array
+*/
+- (NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull)getPublicMessageHistory;
 #pragma mark - Data transfer
 /*!
 @name Data transfer
