@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SKYLINKConnectionFileTransferDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">SKYLINK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Temasys Communications</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/connection:didCompleteFileTransferReceiving:fileData:fileSavePath:remotePeerId:">- connection:didCompleteFileTransferReceiving:fileData:fileSavePath:remotePeerId:</option>
+		
+		<option value="//api/name/connection:didCompleteFileTransferSending:remotePeerId:">- connection:didCompleteFileTransferSending:remotePeerId:</option>
+		
+		<option value="//api/name/connection:didDropFileTransfer:message:isExplicit:remotePeerId:">- connection:didDropFileTransfer:message:isExplicit:remotePeerId:</option>
+		
+		<option value="//api/name/connection:didReceiveFileTransferRequest:isPublic:remotePeerId:">- connection:didReceiveFileTransferRequest:isPublic:remotePeerId:</option>
+		
+		<option value="//api/name/connection:didReceiveFileTransferResponse:fileName:remotePeerId:">- connection:didReceiveFileTransferResponse:fileName:remotePeerId:</option>
+		
+		<option value="//api/name/connection:didUpdateFileTransferReceivingProgress:fileName:remotePeerId:">- connection:didUpdateFileTransferReceivingProgress:fileName:remotePeerId:</option>
+		
+		<option value="//api/name/connection:didUpdateFileTransferSendingProgress:fileName:remotePeerId:">- connection:didUpdateFileTransferSendingProgress:fileName:remotePeerId:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SKYLINKConnectionFileTransferDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SKYLINKConnection.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@protocol</p><p>Delegate methods are called on the main thread.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/connection:didReceiveFileTransferRequest:isPublic:remotePeerId:" title="connection:didReceiveFileTransferRequest:isPublic:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveFileTransferRequest:isPublic:remotePeerId:">&ndash;&nbsp;connection:didReceiveFileTransferRequest:isPublic:remotePeerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called upon receiving a request to accept a File from remote Peer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveFileTransferRequest:(null_unspecified NSString *)<em>fileName</em> isPublic:(BOOL)<em>isPublic</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileName</code></th>
+						<td><p>The name of the file in request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isPublic</code></th>
+						<td><p>accessibility of file.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didReceiveFileTransferResponse:fileName:remotePeerId:" title="connection:didReceiveFileTransferResponse:fileName:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveFileTransferResponse:fileName:remotePeerId:">&ndash;&nbsp;connection:didReceiveFileTransferResponse:fileName:remotePeerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called upon receiving a response to our request to send a File to remote Peer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveFileTransferResponse:(BOOL)<em>wasAccepted</em> fileName:(null_unspecified NSString *)<em>fileName</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>wasAccepted</code></th>
+						<td><p>Flag to specify whether the request was accepted.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileName</code></th>
+						<td><p>The name of the file in request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didDropFileTransfer:message:isExplicit:remotePeerId:" title="connection:didDropFileTransfer:message:isExplicit:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didDropFileTransfer:message:isExplicit:remotePeerId:">&ndash;&nbsp;connection:didDropFileTransfer:message:isExplicit:remotePeerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when receive signal that File transfer was stopped before completing.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didDropFileTransfer:(null_unspecified NSString *)<em>fileName</em> message:(null_unspecified NSString *)<em>message</em> isExplicit:(BOOL)<em>isExplicit</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileName</code></th>
+						<td><p>The name of the file in request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message specifying reason for the file transfer drop.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isExplicit</code></th>
+						<td><p>Flag to specify whether the transfer was halted explicity by the sender.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didUpdateFileTransferSendingProgress:fileName:remotePeerId:" title="connection:didUpdateFileTransferSendingProgress:fileName:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didUpdateFileTransferSendingProgress:fileName:remotePeerId:">&ndash;&nbsp;connection:didUpdateFileTransferSendingProgress:fileName:remotePeerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called upon every file transfer progress update.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didUpdateFileTransferSendingProgress:(CGFloat)<em>percentage</em> fileName:(null_unspecified NSString *)<em>fileName</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>percentage</code></th>
+						<td><p>The perccentage representing the progress of the transfer (CGFloat from 0 to 1).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileName</code></th>
+						<td><p>The name of the file in transmission.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer thie file is sent to or received from.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Alternatively, if many of your objects need to get these informations, it can register to the notification with identifier: @&ldquo;SKYLINKFileProgress&rdquo;.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didUpdateFileTransferReceivingProgress:fileName:remotePeerId:" title="connection:didUpdateFileTransferReceivingProgress:fileName:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didUpdateFileTransferReceivingProgress:fileName:remotePeerId:">&ndash;&nbsp;connection:didUpdateFileTransferReceivingProgress:fileName:remotePeerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called upon every file transfer progress update.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didUpdateFileTransferReceivingProgress:(CGFloat)<em>percentage</em> fileName:(null_unspecified NSString *)<em>fileName</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>percentage</code></th>
+						<td><p>The perccentage representing the progress of the transfer (CGFloat from 0 to 1).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileName</code></th>
+						<td><p>The name of the file in transmission.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer thie file is sent to or received from.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Alternatively, if many of your objects need to get these informations, it can register to the notification with identifier: @&ldquo;SKYLINKFileProgress&rdquo;.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didCompleteFileTransferSending:remotePeerId:" title="connection:didCompleteFileTransferSending:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didCompleteFileTransferSending:remotePeerId:">&ndash;&nbsp;connection:didCompleteFileTransferSending:remotePeerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called upon receiving signal that our sending of a File to remote Peer is complete.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didCompleteFileTransferSending:(null_unspecified NSString *)<em>fileName</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileName</code></th>
+						<td><p>The name of the file in request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didCompleteFileTransferReceiving:fileData:fileSavePath:remotePeerId:" title="connection:didCompleteFileTransferReceiving:fileData:fileSavePath:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didCompleteFileTransferReceiving:fileData:fileSavePath:remotePeerId:">&ndash;&nbsp;connection:didCompleteFileTransferReceiving:fileData:fileSavePath:remotePeerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called upon receiving signal that our receipt of a File from remote Peer is complete</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didCompleteFileTransferReceiving:(null_unspecified NSString *)<em>fileName</em> fileData:(null_unspecified NSData *)<em>fileData</em> fileSavePath:(null_unspecified NSString *)<em>fileSavePath</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileName</code></th>
+						<td><p>The name of the file in request</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileData</code></th>
+						<td><p>The data of the received file</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileSavePath</code></th>
+						<td><p>The path where the file is saved, it is in the sandbox /tmp folder</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Temasys Communications. All rights reserved. Updated: 2020-02-14</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SKYLINKConnectionMediaDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">SKYLINK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Temasys Communications</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/connection:didChangeLocalMedia:">- connection:didChangeLocalMedia:</option>
+		
+		<option value="//api/name/connection:didChangeRemoteMedia:remotePeerId:">- connection:didChangeRemoteMedia:remotePeerId:</option>
+		
+		<option value="//api/name/connection:didChangeVideoSize:videoView:peerId:">- connection:didChangeVideoSize:videoView:peerId:</option>
+		
+		<option value="//api/name/connection:didCreateLocalMedia:">- connection:didCreateLocalMedia:</option>
+		
+		<option value="//api/name/connection:didDestroyLocalMedia:">- connection:didDestroyLocalMedia:</option>
+		
+		<option value="//api/name/connection:didObtainInputVideoResolutionWidth:height:fps:captureFormatDict:mediaId:">- connection:didObtainInputVideoResolutionWidth:height:fps:captureFormatDict:mediaId:</option>
+		
+		<option value="//api/name/connection:didObtainReceivedVideoResolutionWidth:height:fps:remotePeerID:">- connection:didObtainReceivedVideoResolutionWidth:height:fps:remotePeerID:</option>
+		
+		<option value="//api/name/connection:didObtainSentVideoResolutionWidth:height:fps:mediaId:remotePeerId:">- connection:didObtainSentVideoResolutionWidth:height:fps:mediaId:remotePeerId:</option>
+		
+		<option value="//api/name/connection:didReceiveRemoteMedia:remotePeerId:">- connection:didReceiveRemoteMedia:remotePeerId:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SKYLINKConnectionMediaDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SKYLINKConnection.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@protocol</p><p>Delegate methods are called on the main thread.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/connection:didCreateLocalMedia:" title="connection:didCreateLocalMedia:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didCreateLocalMedia:">&ndash;&nbsp;connection:didCreateLocalMedia:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when receive a local Media. Applies for all media type. Including audio and video.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didCreateLocalMedia:(nonnull SKYLINKMedia *)<em>localMedia</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>localMedia</code></th>
+						<td><p>The newly created local Skylink media object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didReceiveRemoteMedia:remotePeerId:" title="connection:didReceiveRemoteMedia:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveRemoteMedia:remotePeerId:">&ndash;&nbsp;connection:didReceiveRemoteMedia:remotePeerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when receive a Media from remote peer. Applies for all media type. Including audio and video.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveRemoteMedia:(nonnull SKYLINKMedia *)<em>remoteMedia</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remoteMedia</code></th>
+						<td><p>The received remote Skylink media object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The received remote peerId.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didChangeLocalMedia:" title="connection:didChangeLocalMedia:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didChangeLocalMedia:">&ndash;&nbsp;connection:didChangeLocalMedia:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when local media changed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didChangeLocalMedia:(nonnull SKYLINKMedia *)<em>localMedia</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>localMedia</code></th>
+						<td><p>The Skylink local media object that is changed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didChangeRemoteMedia:remotePeerId:" title="connection:didChangeRemoteMedia:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didChangeRemoteMedia:remotePeerId:">&ndash;&nbsp;connection:didChangeRemoteMedia:remotePeerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when remote media changed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didChangeRemoteMedia:(nonnull SKYLINKMedia *)<em>remoteMedia</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remoteMedia</code></th>
+						<td><p>The Skylink remote media object that is changed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the remote peer.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didChangeVideoSize:videoView:peerId:" title="connection:didChangeVideoSize:videoView:peerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didChangeVideoSize:videoView:peerId:">&ndash;&nbsp;connection:didChangeVideoSize:videoView:peerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the dimensions of the video view are changed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didChangeVideoSize:(CGSize)<em>videoSize</em> videoView:(null_unspecified UIView *)<em>videoView</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoSize</code></th>
+						<td><p>The size of the respective video.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoView</code></th>
+						<td><p>The video view for which the size was sent.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>peerId</code></th>
+						<td><p>The unique id of peer.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didObtainInputVideoResolutionWidth:height:fps:captureFormatDict:mediaId:" title="connection:didObtainInputVideoResolutionWidth:height:fps:captureFormatDict:mediaId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didObtainInputVideoResolutionWidth:height:fps:captureFormatDict:mediaId:">&ndash;&nbsp;connection:didObtainInputVideoResolutionWidth:height:fps:captureFormatDict:mediaId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the local peer&rsquo;s input stats are changed</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didObtainInputVideoResolutionWidth:(NSInteger)<em>width</em> height:(NSInteger)<em>height</em> fps:(NSInteger)<em>fps</em> captureFormatDict:(nonnull NSDictionary&lt;NSString*,id&gt; *)<em>captureFormatDict</em> mediaId:(nonnull NSString *)<em>mediaId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>width</code></th>
+						<td><p>The video width</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>height</code></th>
+						<td><p>The video height</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fps</code></th>
+						<td><p>The video frame rate</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>captureFormatDict</code></th>
+						<td><p>The stats dictionary</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaId</code></th>
+						<td><p>The id of media</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didObtainReceivedVideoResolutionWidth:height:fps:remotePeerID:" title="connection:didObtainReceivedVideoResolutionWidth:height:fps:remotePeerID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didObtainReceivedVideoResolutionWidth:height:fps:remotePeerID:">&ndash;&nbsp;connection:didObtainReceivedVideoResolutionWidth:height:fps:remotePeerID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the received stats are changed from a remote peer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didObtainReceivedVideoResolutionWidth:(NSInteger)<em>width</em> height:(NSInteger)<em>height</em> fps:(NSInteger)<em>fps</em> remotePeerID:(nonnull NSString *)<em>remotePeerID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>width</code></th>
+						<td><p>The video width</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>height</code></th>
+						<td><p>The video height</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fps</code></th>
+						<td><p>The video frame rate</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerID</code></th>
+						<td><p>The peer id for the input stats</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didObtainSentVideoResolutionWidth:height:fps:mediaId:remotePeerId:" title="connection:didObtainSentVideoResolutionWidth:height:fps:mediaId:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didObtainSentVideoResolutionWidth:height:fps:mediaId:remotePeerId:">&ndash;&nbsp;connection:didObtainSentVideoResolutionWidth:height:fps:mediaId:remotePeerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the sent stats are changed to a remote peer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didObtainSentVideoResolutionWidth:(NSInteger)<em>width</em> height:(NSInteger)<em>height</em> fps:(NSInteger)<em>fps</em> mediaId:(nonnull)<em>mediaId</em> remotePeerId:(nonnull NSString *)<em>remotePeerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>width</code></th>
+						<td><p>The video width</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>height</code></th>
+						<td><p>The video height</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fps</code></th>
+						<td><p>The video frame rate</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The peer id for the input stats</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didDestroyLocalMedia:" title="connection:didDestroyLocalMedia:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didDestroyLocalMedia:">&ndash;&nbsp;connection:didDestroyLocalMedia:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when local Media was destroyed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didDestroyLocalMedia:(nonnull SKYLINKMedia *)<em>localMedia</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>localMedia</code></th>
+						<td><p>The newly created local Skylink media object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Temasys Communications. All rights reserved. Updated: 2020-02-14</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

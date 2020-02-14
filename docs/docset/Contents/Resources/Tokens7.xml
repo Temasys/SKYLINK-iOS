@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SKYLINKConnectionMessagesDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionMessagesDelegate</TokenIdentifier>
+			<Abstract type="html">Protocol to receive events related to remote peer messages.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMessagesDelegate/connection:didReceiveServerMessage:isPublic:timeStamp:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called upon receiving a socket message (Signalling).</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveServerMessage:(null_unspecified id)message isPublic:(BOOL)isPublic timeStamp:(long long)timeStamp remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">User defined message. May be an NSString, NSDictionary or NSArray.</Abstract>
+				</Parameter><Parameter>
+					<Name>isPublic</Name>
+					<Abstract type="html">Flag to specify whether the message was a broadcast.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the peer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didReceiveServerMessage:isPublic:timeStamp:remotePeerId:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMessagesDelegate/connection:didReceiveP2PMessage:isPublic:timeStamp:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called upon receiving a P2P message (DataChannel).</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveP2PMessage:(null_unspecified id)message isPublic:(BOOL)isPublic timeStamp:(long long)timeStamp remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">User defined message. May be an NSString, NSDictionary or NSArray.</Abstract>
+				</Parameter><Parameter>
+					<Name>isPublic</Name>
+					<Abstract type="html">Flag to specify whether the message was a broadcast.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the peer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didReceiveP2PMessage:isPublic:timeStamp:remotePeerId:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMessagesDelegate/connection:didReceiveData:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called upon receiving binary data on data channel.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveData:(null_unspecified NSData *)data remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">Binary data.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the remote peer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didReceiveData:remotePeerId:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
