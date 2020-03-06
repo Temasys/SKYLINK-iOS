@@ -25,7 +25,8 @@ Install cocoa pods in the terminal: `$ sudo gem install cocoapods`
 Add the following line to your Podfile:
 
     pod "SKYLINK"
-
+	If facing issues with installation, please use:
+ 	pod 'SKYLINK', :git => 'https://github.com/Temasys/SKYLINK-iOS.git'
 ##### STEP 3  
 Follow the instructions [here](https://temasys.io/creating-an-account-generating-a-key/) to create an App and a key on the Temasys Console.
 
