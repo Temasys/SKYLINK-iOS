@@ -373,6 +373,114 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/setEncryptSecrets:</TokenIdentifier>
+			<Abstract type="html">Map of secretId and encryption secret for generating key for SDK encryption.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *encryptSecrets</Declaration>
+			
+			
+			<Anchor>//api/name/encryptSecrets</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/encryptSecrets</TokenIdentifier>
+			<Abstract type="html">Map of secretId and encryption secret for generating key for SDK encryption.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *encryptSecrets</Declaration>
+			
+			
+			<Anchor>//api/name/encryptSecrets</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnection/encryptSecrets</TokenIdentifier>
+			<Abstract type="html">Map of secretId and encryption secret for generating key for SDK encryption.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *encryptSecrets</Declaration>
+			
+			
+			<Anchor>//api/name/encryptSecrets</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/setSelectedSecretId:</TokenIdentifier>
+			<Abstract type="html">Selected secretId of the secret to use when SDK needs to perform encryption.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *selectedSecretId</Declaration>
+			
+			
+			<Anchor>//api/name/selectedSecretId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/selectedSecretId</TokenIdentifier>
+			<Abstract type="html">Selected secretId of the secret to use when SDK needs to perform encryption.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *selectedSecretId</Declaration>
+			
+			
+			<Anchor>//api/name/selectedSecretId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnection/selectedSecretId</TokenIdentifier>
+			<Abstract type="html">Selected secretId of the secret to use when SDK needs to perform encryption.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *selectedSecretId</Declaration>
+			
+			
+			<Anchor>//api/name/selectedSecretId</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/setMessagePersist:</TokenIdentifier>
+			<Abstract type="html">whether the next public server message sent should be persisted.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL messagePersist</Declaration>
+			
+			
+			<Anchor>//api/name/messagePersist</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/messagePersist</TokenIdentifier>
+			<Abstract type="html">whether the next public server message sent should be persisted.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL messagePersist</Declaration>
+			
+			
+			<Anchor>//api/name/messagePersist</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnection/messagePersist</TokenIdentifier>
+			<Abstract type="html">whether the next public server message sent should be persisted.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL messagePersist</Declaration>
+			
+			
+			<Anchor>//api/name/messagePersist</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/initWithConfig:callback:</TokenIdentifier>
 			<Abstract type="html">Initialize and return a newly allocated connection object</Abstract>
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
@@ -1076,6 +1184,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/getStoredMessages:</TokenIdentifier>
+			<Abstract type="html">The sending Peer sends this to get storedMessages of the room</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)getStoredMessages:(void ( ^ _Null_unspecified ) ( NSArray *_Nullable storedMessages , NSDictionary *_Nullable errors ))callback</Declaration>
+			
+			
+			<Anchor>//api/name/getStoredMessages:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/sendData:toRemotePeerId:callback:</TokenIdentifier>
 			<Abstract type="html">Send binary data to a peer via data channel</Abstract>
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
@@ -1355,6 +1475,23 @@
 			</Parameters>
 			<ReturnValue><Abstract type="html">The calculated credential string</Abstract></ReturnValue>
 			<Anchor>//api/name/calculateCredentials:duration:startTime:secret:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SKYLINKConnection/getErrorFrom:</TokenIdentifier>
+			<Abstract type="html">Get NSError of SDK error list from Error code</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>+ (null_unspecified NSError *)getErrorFrom:(int)errorCode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>errorCode</Name>
+					<Abstract type="html">code of error</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The NSError</Abstract></ReturnValue>
+			<Anchor>//api/name/getErrorFrom:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/SKYLINKConnectionMediaDelegate.html">
+	<File path="Protocols/SKYLINKConnectionLifeCycleDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionMediaDelegate</TokenIdentifier>
-			<Abstract type="html">Protocol to receive events related to media i.e. audio/video.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionLifeCycleDelegate</TokenIdentifier>
+			<Abstract type="html">Protocol to receive events related to the lifecycle of the connection.</Abstract>
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
             
 			
@@ -13,224 +13,145 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didCreateLocalMedia:</TokenIdentifier>
-			<Abstract type="html">Called when receive a local Media. Applies for all media type. Including audio and video.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connectionDidConnectToRoomSuccessful:</TokenIdentifier>
+			<Abstract type="html">First delegate method called on the delegate upon successful connection.</Abstract>
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didCreateLocalMedia:(nonnull SKYLINKMedia *)localMedia</Declaration>
+			<Declaration>- (void)connectionDidConnectToRoomSuccessful:(nonnull SKYLINKConnection *)connection</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
-				</Parameter><Parameter>
-					<Name>localMedia</Name>
-					<Abstract type="html">The newly created local Skylink media object.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:didCreateLocalMedia:</Anchor>
+			<Anchor>//api/name/connectionDidConnectToRoomSuccessful:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didReceiveRemoteMedia:remotePeerId:</TokenIdentifier>
-			<Abstract type="html">Called when receive a Media from remote peer. Applies for all media type. Including audio and video.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didConnectToRoomFailed:</TokenIdentifier>
+			<Abstract type="html">First delegate method called on the delegate upon unsuccessful connection.</Abstract>
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveRemoteMedia:(nonnull SKYLINKMedia *)remoteMedia remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didConnectToRoomFailed:(null_unspecified NSString *)errorMessage</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>remoteMedia</Name>
-					<Abstract type="html">The received remote Skylink media object.</Abstract>
+					<Name>errorMessage</Name>
+					<Abstract type="html">Error message in case the connection is unsuccessful.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didConnectToRoomFailed:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didLockTheRoom:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called when a remote peer locks/unlocks the room.</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didLockTheRoom:(BOOL)lockStatus remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>lockStatus</Name>
+					<Abstract type="html">The status of the lock.</Abstract>
 				</Parameter><Parameter>
 					<Name>remotePeerId</Name>
-					<Abstract type="html">The received remote peerId.</Abstract>
+					<Abstract type="html">The unique id of the peer who originated the action.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:didReceiveRemoteMedia:remotePeerId:</Anchor>
+			<Anchor>//api/name/connection:didLockTheRoom:remotePeerId:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didChangeLocalMedia:</TokenIdentifier>
-			<Abstract type="html">Called when local media changed.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didReceiveInfoWithSkylinkInfo:</TokenIdentifier>
+			<Abstract type="html">Called when an info is received from the underlying system.</Abstract>
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didChangeLocalMedia:(nonnull SKYLINKMedia *)localMedia</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveInfoWithSkylinkInfo:(null_unspecified NSDictionary *)skylinkInfo</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>localMedia</Name>
-					<Abstract type="html">The Skylink local media object that is changed.</Abstract>
+					<Name>skylinkInfo</Name>
+					<Abstract type="html">SkylinkInfo dictionary contains a code and a message from the underlying system.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:didChangeLocalMedia:</Anchor>
+			<Anchor>//api/name/connection:didReceiveInfoWithSkylinkInfo:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didChangeRemoteMedia:remotePeerId:</TokenIdentifier>
-			<Abstract type="html">Called when remote media changed.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didReceiveWarningWithError:</TokenIdentifier>
+			<Abstract type="html">Called when a warning is received from the underlying system.</Abstract>
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didChangeRemoteMedia:(nonnull SKYLINKMedia *)remoteMedia remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveWarningWithError:(null_unspecified NSError *)error</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>remoteMedia</Name>
-					<Abstract type="html">The Skylink remote media object that is changed.</Abstract>
-				</Parameter><Parameter>
-					<Name>remotePeerId</Name>
-					<Abstract type="html">The unique id of the remote peer.</Abstract>
+					<Name>error</Name>
+					<Abstract type="html">Error which contain warning message inside userInfo.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:didChangeRemoteMedia:remotePeerId:</Anchor>
+			<Anchor>//api/name/connection:didReceiveWarningWithError:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didChangeVideoSize:videoView:peerId:</TokenIdentifier>
-			<Abstract type="html">Called when the dimensions of the video view are changed.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didReceiveError:</TokenIdentifier>
+			<Abstract type="html">Called when a error is received from the underlying system.</Abstract>
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didChangeVideoSize:(CGSize)videoSize videoView:(null_unspecified UIView *)videoView peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveError:(null_unspecified NSError *)error</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>videoSize</Name>
-					<Abstract type="html">The size of the respective video.</Abstract>
-				</Parameter><Parameter>
-					<Name>videoView</Name>
-					<Abstract type="html">The video view for which the size was sent.</Abstract>
-				</Parameter><Parameter>
-					<Name>peerId</Name>
-					<Abstract type="html">The unique id of peer.</Abstract>
+					<Name>error</Name>
+					<Abstract type="html">Error from the underlying system.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:didChangeVideoSize:videoView:peerId:</Anchor>
+			<Anchor>//api/name/connection:didReceiveError:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didObtainInputVideoResolutionWidth:height:fps:captureFormatDict:mediaId:</TokenIdentifier>
-			<Abstract type="html">Called when the local peer&apos;s input stats are changed</Abstract>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didDisconnectFromRoomWithSkylinkEvent:contextDescription:</TokenIdentifier>
+			<Abstract type="html">Called when the client is disconnected from the server.</Abstract>
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didObtainInputVideoResolutionWidth:(NSInteger)width height:(NSInteger)height fps:(NSInteger)fps captureFormatDict:(nonnull NSDictionary&lt;NSString*,id&gt; *)captureFormatDict mediaId:(nonnull NSString *)mediaId</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didDisconnectFromRoomWithSkylinkEvent:(nullable NSDictionary *)skylinkEvent contextDescription:(nullable NSString *)contextDescription</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>width</Name>
-					<Abstract type="html">The video width</Abstract>
+					<Name>skylinkEvent</Name>
+					<Abstract type="html">Is Error/Info.</Abstract>
 				</Parameter><Parameter>
-					<Name>height</Name>
-					<Abstract type="html">The video height</Abstract>
-				</Parameter><Parameter>
-					<Name>fps</Name>
-					<Abstract type="html">The video frame rate</Abstract>
-				</Parameter><Parameter>
-					<Name>captureFormatDict</Name>
-					<Abstract type="html">The stats dictionary</Abstract>
-				</Parameter><Parameter>
-					<Name>mediaId</Name>
-					<Abstract type="html">The id of media</Abstract>
+					<Name>contextDescription</Name>
+					<Abstract type="html">Extra description.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:didObtainInputVideoResolutionWidth:height:fps:captureFormatDict:mediaId:</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didObtainReceivedVideoResolutionWidth:height:fps:remotePeerID:</TokenIdentifier>
-			<Abstract type="html">Called when the received stats are changed from a remote peer</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didObtainReceivedVideoResolutionWidth:(NSInteger)width height:(NSInteger)height fps:(NSInteger)fps remotePeerID:(nonnull NSString *)remotePeerID</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>connection</Name>
-					<Abstract type="html">The underlying connection object.</Abstract>
-				</Parameter><Parameter>
-					<Name>width</Name>
-					<Abstract type="html">The video width</Abstract>
-				</Parameter><Parameter>
-					<Name>height</Name>
-					<Abstract type="html">The video height</Abstract>
-				</Parameter><Parameter>
-					<Name>fps</Name>
-					<Abstract type="html">The video frame rate</Abstract>
-				</Parameter><Parameter>
-					<Name>remotePeerID</Name>
-					<Abstract type="html">The peer id for the input stats</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/connection:didObtainReceivedVideoResolutionWidth:height:fps:remotePeerID:</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didObtainSentVideoResolutionWidth:height:fps:mediaId:remotePeerId:</TokenIdentifier>
-			<Abstract type="html">Called when the sent stats are changed to a remote peer</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didObtainSentVideoResolutionWidth:(NSInteger)width height:(NSInteger)height fps:(NSInteger)fps mediaId:(nonnull)mediaId remotePeerId:(nonnull NSString *)remotePeerId</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>connection</Name>
-					<Abstract type="html">The underlying connection object.</Abstract>
-				</Parameter><Parameter>
-					<Name>width</Name>
-					<Abstract type="html">The video width</Abstract>
-				</Parameter><Parameter>
-					<Name>height</Name>
-					<Abstract type="html">The video height</Abstract>
-				</Parameter><Parameter>
-					<Name>fps</Name>
-					<Abstract type="html">The video frame rate</Abstract>
-				</Parameter><Parameter>
-					<Name>remotePeerId</Name>
-					<Abstract type="html">The peer id for the input stats</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/connection:didObtainSentVideoResolutionWidth:height:fps:mediaId:remotePeerId:</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didDestroyLocalMedia:</TokenIdentifier>
-			<Abstract type="html">Called when local Media was destroyed.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didDestroyLocalMedia:(nonnull SKYLINKMedia *)localMedia</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>connection</Name>
-					<Abstract type="html">The underlying connection object.</Abstract>
-				</Parameter><Parameter>
-					<Name>localMedia</Name>
-					<Abstract type="html">The newly created local Skylink media object.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/connection:didDestroyLocalMedia:</Anchor>
+			<Anchor>//api/name/connection:didDisconnectFromRoomWithSkylinkEvent:contextDescription:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

@@ -58,6 +58,8 @@
 		
 		<option value="//api/name/enableLogs">enableLogs</option>
 		
+		<option value="//api/name/encryptSecrets">encryptSecrets</option>
+		
 		<option value="//api/name/fileTransferDelegate">fileTransferDelegate</option>
 		
 		<option value="//api/name/lifeCycleDelegate">lifeCycleDelegate</option>
@@ -68,11 +70,15 @@
 		
 		<option value="//api/name/mediaDelegate">mediaDelegate</option>
 		
+		<option value="//api/name/messagePersist">messagePersist</option>
+		
 		<option value="//api/name/messagesDelegate">messagesDelegate</option>
 		
 		<option value="//api/name/recordingDelegate">recordingDelegate</option>
 		
 		<option value="//api/name/remotePeerDelegate">remotePeerDelegate</option>
+		
+		<option value="//api/name/selectedSecretId">selectedSecretId</option>
 		
 		<option value="//api/name/userName">userName</option>
 		
@@ -83,6 +89,8 @@
 	<optgroup label="Class Methods">
 		
 		<option value="//api/name/calculateCredentials:duration:startTime:secret:">+ calculateCredentials:duration:startTime:secret:</option>
+		
+		<option value="//api/name/getErrorFrom:">+ getErrorFrom:</option>
 		
 		<option value="//api/name/getSkylinkVersion">+ getSkylinkVersion</option>
 		
@@ -147,6 +155,8 @@
 		<option value="//api/name/getSkylinkMediaListWithMediaType:peerId:">- getSkylinkMediaListWithMediaType:peerId:</option>
 		
 		<option value="//api/name/getSkylinkMediaWithMediaId:">- getSkylinkMediaWithMediaId:</option>
+		
+		<option value="//api/name/getStoredMessages:">- getStoredMessages:</option>
 		
 		<option value="//api/name/getUserInfo:">- getUserInfo:</option>
 		
@@ -659,6 +669,139 @@
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Set the debugging mode for tracing etc.</p>
 			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/encryptSecrets" title="encryptSecrets"></a>
+	<h3 class="method-title"><code><a href="#//api/name/encryptSecrets">&nbsp;&nbsp;encryptSecrets</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Map of secretId and encryption secret for generating key for SDK encryption.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSDictionary *encryptSecrets</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SDK now allows AES encryption/decryption of certain user provided information.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/selectedSecretId" title="selectedSecretId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/selectedSecretId">&nbsp;&nbsp;selectedSecretId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Selected secretId of the secret to use when SDK needs to perform encryption.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *selectedSecretId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SDK now allows AES encryption/decryption of certain user provided information.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/messagePersist" title="messagePersist"></a>
+	<h3 class="method-title"><code><a href="#//api/name/messagePersist">&nbsp;&nbsp;messagePersist</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>whether the next public server message sent should be persisted.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL messagePersist</code></div>
+
+		    
+			
+
+			
+
+			
+
 			
 
 			
@@ -2927,6 +3070,52 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/getStoredMessages:" title="getStoredMessages:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getStoredMessages:">&ndash;&nbsp;getStoredMessages:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The sending Peer sends this to get storedMessages of the room</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getStoredMessages:(void ( ^ _Null_unspecified ) ( NSArray *_Nullable storedMessages , NSDictionary *_Nullable errors ))<em>callback</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Can only get all public messages</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -3864,6 +4053,64 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/getErrorFrom:" title="getErrorFrom:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getErrorFrom:">+&nbsp;getErrorFrom:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get NSError of SDK error list from Error code</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (null_unspecified NSError *)getErrorFrom:(int)<em>errorCode</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorCode</code></th>
+						<td><p>code of error</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The NSError</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -3879,7 +4126,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2020 Temasys Communications. All rights reserved. Updated: 2020-02-14</p>
+						<p class="copyright">Copyright &copy; 2020 Temasys Communications. All rights reserved. Updated: 2020-03-06</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

@@ -113,6 +113,27 @@ typedef void (^ResolutionResultBlock)(NSInteger width, NSInteger height, NSInteg
 */
 @property(nonatomic, assign) BOOL enableLogs;
 
+/*!
+ @property
+ @abstract Map of secretId and encryption secret for generating key for SDK encryption.
+ @discussion SDK now allows AES encryption/decryption of certain user provided information.
+*/
+@property(nonatomic, copy) NSDictionary * _Nullable encryptSecrets;
+
+/*!
+ @property
+ @abstract Selected secretId of the secret to use when SDK needs to perform encryption.
+ @discussion SDK now allows AES encryption/decryption of certain user provided information.
+*/
+@property(nonatomic, copy) NSString * _Nullable selectedSecretId;
+
+/*!
+ @property
+ @abstract whether the next public server message sent should be persisted.
+ 
+*/
+@property(nonatomic, assign) BOOL messagePersist;
+
 #pragma mark - Lifecycle
 /*!
  @name Lifecycle
@@ -493,7 +514,12 @@ typedef void (^ResolutionResultBlock)(NSInteger width, NSInteger height, NSInteg
  */
 - (void)sendP2PMessage:(null_unspecified id)message toRemotePeerId:(nullable NSString *)remotePeerId callback:(nullable ErrorBlock)callback;
 
-
+/*!
+@method
+@abstract The sending Peer sends this to get storedMessages of the room
+@discussion Can only get all public messages
+*/
+- (void)getStoredMessages:(void (^ _Null_unspecified) (NSArray * _Nullable storedMessages, NSDictionary * _Nullable errors))callback;
 #pragma mark - Data transfer
 /*!
 @name Data transfer
@@ -656,4 +682,11 @@ typedef void (^ResolutionResultBlock)(NSInteger width, NSInteger height, NSInteg
  @return The calculated credential string
  */
 + (nonnull NSString *)calculateCredentials:(null_unspecified NSString *)roomName duration:(null_unspecified NSNumber *)duration startTime:(null_unspecified NSDate *)startTime secret:(null_unspecified NSString *)secret;
+/*!
+@method
+@abstract Get NSError of SDK error list from Error code
+@param errorCode code of error
+@return The NSError
+*/
++(null_unspecified NSError*)getErrorFrom:(int)errorCode;
 @end

@@ -80,7 +80,8 @@ typedef enum AudioVideoConfig {
 */
 typedef enum SkylinkAction {
     SkylinkAction_FILE_SEND_REQUEST = 0,
-    SkylinkAction_CONNECT_TO_ROOM
+    SkylinkAction_CONNECT_TO_ROOM,
+    SkylinkAction_GET_MESSAGE_STORED
 } SkylinkAction;
 
 /*!
