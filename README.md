@@ -1,4 +1,4 @@
-# Temasys iOS SDK
+# SkylinkSDK for iOS
 [![Version](https://img.shields.io/cocoapods/v/MyLibrary.svg?style=flat)](http://cocoadocs.org/docsets/SKYLINK)  [![License](https://img.shields.io/cocoapods/l/MyLibrary.svg?style=flat)](http://cocoadocs.org/docsets/SKYLINK) [![Platform](https://img.shields.io/cocoapods/p/MyLibrary.svg?style=flat)](http://cocoadocs.org/docsets/SKYLINK)
 
 The **SkylinkSDK for iOS** lets you build real time webRTC applications with voice calling, video chat, P2P file sharing or data and messages exchange. Go multi-platform with our [Web](https://temasys.io/products/sdks/js/) and [Android](https://temasys.io/products/sdks/android/) SDKs.
@@ -15,39 +15,56 @@ iOS 9 or higher.
 ### Step-by-step guide
 
 ##### STEP 1  
-It is recommended to install the SkylinkSDK for iOS via [cocoapods](http://cocoapods.org). If you do not have it installed, follow the below steps:
+You can install the SkylinkSDK for iOS via CocoaPods, or Carthage. If you do not have it installed, follow the below steps:
 
 ###### Installing Cocoapods  
 Check that you have Xcode command line tools installed (Xcode > Preferences > Locations > Command line tools([?](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/)). If not, open the terminal and run `xcode-select --install`.
 Install cocoa pods in the terminal: `$ sudo gem install cocoapods`
+###### Installing Carthage 
+Download and run the Carthage.pkg file for the latest [release](https://github.com/Carthage/Carthage/releases), then follow the on-screen instructions. If you are installing the pkg via CLI, you might need to run sudo chown -R $(whoami) /usr/local first
 
 ##### STEP 2  
-Add the following line to your Podfile:
+If you are using CocoaPods, add the following line to your Podfile:
 
     pod "SKYLINK"
-	If facing issues with installation, please use:
- 	pod 'SKYLINK', :git => 'https://github.com/Temasys/SKYLINK-iOS.git'
+    #If facing issues with installation, please use:
+    #pod 'SKYLINK', :git => 'https://github.com/Temasys/SKYLINK-iOS.git'
+If you are using Carthage, add the following line to your Cartfile:
+	
+    git "https://github.com/Temasys/SKYLINK-iOS.git"
 ##### STEP 3  
 Follow the instructions [here](https://temasys.io/creating-an-account-generating-a-key/) to create an App and a key on the Temasys Console.
 
 
 
-#### STEP 4
+##### STEP 4
 
 To create a Swift project using Teamsys iOS SDK, follow these steps:  
+###### If you are using CocoaPods:
 
-- Create new Xcode project
-- Run  `pod init`
-- Your Podfile should look like that: 
-```
+Your Podfile should look like that:
+	
+    project 'SampleApp_Swift.xcodeproj'
+    platform :ios, '9.0'
+    target 'SampleApp_Swift' do
     use_frameworks!
-    target 'MyTarget' do
     pod "SKYLINK"
+    #If facing issues with installation, please use:
+    #pod 'SKYLINK', :git => 'https://github.com/Temasys/SKYLINK-iOS.git'
     end
-```
-- Run `pod install`
-- Create the `Project-Bridging-Header.h` and refer to it in build settings (swift compiler section)
-- Add `#import <SKYLINK/SKYLINK.h>` to the newly created file
+
+In the terminal, run `pod install`
+###### If you are using Carthage:
+Your Cartfile should look like that:
+	
+    git "https://github.com/Temasys/SKYLINK-iOS.git"
+
+In the terminal, run `carthage update`
+
+#####Note: If you install by Carthage and the installation is successful, you have to link the frameworks to your project, in Xcode, go to "TARGETS" --> "Frameworks, Libraries, and Embedded Content", click "+", in the prompted window "Choose frameworks and libraries to add:", click "Add Other...", "Add Files...", in the prompted window, choose "Carthage" --> "Checkouts" --> "SKYLINK-iOS" --> "frameworks", select all the four frameworks here, then click open, you will see the four frameworks added into your "Frameworks, Libraries, and Embedded Content" window. After that, build your project, see if there is any error
+![image](./1.png)![image](./2.png)![image](./3.png)
+Create the `Project-Bridging-Header.h` and refer to it in build settings (swift compiler section)
+Add `#import <SKYLINK/SKYLINK.h>` to the newly created file
 You should be able to run your project after this, and use Temasys iOS SDK with Swift.
 
 ### Configuring Settings
