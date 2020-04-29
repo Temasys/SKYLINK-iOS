@@ -1366,6 +1366,45 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setUseSpeaker:</TokenIdentifier>
+			<Abstract type="html">When start the SDK, use loudspeaker or not
+@description Default is NO</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL useSpeaker</Declaration>
+			
+			
+			<Anchor>//api/name/useSpeaker</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/useSpeaker</TokenIdentifier>
+			<Abstract type="html">When start the SDK, use loudspeaker or not
+@description Default is NO</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL useSpeaker</Declaration>
+			
+			
+			<Anchor>//api/name/useSpeaker</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/useSpeaker</TokenIdentifier>
+			<Abstract type="html">When start the SDK, use loudspeaker or not
+@description Default is NO</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL useSpeaker</Declaration>
+			
+			
+			<Anchor>//api/name/useSpeaker</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/getTimeoutWithEventType:</TokenIdentifier>
 			<Abstract type="html">Get the timeout value for an action</Abstract>
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>

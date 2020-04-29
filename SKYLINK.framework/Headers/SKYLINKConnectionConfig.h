@@ -335,6 +335,14 @@ extern NSInteger const MAX_PEERS_NO_AUDIO_NO_VIDEO; // = 16
  @description xxx
 */
 @property(nonatomic, assign) SocketIOTransport preferredTransport;
+
+/*!
+ @property
+ @abstract When start the SDK, use loudspeaker or not
+ @description Default is NO
+ */
+@property(nonatomic, assign) BOOL useSpeaker;
+
 /*!
  @method
  @abstract Get the timeout value for an action
