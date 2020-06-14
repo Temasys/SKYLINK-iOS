@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
 </head>
 <body class="appledoc">
 	<header>
@@ -56,21 +56,31 @@
 	
 	<optgroup label="Properties">
 		
+		<option value="//api/name/enableLogs">enableLogs</option>
+		
+		<option value="//api/name/encryptSecrets">encryptSecrets</option>
+		
 		<option value="//api/name/fileTransferDelegate">fileTransferDelegate</option>
 		
 		<option value="//api/name/lifeCycleDelegate">lifeCycleDelegate</option>
+		
+		<option value="//api/name/localPeerId">localPeerId</option>
 		
 		<option value="//api/name/maxPeerCount">maxPeerCount</option>
 		
 		<option value="//api/name/mediaDelegate">mediaDelegate</option>
 		
-		<option value="//api/name/messagesDelegate">messagesDelegate</option>
+		<option value="//api/name/messagePersist">messagePersist</option>
 		
-		<option value="//api/name/myPeerId">myPeerId</option>
+		<option value="//api/name/messagesDelegate">messagesDelegate</option>
 		
 		<option value="//api/name/recordingDelegate">recordingDelegate</option>
 		
 		<option value="//api/name/remotePeerDelegate">remotePeerDelegate</option>
+		
+		<option value="//api/name/selectedSecretId">selectedSecretId</option>
+		
+		<option value="//api/name/userName">userName</option>
 		
 	</optgroup>
 	
@@ -80,9 +90,9 @@
 		
 		<option value="//api/name/calculateCredentials:duration:startTime:secret:">+ calculateCredentials:duration:startTime:secret:</option>
 		
-		<option value="//api/name/getSkylinkVersion">+ getSkylinkVersion</option>
+		<option value="//api/name/getErrorFrom:">+ getErrorFrom:</option>
 		
-		<option value="//api/name/setVerbose:">+ setVerbose:</option>
+		<option value="//api/name/getSkylinkVersion">+ getSkylinkVersion</option>
 		
 	</optgroup>
 	
@@ -90,55 +100,107 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/acceptFileTransfer:filename:peerId:">- acceptFileTransfer:filename:peerId:</option>
+		<option value="//api/name/acceptFileTransferWithFileName:fromRemotePeerId:callback:">- acceptFileTransferWithFileName:fromRemotePeerId:callback:</option>
 		
-		<option value="//api/name/cancelFileTransfer:peerId:">- cancelFileTransfer:peerId:</option>
+		<option value="//api/name/cancelFileTransferWithRemotePeerId:forSending:callback:">- cancelFileTransferWithRemotePeerId:forSending:callback:</option>
 		
-		<option value="//api/name/connectToRoomWithCredentials:roomName:userInfo:">- connectToRoomWithCredentials:roomName:userInfo:</option>
+		<option value="//api/name/changeLocalMediaStateWithMediaId:mediaState:callback:">- changeLocalMediaStateWithMediaId:mediaState:callback:</option>
 		
-		<option value="//api/name/connectToRoomWithSecret:roomName:userInfo:">- connectToRoomWithSecret:roomName:userInfo:</option>
+		<option value="//api/name/connectToRoomWithAppKey:secret:roomName:userData:callback:">- connectToRoomWithAppKey:secret:roomName:userData:callback:</option>
 		
-		<option value="//api/name/connectToRoomWithStringURL:userInfo:">- connectToRoomWithStringURL:userInfo:</option>
+		<option value="//api/name/connectToRoomWithStringURL:userData:callback:">- connectToRoomWithStringURL:userData:callback:</option>
+		
+		<option value="//api/name/createLocalMediaWithMediaDevice:mediaMetadata:callback:">- createLocalMediaWithMediaDevice:mediaMetadata:callback:</option>
+		
+		<option value="//api/name/createLocalMediaWithMediaDevice:mediaMetadata:captureSessionPreset:fps:callback:">- createLocalMediaWithMediaDevice:mediaMetadata:captureSessionPreset:fps:callback:</option>
+		
+		<option value="//api/name/createLocalMediaWithMediaDevice:mediaMetadata:customVideoCapturer:captureSessionPreset:fps:callback:">- createLocalMediaWithMediaDevice:mediaMetadata:customVideoCapturer:captureSessionPreset:fps:callback:</option>
+		
+		<option value="//api/name/createLocalMediaWithMediaDevice:mediaMetadata:fromViewController:callback:">- createLocalMediaWithMediaDevice:mediaMetadata:fromViewController:callback:</option>
+		
+		<option value="//api/name/destroyLocalMediaWithMediaId:callback:">- destroyLocalMediaWithMediaId:callback:</option>
 		
 		<option value="//api/name/disconnect:">- disconnect:</option>
 		
+		<option value="//api/name/getAllCameraNames">- getAllCameraNames</option>
+		
+		<option value="//api/name/getAllCaptureFormats">- getAllCaptureFormats</option>
+		
+		<option value="//api/name/getAllVideoDevices">- getAllVideoDevices</option>
+		
+		<option value="//api/name/getCurrentCameraName">- getCurrentCameraName</option>
+		
+		<option value="//api/name/getCurrentCaptureFormat">- getCurrentCaptureFormat</option>
+		
+		<option value="//api/name/getCurrentVideoDevice">- getCurrentVideoDevice</option>
+		
+		<option value="//api/name/getInputVideoResolutionWithMediaId:callback:">- getInputVideoResolutionWithMediaId:callback:</option>
+		
+		<option value="//api/name/getPeerIdList">- getPeerIdList</option>
+		
+		<option value="//api/name/getReceivedTransferSpeedByMediaId:callback:">- getReceivedTransferSpeedByMediaId:callback:</option>
+		
+		<option value="//api/name/getReceivedVideoResolutionWithMediaId:callback:">- getReceivedVideoResolutionWithMediaId:callback:</option>
+		
+		<option value="//api/name/getReceivedWebRtcStatsWithMediaId:callback:">- getReceivedWebRtcStatsWithMediaId:callback:</option>
+		
+		<option value="//api/name/getRoomId">- getRoomId</option>
+		
+		<option value="//api/name/getSentTransferSpeedByMediaId:remotePeerId:callback:">- getSentTransferSpeedByMediaId:remotePeerId:callback:</option>
+		
+		<option value="//api/name/getSentVideoResolutionOfRemotePeerId:mediaId:callback:">- getSentVideoResolutionOfRemotePeerId:mediaId:callback:</option>
+		
+		<option value="//api/name/getSentWebRtcStatsWithMediaId:remotePeerId:callback:">- getSentWebRtcStatsWithMediaId:remotePeerId:callback:</option>
+		
+		<option value="//api/name/getSkylinkMediaListWithMediaType:peerId:">- getSkylinkMediaListWithMediaType:peerId:</option>
+		
+		<option value="//api/name/getSkylinkMediaWithMediaId:">- getSkylinkMediaWithMediaId:</option>
+		
+		<option value="//api/name/getStoredMessages:">- getStoredMessages:</option>
+		
 		<option value="//api/name/getUserInfo:">- getUserInfo:</option>
 		
-		<option value="//api/name/initWithConfig:appKey:">- initWithConfig:appKey:</option>
+		<option value="//api/name/initWithConfig:callback:">- initWithConfig:callback:</option>
 		
 		<option value="//api/name/isAudioMuted">- isAudioMuted</option>
 		
+		<option value="//api/name/isMultiTrackEnable">- isMultiTrackEnable</option>
+		
+		<option value="//api/name/isRecording">- isRecording</option>
+		
+		<option value="//api/name/isRoomLocked">- isRoomLocked</option>
+		
 		<option value="//api/name/isVideoMuted">- isVideoMuted</option>
 		
-		<option value="//api/name/lockTheRoom">- lockTheRoom</option>
+		<option value="//api/name/lockTheRoom:">- lockTheRoom:</option>
 		
 		<option value="//api/name/muteAudio:">- muteAudio:</option>
 		
 		<option value="//api/name/muteVideo:">- muteVideo:</option>
 		
-		<option value="//api/name/refreshConnection:">- refreshConnection:</option>
+		<option value="//api/name/refreshConnectionWithRemotePeerId:doIceRestart:callback:">- refreshConnectionWithRemotePeerId:doIceRestart:callback:</option>
 		
-		<option value="//api/name/roomId">- roomId</option>
+		<option value="//api/name/rejectFileTransferFromRemotePeerId:callback:">- rejectFileTransferFromRemotePeerId:callback:</option>
 		
-		<option value="//api/name/sendBinaryData:peerId:">- sendBinaryData:peerId:</option>
+		<option value="//api/name/sendData:toRemotePeerId:callback:">- sendData:toRemotePeerId:callback:</option>
 		
-		<option value="//api/name/sendCustomMessage:peerId:">- sendCustomMessage:peerId:</option>
+		<option value="//api/name/sendFileTransferWithFileURL:assetType:fileName:remotePeerId:callback:">- sendFileTransferWithFileURL:assetType:fileName:remotePeerId:callback:</option>
 		
-		<option value="//api/name/sendDCMessage:peerId:">- sendDCMessage:peerId:</option>
+		<option value="//api/name/sendLocalUserData:callback:">- sendLocalUserData:callback:</option>
 		
-		<option value="//api/name/sendFileTransferRequest:assetType:">- sendFileTransferRequest:assetType:</option>
+		<option value="//api/name/sendP2PMessage:toRemotePeerId:callback:">- sendP2PMessage:toRemotePeerId:callback:</option>
 		
-		<option value="//api/name/sendFileTransferRequest:assetType:peerId:">- sendFileTransferRequest:assetType:peerId:</option>
+		<option value="//api/name/sendServerMessage:toRemotePeerId:callback:">- sendServerMessage:toRemotePeerId:callback:</option>
 		
-		<option value="//api/name/sendUserInfo:">- sendUserInfo:</option>
+		<option value="//api/name/setInputVideoResolutionOfMedia:toWidth:height:fps:callback:">- setInputVideoResolutionOfMedia:toWidth:height:fps:callback:</option>
 		
-		<option value="//api/name/startRecording">- startRecording</option>
+		<option value="//api/name/startRecording:">- startRecording:</option>
 		
-		<option value="//api/name/stopRecording">- stopRecording</option>
+		<option value="//api/name/stopRecording:">- stopRecording:</option>
 		
-		<option value="//api/name/switchCamera">- switchCamera</option>
+		<option value="//api/name/switchCamera:">- switchCamera:</option>
 		
-		<option value="//api/name/unlockTheRoom">- unlockTheRoom</option>
+		<option value="//api/name/unlockTheRoom:">- unlockTheRoom:</option>
 		
 	</optgroup>
 	
@@ -439,13 +501,13 @@
 						</div>
 						
 
-						<a title="Peer Id" name="task_Peer Id"></a>
-						<h2 class="task-title">Peer Id</h2>
+						<a title="Peer" name="task_Peer"></a>
+						<h2 class="task-title">Peer</h2>
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/myPeerId" title="myPeerId"></a>
-	<h3 class="method-title"><code><a href="#//api/name/myPeerId">&nbsp;&nbsp;myPeerId</a></code>
+	<a name="//api/name/localPeerId" title="localPeerId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/localPeerId">&nbsp;&nbsp;localPeerId</a></code>
 </h3>
 
 	<div class="method-info">
@@ -460,7 +522,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *myPeerId</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *localPeerId</code></div>
 
 		    
 			
@@ -530,6 +592,231 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/userName" title="userName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userName">&nbsp;&nbsp;userName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The use name of the peer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *userName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is obtained from the server.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableLogs" title="enableLogs"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableLogs">&nbsp;&nbsp;enableLogs</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Wether enable the logs.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL enableLogs</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the debugging mode for tracing etc.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/encryptSecrets" title="encryptSecrets"></a>
+	<h3 class="method-title"><code><a href="#//api/name/encryptSecrets">&nbsp;&nbsp;encryptSecrets</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Map of secretId and encryption secret for generating key for SDK encryption.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSDictionary *encryptSecrets</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SDK now allows AES encryption/decryption of certain user provided information.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/selectedSecretId" title="selectedSecretId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/selectedSecretId">&nbsp;&nbsp;selectedSecretId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Selected secretId of the secret to use when SDK needs to perform encryption.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *selectedSecretId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SDK now allows AES encryption/decryption of certain user provided information.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/messagePersist" title="messagePersist"></a>
+	<h3 class="method-title"><code><a href="#//api/name/messagePersist">&nbsp;&nbsp;messagePersist</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>whether the next public server message sent should be persisted.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL messagePersist</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -539,8 +826,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/initWithConfig:appKey:" title="initWithConfig:appKey:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithConfig:appKey:">&ndash;&nbsp;initWithConfig:appKey:</a></code>
+	<a name="//api/name/initWithConfig:callback:" title="initWithConfig:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithConfig:callback:">&ndash;&nbsp;initWithConfig:callback:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -550,12 +837,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Initialize and return a newly allocated connection object.</p>
+				<p>Initialize and return a newly allocated connection object</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (null_unspecified id)initWithConfig:(null_unspecified SKYLINKConnectionConfig *)<em>config</em> appKey:(null_unspecified NSString *)<em>appKey</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (null_unspecified instancetype)initWithConfig:(null_unspecified SKYLINKConnectionConfig *)<em>config</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
@@ -565,80 +852,98 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>config</code></th>
-						<td><p>The connection configuration object.</p></td>
+						<td><p>The connection configuration object</p></td>
 					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Changes in config after creating the object won&rsquo;t affect the connection</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Room connection" name="task_Room connection"></a>
+						<h2 class="task-title">Room connection</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/connectToRoomWithAppKey:secret:roomName:userData:callback:" title="connectToRoomWithAppKey:secret:roomName:userData:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectToRoomWithAppKey:secret:roomName:userData:callback:">&ndash;&nbsp;connectToRoomWithAppKey:secret:roomName:userData:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Join the room specifiying the shared secret, room name and user info</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connectToRoomWithAppKey:(null_unspecified NSString *)<em>appKey</em> secret:(null_unspecified NSString *)<em>secret</em> roomName:(null_unspecified NSString *)<em>roomName</em> userData:(null_unspecified id)<em>userData</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>appKey</code></th>
-						<td><p>APP key.</p></td>
+						<td><p>Shared appKey</p></td>
 					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Changes in config after creating the object won&rsquo;t affect the connection.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/connectToRoomWithSecret:roomName:userInfo:" title="connectToRoomWithSecret:roomName:userInfo:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connectToRoomWithSecret:roomName:userInfo:">&ndash;&nbsp;connectToRoomWithSecret:roomName:userInfo:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Join the room specifiying the shared secret, room name and user info.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)connectToRoomWithSecret:(null_unspecified NSString *)<em>secret</em> roomName:(null_unspecified NSString *)<em>roomName</em> userInfo:(null_unspecified id)<em>userInfo</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>secret</code></th>
-						<td><p>Shared secret.</p></td>
+						<td><p>Shared secret</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>roomName</code></th>
-						<td><p>Name of the room to join.</p></td>
+						<td><p>Name of the room to join</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>userInfo</code></th>
-						<td><p>User defined information (relating to oneself). May be an NSString, NSDictionary or NSArray.</p></td>
+						<th scope="row" class="argument-name"><code>userData</code></th>
+						<td><p>User defined information (relating to oneself). May be an NSString, NSDictionary or NSArray</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
 					</tr>
 				
 				</table>
@@ -646,18 +951,13 @@
 			
 
 			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>NO if a connection is already established.</p>
-			</div>
-			
 
 			
 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>It is recommended to use <a href="#//api/name/connectToRoomWithCredentials:roomName:userInfo:">connectToRoomWithCredentials:roomName:userInfo:</a> after calculating the credentials on a server, but if the client application has no server implementation then this one should be used.</p>
+				<p>It is recommended to use connectToRoomWithCredentials:roomName:userInfo: after calculating the credentials on a server, but if the client application has no server implementation then this one should be used</p>
 			</div>
 			
 
@@ -675,81 +975,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/connectToRoomWithCredentials:roomName:userInfo:" title="connectToRoomWithCredentials:roomName:userInfo:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connectToRoomWithCredentials:roomName:userInfo:">&ndash;&nbsp;connectToRoomWithCredentials:roomName:userInfo:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Join the room specifiying the calculated credential info, room name and user info.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (nonnull NSString *)connectToRoomWithCredentials:(null_unspecified NSDictionary *)<em>credInfo</em> roomName:(null_unspecified NSString *)<em>roomName</em> userInfo:(null_unspecified id)<em>userInfo</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>credInfo</code></th>
-						<td><p>A dictionary containing a credential, startTime and duration.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>roomName</code></th>
-						<td><p>Name of the room to join.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>userInfo</code></th>
-						<td><p>User defined information (relating to oneself). May be an NSString, NSDictionary or NSArray.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>nil if connection can be established otherwise a message specifying reason for connection denial.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The dictionary &lsquo;credInfo&rsquo; is expected to have 3 non-Null parameters: an NSString type &lsquo;credential&rsquo;, an NSDate type &lsquo;startTime&rsquo; and an NSNumber type &lsquo;duration&rsquo; in hours. The &lsquo;startTime&rsquo; must be a correct time of the client application&rsquo;s timezone. Both the &lsquo;startTime&rsquo; and &lsquo;duration&rsquo; must be the same as the ones that were used to calculate the credential. Failing to provide any of them will result in a connection denial.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/connectToRoomWithStringURL:userInfo:" title="connectToRoomWithStringURL:userInfo:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connectToRoomWithStringURL:userInfo:">&ndash;&nbsp;connectToRoomWithStringURL:userInfo:</a></code>
+	<a name="//api/name/connectToRoomWithStringURL:userData:callback:" title="connectToRoomWithStringURL:userData:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectToRoomWithStringURL:userData:callback:">&ndash;&nbsp;connectToRoomWithStringURL:userData:callback:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -764,7 +991,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (BOOL)connectToRoomWithStringURL:(null_unspecified NSString *)<em>stringURL</em> userInfo:(null_unspecified id)<em>userInfo</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connectToRoomWithStringURL:(null_unspecified NSString *)<em>stringURL</em> userData:(null_unspecified id)<em>userData</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
@@ -778,19 +1005,19 @@
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<th scope="row" class="argument-name"><code>userData</code></th>
 						<td><p>User defined information (relating to oneself). May be an NSString, NSDictionary or NSArray.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message.</p></td>
 					</tr>
 				
 				</table>
 			</div>
 			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>YES (success) if connection can be established. NO if a connection is already established.</p>
-			</div>
 			
 
 			
@@ -827,12 +1054,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Leave the room.</p>
+				<p>Leave the room</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)disconnect:(void ( ^ _Null_unspecified ) ( void ))<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)disconnect:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
@@ -841,8 +1068,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>The completion block called on the UI thread after leaving the room. This block is a good place to deallocate SKYLINKConnection if desired. Leave as empty block if not required.</p></td>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
 					</tr>
 				
 				</table>
@@ -856,7 +1083,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Leave the room and remove any video renderers and PeerConnections.</p>
+				<p>Leave the room and remove any video renderers and PeerConnections</p>
 			</div>
 			
 
@@ -877,13 +1104,13 @@
 						</div>
 						
 
-						<a title="Room Control." name="task_Room Control."></a>
-						<h2 class="task-title">Room Control.</h2>
+						<a title="Media create remove" name="task_Media create remove"></a>
+						<h2 class="task-title">Media create remove</h2>
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/refreshConnection:" title="refreshConnection:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/refreshConnection:">&ndash;&nbsp;refreshConnection:</a></code>
+	<a name="//api/name/createLocalMediaWithMediaDevice:mediaMetadata:callback:" title="createLocalMediaWithMediaDevice:mediaMetadata:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createLocalMediaWithMediaDevice:mediaMetadata:callback:">&ndash;&nbsp;createLocalMediaWithMediaDevice:mediaMetadata:callback:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -893,12 +1120,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Refresh peer connection with a specified peer.</p>
+				<p>Start a local media with a media device</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)refreshConnection:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)createLocalMediaWithMediaDevice:(SKYLINKMediaDevice)<em>mediaDevice</em> mediaMetadata:(id _Nullable)<em>mediaMetadata</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
@@ -907,8 +1134,96 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the peer with whom the connection is being refreshed.</p></td>
+						<th scope="row" class="argument-name"><code>mediaDevice</code></th>
+						<td><p>The type of Skylink media device you want to start</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaMetadata</code></th>
+						<td><p>Some label associated with the new media, can be NSString, NSDictionary, NSArray</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createLocalMediaWithMediaDevice:mediaMetadata:customVideoCapturer:captureSessionPreset:fps:callback:" title="createLocalMediaWithMediaDevice:mediaMetadata:customVideoCapturer:captureSessionPreset:fps:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createLocalMediaWithMediaDevice:mediaMetadata:customVideoCapturer:captureSessionPreset:fps:callback:">&ndash;&nbsp;createLocalMediaWithMediaDevice:mediaMetadata:customVideoCapturer:captureSessionPreset:fps:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start a custom local media with a media device, customVideoCapturer, captureSessionPreset, and fps</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createLocalMediaWithMediaDevice:(SKYLINKMediaDevice)<em>mediaDevice</em> mediaMetadata:(id _Nullable)<em>mediaMetadata</em> customVideoCapturer:(RTCCameraVideoCapturer *_Nonnull)<em>customVideoCapturer</em> captureSessionPreset:(AVCaptureSessionPreset _Null_unspecified)<em>captureSessionPreset</em> fps:(NSInteger)<em>fps</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaDevice</code></th>
+						<td><p>The type of Skylink media device you want to start</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaMetadata</code></th>
+						<td><p>Some label associated with the new media, can be NSString, NSDictionary, NSArray</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>customVideoCapturer</code></th>
+						<td><p>Using custom videoCapturer</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>captureSessionPreset</code></th>
+						<td><p>AVCaptureSessionPreset will be accepted</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fps</code></th>
+						<td><p>The framerate using by the custom video capturer</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
 					</tr>
 				
 				</table>
@@ -922,7 +1237,8 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>This method is provided as a convenience method. So that one can call if a peer streams are not behaving correctly.</p>
+				<p>Available values for captureSessionPreset
+             AVCaptureSessionPresetLow, AVCaptureSessionPreset640x480, AVCaptureSessionPreset352x288, AVCaptureSessionPreset1280x720, AVCaptureSessionPresetHigh, AVCaptureSessionPresetPhoto, AVCaptureSessionPreset1920x1080</p>
 			</div>
 			
 
@@ -940,8 +1256,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/lockTheRoom" title="lockTheRoom"></a>
-	<h3 class="method-title"><code><a href="#//api/name/lockTheRoom">&ndash;&nbsp;lockTheRoom</a></code>
+	<a name="//api/name/createLocalMediaWithMediaDevice:mediaMetadata:captureSessionPreset:fps:callback:" title="createLocalMediaWithMediaDevice:mediaMetadata:captureSessionPreset:fps:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createLocalMediaWithMediaDevice:mediaMetadata:captureSessionPreset:fps:callback:">&ndash;&nbsp;createLocalMediaWithMediaDevice:mediaMetadata:captureSessionPreset:fps:callback:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -951,14 +1267,120 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Lock the room.</p>
+				<p>Start a local media with a media device, custom captureSessionPreset and fps</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)lockTheRoom</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)createLocalMediaWithMediaDevice:(SKYLINKMediaDevice)<em>mediaDevice</em> mediaMetadata:(id _Nullable)<em>mediaMetadata</em> captureSessionPreset:(AVCaptureSessionPreset _Null_unspecified)<em>captureSessionPreset</em> fps:(NSInteger)<em>fps</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaDevice</code></th>
+						<td><p>The type of Skylink media device you want to start</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaMetadata</code></th>
+						<td><p>Some label associated with the new media, can be NSString, NSDictionary, NSArray</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>captureSessionPreset</code></th>
+						<td><p>AVCaptureSessionPreset will be accepted</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fps</code></th>
+						<td><p>The framerate using by the custom video capturer</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Available values for captureSessionPreset
+             AVCaptureSessionPresetLow, AVCaptureSessionPreset640x480, AVCaptureSessionPreset352x288, AVCaptureSessionPreset1280x720, AVCaptureSessionPresetHigh, AVCaptureSessionPresetPhoto, AVCaptureSessionPreset1920x1080</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createLocalMediaWithMediaDevice:mediaMetadata:fromViewController:callback:" title="createLocalMediaWithMediaDevice:mediaMetadata:fromViewController:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createLocalMediaWithMediaDevice:mediaMetadata:fromViewController:callback:">&ndash;&nbsp;createLocalMediaWithMediaDevice:mediaMetadata:fromViewController:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start a local media with a media device and a custom view controller</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createLocalMediaWithMediaDevice:(SKYLINKMediaDevice)<em>mediaDevice</em> mediaMetadata:(id _Nullable)<em>mediaMetadata</em> fromViewController:(UIViewController *_Null_unspecified)<em>viewController</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaDevice</code></th>
+						<td><p>The type of Skylink media device you want to start</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaMetadata</code></th>
+						<td><p>Some label associated with the new media, can be NSString, NSDictionary, NSArray</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>viewController</code></th>
+						<td><p>Screenshare with specific ViewController, if you don&rsquo;t provide a view controller, the top view controller will be used</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
@@ -981,8 +1403,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/unlockTheRoom" title="unlockTheRoom"></a>
-	<h3 class="method-title"><code><a href="#//api/name/unlockTheRoom">&ndash;&nbsp;unlockTheRoom</a></code>
+	<a name="//api/name/changeLocalMediaStateWithMediaId:mediaState:callback:" title="changeLocalMediaStateWithMediaId:mediaState:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changeLocalMediaStateWithMediaId:mediaState:callback:">&ndash;&nbsp;changeLocalMediaStateWithMediaId:mediaState:callback:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -992,14 +1414,94 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Unlock the room.</p>
+				<p>Change a local media state by the mediaId</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)unlockTheRoom</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)changeLocalMediaStateWithMediaId:(NSString *_Nonnull)<em>mediaId</em> mediaState:(SKYLINKMediaState)<em>mediaState</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaId</code></th>
+						<td><p>The unique mediaId of a Skylink media object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaState</code></th>
+						<td><p>The SkyinkMediaState you want to change to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/destroyLocalMediaWithMediaId:callback:" title="destroyLocalMediaWithMediaId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/destroyLocalMediaWithMediaId:callback:">&ndash;&nbsp;destroyLocalMediaWithMediaId:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stop and remove a local media by the mediaId</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)destroyLocalMediaWithMediaId:(NSString *_Nonnull)<em>mediaId</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaId</code></th>
+						<td><p>The unique mediaId of a Skylink media object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
@@ -1025,8 +1527,729 @@
 						</div>
 						
 
-						<a title="Media" name="task_Media"></a>
-						<h2 class="task-title">Media</h2>
+						<a title="Media get" name="task_Media get"></a>
+						<h2 class="task-title">Media get</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getSkylinkMediaWithMediaId:" title="getSkylinkMediaWithMediaId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSkylinkMediaWithMediaId:">&ndash;&nbsp;getSkylinkMediaWithMediaId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get specific SkylinkMedia via MediaId</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable SKYLINKMedia *)getSkylinkMediaWithMediaId:(nonnull NSString *)<em>mediaId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaId</code></th>
+						<td><p>The unique mediaId of a Skylink media object</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The required media, if cannot find, nil will be returned</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSkylinkMediaListWithMediaType:peerId:" title="getSkylinkMediaListWithMediaType:peerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSkylinkMediaListWithMediaType:peerId:">&ndash;&nbsp;getSkylinkMediaListWithMediaType:peerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get list of SkylinkMedia via MediaType</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSArray&lt;SKYLINKMedia*&gt; *)getSkylinkMediaListWithMediaType:(SKYLINKMediaType)<em>mediaType</em> peerId:(NSString *_Nullable)<em>peerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaType</code></th>
+						<td><p>The SkylinkMediaType you want to get</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>peerId</code></th>
+						<td><p>The peerId you want to get from</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The array of the required media, if cannot find, nil will be returned</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If mediaType is NOT in the SKYLINKMediaType enum, all SM of peerId will be returned.
+             If peerId is nil, all SM of mediaType will be returned.
+             If peerId is null and mediaType is NOT in the SKYLINKMediaType enum all SM will be returned</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Media video devices" name="task_Media video devices"></a>
+						<h2 class="task-title">Media video devices</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/switchCamera:" title="switchCamera:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/switchCamera:">&ndash;&nbsp;switchCamera:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Switches between front and back camera. By default the front camera input is captured.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)switchCamera:(nullable ErrorBlock)<em>callback</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCurrentCaptureFormat" title="getCurrentCaptureFormat"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCurrentCaptureFormat">&ndash;&nbsp;getCurrentCaptureFormat</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the current camera captured format</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable AVCaptureDeviceFormat *)getCurrentCaptureFormat</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The current capturer format</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAllCaptureFormats" title="getAllCaptureFormats"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAllCaptureFormats">&ndash;&nbsp;getAllCaptureFormats</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get all the supported camera capture formats</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSArray&lt;AVCaptureDeviceFormat*&gt; *)getAllCaptureFormats</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>All the supported capturer formats</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCurrentVideoDevice" title="getCurrentVideoDevice"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCurrentVideoDevice">&ndash;&nbsp;getCurrentVideoDevice</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the current video device</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable AVCaptureDevice *)getCurrentVideoDevice</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The current video device</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAllVideoDevices" title="getAllVideoDevices"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAllVideoDevices">&ndash;&nbsp;getAllVideoDevices</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get all available video devices</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSArray&lt;AVCaptureDevice*&gt; *)getAllVideoDevices</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The array of all video devices</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCurrentCameraName" title="getCurrentCameraName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCurrentCameraName">&ndash;&nbsp;getCurrentCameraName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the current camera name</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSString *)getCurrentCameraName</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The current camera name</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAllCameraNames" title="getAllCameraNames"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAllCameraNames">&ndash;&nbsp;getAllCameraNames</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get all the available camera names</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSArray&lt;NSString*&gt; *)getAllCameraNames</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The array of all camera names</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Media video resolutions" name="task_Media video resolutions"></a>
+						<h2 class="task-title">Media video resolutions</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setInputVideoResolutionOfMedia:toWidth:height:fps:callback:" title="setInputVideoResolutionOfMedia:toWidth:height:fps:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setInputVideoResolutionOfMedia:toWidth:height:fps:callback:">&ndash;&nbsp;setInputVideoResolutionOfMedia:toWidth:height:fps:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>You may use this to set your local input stats</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setInputVideoResolutionOfMedia:(nonnull NSString *)<em>mediaId</em> toWidth:(NSUInteger)<em>width</em> height:(NSUInteger)<em>height</em> fps:(NSUInteger)<em>fps</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaId</code></th>
+						<td><p>The unique mediaId of a Skylink media object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>width</code></th>
+						<td><p>Width you want to set</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>height</code></th>
+						<td><p>Height you want to set</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fps</code></th>
+						<td><p>Frame rate you want to set</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getInputVideoResolutionWithMediaId:callback:" title="getInputVideoResolutionWithMediaId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInputVideoResolutionWithMediaId:callback:">&ndash;&nbsp;getInputVideoResolutionWithMediaId:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get all the stats for your local input video</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getInputVideoResolutionWithMediaId:(nonnull NSString *)<em>mediaId</em> callback:(ResolutionResultBlock _Null_unspecified)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaId</code></th>
+						<td><p>The unique mediaId of a Skylink media object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback contains the width height frame rate and an error message, if everything is fine, the error can be nil</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getReceivedVideoResolutionWithMediaId:callback:" title="getReceivedVideoResolutionWithMediaId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getReceivedVideoResolutionWithMediaId:callback:">&ndash;&nbsp;getReceivedVideoResolutionWithMediaId:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get all the stats of your received remote video</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getReceivedVideoResolutionWithMediaId:(nonnull NSString *)<em>mediaId</em> callback:(ResolutionResultBlock _Null_unspecified)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaId</code></th>
+						<td><p>The unique mediaId of a Skylink media object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback contains the width height frame rate and an error message, if everything is fine, the error can be nil</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSentVideoResolutionOfRemotePeerId:mediaId:callback:" title="getSentVideoResolutionOfRemotePeerId:mediaId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSentVideoResolutionOfRemotePeerId:mediaId:callback:">&ndash;&nbsp;getSentVideoResolutionOfRemotePeerId:mediaId:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get all the stats you sent to the remote peer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getSentVideoResolutionOfRemotePeerId:(nonnull NSString *)<em>remotePeerId</em> mediaId:(nonnull NSString *)<em>mediaId</em> callback:(ResolutionResultBlock _Null_unspecified)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The remote peer id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaId</code></th>
+						<td><p>The unique mediaId of a Skylink media object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback contains the width height frame rate and an error message, if everything is fine, the error can be nil</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Media others" name="task_Media others"></a>
+						<h2 class="task-title">Media others</h2>
 
 						<div class="task-list">
 							<div class="section-method">
@@ -1228,8 +2451,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/switchCamera" title="switchCamera"></a>
-	<h3 class="method-title"><code><a href="#//api/name/switchCamera">&ndash;&nbsp;switchCamera</a></code>
+	<a name="//api/name/isMultiTrackEnable" title="isMultiTrackEnable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isMultiTrackEnable">&ndash;&nbsp;isMultiTrackEnable</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1239,14 +2462,274 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Switches between front and back camera. By default the front camera input is captured.</p>
+				<p>Checks the value in the SDK, which was set by the SkylinkConfig in SDK&rsquo;s init</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)switchCamera</code></div>
+			<div class="method-subsection method-declaration"><code>- (BOOL)isMultiTrackEnable</code></div>
 
 		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Whethe enabled or not</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This value does not change once set</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Statistics" name="task_Statistics"></a>
+						<h2 class="task-title">Statistics</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getSentTransferSpeedByMediaId:remotePeerId:callback:" title="getSentTransferSpeedByMediaId:remotePeerId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSentTransferSpeedByMediaId:remotePeerId:callback:">&ndash;&nbsp;getSentTransferSpeedByMediaId:remotePeerId:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the full WebRTC stats</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getSentTransferSpeedByMediaId:(nonnull NSString *)<em>mediaId</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em> callback:(void ( ^ _Null_unspecified ) ( CGFloat speed , NSError *_Nullable error ))<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaId</code></th>
+						<td><p>The unique mediaId of a Skylink media object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The remote peer id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an object containing the transfer speed (Kbps) and an error, the error can be nil if everything is fine</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getReceivedTransferSpeedByMediaId:callback:" title="getReceivedTransferSpeedByMediaId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getReceivedTransferSpeedByMediaId:callback:">&ndash;&nbsp;getReceivedTransferSpeedByMediaId:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the full WebRTC stats</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getReceivedTransferSpeedByMediaId:(nonnull NSString *)<em>mediaId</em> callback:(void ( ^ _Null_unspecified ) ( CGFloat speed , NSError *_Nullable error ))<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaId</code></th>
+						<td><p>The unique mediaId of a Skylink media object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an object containing the transfer speed (Kbps) and an error, the error can be nil if everything is fine</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSentWebRtcStatsWithMediaId:remotePeerId:callback:" title="getSentWebRtcStatsWithMediaId:remotePeerId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSentWebRtcStatsWithMediaId:remotePeerId:callback:">&ndash;&nbsp;getSentWebRtcStatsWithMediaId:remotePeerId:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the full WebRTC stats for sent</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getSentWebRtcStatsWithMediaId:(nonnull NSString *)<em>mediaId</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em> callback:(void ( ^ _Nullable ) ( id _Nullable responseObject , NSError *_Nullable error ))<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaId</code></th>
+						<td><p>The unique mediaId of a Skylink media object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The remote peer id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an object containing all the WebRTC stats</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getReceivedWebRtcStatsWithMediaId:callback:" title="getReceivedWebRtcStatsWithMediaId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getReceivedWebRtcStatsWithMediaId:callback:">&ndash;&nbsp;getReceivedWebRtcStatsWithMediaId:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the full WebRTC stats for receive</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getReceivedWebRtcStatsWithMediaId:(nonnull NSString *)<em>mediaId</em> callback:(void ( ^ _Nullable ) ( id _Nullable responseObject , NSError *_Nullable error ))<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaId</code></th>
+						<td><p>The unique mediaId of a Skylink media object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an object containing all the WebRTC stats</p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
@@ -1272,13 +2755,13 @@
 						</div>
 						
 
-						<a title="Recording (Beta)" name="task_Recording (Beta)"></a>
-						<h2 class="task-title">Recording (Beta)</h2>
+						<a title="Recording" name="task_Recording"></a>
+						<h2 class="task-title">Recording</h2>
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/startRecording" title="startRecording"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startRecording">&ndash;&nbsp;startRecording</a></code>
+	<a name="//api/name/startRecording:" title="startRecording:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startRecording:">&ndash;&nbsp;startRecording:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1288,21 +2771,28 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Start the recording of the room.</p>
+				<p>Start the recording of the room</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (nullable NSString *)startRecording</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)startRecording:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>The NSString return value is an error description. A nil value means no error occured.</p>
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
+					</tr>
+				
+				</table>
 			</div>
+			
+
 			
 
 			
@@ -1310,7 +2800,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<div class="warning"><p><strong>Warning:</strong> This feature is in BETA.</p></div><p>This is a Skylink Media Relay only feature, it needs to be enable for the API Key in Temasys developer console.</p>
+				<div class="warning"><p><strong>Warning:</strong> This feature is in BETA</p></div><p>This is a Skylink Media Relay only feature, it needs to be enable for the API Key in Temasys developer console</p>
 			</div>
 			
 
@@ -1328,8 +2818,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/stopRecording" title="stopRecording"></a>
-	<h3 class="method-title"><code><a href="#//api/name/stopRecording">&ndash;&nbsp;stopRecording</a></code>
+	<a name="//api/name/stopRecording:" title="stopRecording:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopRecording:">&ndash;&nbsp;stopRecording:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1339,12 +2829,70 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Stop the recording of the room.</p>
+				<p>Stop the recording of the room</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (nullable NSString *)stopRecording</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)stopRecording:(nullable ErrorBlock)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> This feature is in BETA</p></div><p>This is a Skylink Media Relay only feature, it needs to be enable for the API Key in Temasys developer console</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isRecording" title="isRecording"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isRecording">&ndash;&nbsp;isRecording</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check recording status.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isRecording</code></div>
 
 		    
 			
@@ -1352,7 +2900,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>The NSString return value is an error description. A nil value means no error occured.</p>
+				<p>The recording status bool value</p>
 			</div>
 			
 
@@ -1361,7 +2909,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<div class="warning"><p><strong>Warning:</strong> This feature is in BETA.</p></div><p>This is a Skylink Media Relay only feature, it needs to be enable for the API Key in Temasys developer console.</p>
+				<p>This is a Skylink Media Relay only feature</p>
 			</div>
 			
 
@@ -1387,8 +2935,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/sendCustomMessage:peerId:" title="sendCustomMessage:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendCustomMessage:peerId:">&ndash;&nbsp;sendCustomMessage:peerId:</a></code>
+	<a name="//api/name/sendServerMessage:toRemotePeerId:callback:" title="sendServerMessage:toRemotePeerId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendServerMessage:toRemotePeerId:callback:">&ndash;&nbsp;sendServerMessage:toRemotePeerId:callback:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1398,12 +2946,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Send a custom message (dictionary, array or string) to a peer via signaling server.</p>
+				<p>Send a server message (dictionary, array or string) to a peer via signaling server</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)sendCustomMessage:(null_unspecified id)<em>message</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)sendServerMessage:(null_unspecified id)<em>message</em> toRemotePeerId:(nullable NSString *)<em>remotePeerId</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
@@ -1413,12 +2961,17 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>message</code></th>
-						<td><p>User defined message to be sent. May be an NSString, NSDictionary or NSArray.</p></td>
+						<td><p>User defined message to be sent. May be an NSString, NSDictionary or NSArray</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the peer to whom the message is sent.</p></td>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer to whom the message is sent</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
 					</tr>
 				
 				</table>
@@ -1432,7 +2985,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>If the &lsquo;peerId&rsquo; is not given then the message is broadcasted to all the peers.</p>
+				<p>If the &lsquo;peerId&rsquo; is not given then the message is broadcasted to all the peers</p>
 			</div>
 			
 
@@ -1450,8 +3003,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/sendDCMessage:peerId:" title="sendDCMessage:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendDCMessage:peerId:">&ndash;&nbsp;sendDCMessage:peerId:</a></code>
+	<a name="//api/name/sendP2PMessage:toRemotePeerId:callback:" title="sendP2PMessage:toRemotePeerId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendP2PMessage:toRemotePeerId:callback:">&ndash;&nbsp;sendP2PMessage:toRemotePeerId:callback:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1461,12 +3014,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Send a message (dictionary, array or string) to a peer via data channel.</p>
+				<p>Send a peer to peer message (dictionary, array or string) to a peer via data channel</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (BOOL)sendDCMessage:(null_unspecified id)<em>message</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)sendP2PMessage:(null_unspecified id)<em>message</em> toRemotePeerId:(nullable NSString *)<em>remotePeerId</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
@@ -1476,12 +3029,17 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>message</code></th>
-						<td><p>User defined message to be sent. May be an NSString, NSDictionary, NSArray.</p></td>
+						<td><p>User defined message to be sent. May be an NSString, NSDictionary, NSArray</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the peer to whom the message is sent.</p></td>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer to whom the message is sent</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
 					</tr>
 				
 				</table>
@@ -1489,18 +3047,13 @@
 			
 
 			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>YES if the message has been succesfully sent to all targeted peers, if NO is returned and verbose is enabled then informations will be logged.</p>
-			</div>
-			
 
 			
 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>If the &lsquo;peerId&rsquo; is not given then the message is broadcasted to all the peers.</p>
+				<p>If the &lsquo;peerId&rsquo; is not given then the message is broadcasted to all the peers</p>
 			</div>
 			
 
@@ -1518,8 +3071,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/sendBinaryData:peerId:" title="sendBinaryData:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendBinaryData:peerId:">&ndash;&nbsp;sendBinaryData:peerId:</a></code>
+	<a name="//api/name/getStoredMessages:" title="getStoredMessages:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getStoredMessages:">&ndash;&nbsp;getStoredMessages:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1529,12 +3082,66 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Send binary data to a peer via data channel.</p>
+				<p>The sending Peer sends this to get storedMessages of the room</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)sendBinaryData:(null_unspecified NSData *)<em>data</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)getStoredMessages:(void ( ^ _Null_unspecified ) ( NSArray *_Nullable storedMessages , NSDictionary *_Nullable errors ))<em>callback</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Can only get all public messages</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Data transfer" name="task_Data transfer"></a>
+						<h2 class="task-title">Data transfer</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sendData:toRemotePeerId:callback:" title="sendData:toRemotePeerId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendData:toRemotePeerId:callback:">&ndash;&nbsp;sendData:toRemotePeerId:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Send binary data to a peer via data channel</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendData:(null_unspecified NSData *)<em>data</em> toRemotePeerId:(null_unspecified NSString *)<em>remotePeerId</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
@@ -1544,12 +3151,17 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>data</code></th>
-						<td><p>Binary data to be sent to the peer. The maximum size the method expects is 65456 bytes.</p></td>
+						<td><p>Binary data to be sent to the peer. The maximum size the method expects is 65456 bytes</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the peer to whom the data is sent.</p></td>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer to whom the data is sent</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
 					</tr>
 				
 				</table>
@@ -1563,7 +3175,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>If the &lsquo;peerId&rsquo; is not given then the data is sent to all the peers. If the caller passes data object exceeding the maximum length i.e. 65456, excess bytes are truncated to the limit before sending the data on to the channel.</p>
+				<p>If the &lsquo;peerId&rsquo; is not given then the data is sent to all the peers. If the caller passes data object exceeding the maximum length i.e. 65456, excess bytes are truncated to the limit before sending the data on to the channel</p>
 			</div>
 			
 
@@ -1589,8 +3201,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/sendFileTransferRequest:assetType:peerId:" title="sendFileTransferRequest:assetType:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendFileTransferRequest:assetType:peerId:">&ndash;&nbsp;sendFileTransferRequest:assetType:peerId:</a></code>
+	<a name="//api/name/sendFileTransferWithFileURL:assetType:fileName:remotePeerId:callback:" title="sendFileTransferWithFileURL:assetType:fileName:remotePeerId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendFileTransferWithFileURL:assetType:fileName:remotePeerId:callback:">&ndash;&nbsp;sendFileTransferWithFileURL:assetType:fileName:remotePeerId:callback:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1600,12 +3212,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>This will trigger a file permission event at a peer.</p>
+				<p>This will trigger a file permission event at a peer</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)sendFileTransferRequest:(null_unspecified NSURL *)<em>fileURL</em> assetType:(SKYLINKAssetType)<em>assetType</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)sendFileTransferWithFileURL:(null_unspecified NSURL *)<em>fileURL</em> assetType:(SKYLINKAssetType)<em>assetType</em> fileName:(NSString *_Nullable)<em>fileName</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
@@ -1615,17 +3227,27 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>fileURL</code></th>
-						<td><p>The url of the file to send.</p></td>
+						<td><p>The url of the file to send</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>assetType</code></th>
-						<td><p>The type of the asset to send.</p></td>
+						<td><p>The type of the asset to send</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the peer to whom the file would be sent.</p></td>
+						<th scope="row" class="argument-name"><code>fileName</code></th>
+						<td><p>The unique id of the peer to whom the file would be sent</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer to whom the file would be sent, if it is nil, broadcast the sending</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
 					</tr>
 				
 				</table>
@@ -1645,7 +3267,7 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>exception</code></th>
-						<td><p>An exception will be raised if there is already a file transfer being done with the same peer.</p></td>
+						<td><p>An exception will be raised if there is already a file transfer being done with the same peer</p></td>
 					</tr>
 				
 				</table>
@@ -1664,8 +3286,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/sendFileTransferRequest:assetType:" title="sendFileTransferRequest:assetType:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendFileTransferRequest:assetType:">&ndash;&nbsp;sendFileTransferRequest:assetType:</a></code>
+	<a name="//api/name/acceptFileTransferWithFileName:fromRemotePeerId:callback:" title="acceptFileTransferWithFileName:fromRemotePeerId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/acceptFileTransferWithFileName:fromRemotePeerId:callback:">&ndash;&nbsp;acceptFileTransferWithFileName:fromRemotePeerId:callback:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1675,12 +3297,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>This will trigger a broadcast file permission event at all peers in the room.</p>
+				<p>Accept the file transfer request from a peer</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)sendFileTransferRequest:(null_unspecified NSURL *)<em>fileURL</em> assetType:(SKYLINKAssetType)<em>assetType</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)acceptFileTransferWithFileName:(null_unspecified NSString *)<em>fileName</em> fromRemotePeerId:(null_unspecified NSString *)<em>remotePeerId</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
@@ -1689,13 +3311,18 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>fileURL</code></th>
-						<td><p>The url of the file to send.</p></td>
+						<th scope="row" class="argument-name"><code>fileName</code></th>
+						<td><p>The name of the file in request, you can specify a file name, if it is nil, then then file name will be the original file name</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>assetType</code></th>
-						<td><p>The type of the asset to send.</p></td>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer from whom the file would be received</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
 					</tr>
 				
 				</table>
@@ -1709,7 +3336,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>If all the data channel connections are busy in some file transfer then this message will be ignored. If one or more data channel connections are not busy in some file transfer then this will trigger a broadcast file permission event at the available peers.</p>
+				<p>You can specify a local file name, for the file receiving from the remote peer, if don&rsquo;t want to specify a local name, just send a nil, then the original file name will be used to save to your local disk</p>
 			</div>
 			
 
@@ -1727,8 +3354,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/acceptFileTransfer:filename:peerId:" title="acceptFileTransfer:filename:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/acceptFileTransfer:filename:peerId:">&ndash;&nbsp;acceptFileTransfer:filename:peerId:</a></code>
+	<a name="//api/name/rejectFileTransferFromRemotePeerId:callback:" title="rejectFileTransferFromRemotePeerId:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rejectFileTransferFromRemotePeerId:callback:">&ndash;&nbsp;rejectFileTransferFromRemotePeerId:callback:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1738,12 +3365,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Accept or reject the file transfer request from a peer.</p>
+				<p>Reject a File (uses WRQ) from remote user</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)acceptFileTransfer:(BOOL)<em>accept</em> filename:(null_unspecified NSString *)<em>filename</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)rejectFileTransferFromRemotePeerId:(null_unspecified NSString *)<em>remotePeerId</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
@@ -1752,18 +3379,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>accept</code></th>
-						<td><p>Flag to specify whether the request is accepted.</p></td>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer from whom the file would be received</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>filename</code></th>
-						<td><p>The name of the file in request.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the peer who sent the file transfer request.</p></td>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
 					</tr>
 				
 				</table>
@@ -1790,8 +3412,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/cancelFileTransfer:peerId:" title="cancelFileTransfer:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cancelFileTransfer:peerId:">&ndash;&nbsp;cancelFileTransfer:peerId:</a></code>
+	<a name="//api/name/cancelFileTransferWithRemotePeerId:forSending:callback:" title="cancelFileTransferWithRemotePeerId:forSending:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelFileTransferWithRemotePeerId:forSending:callback:">&ndash;&nbsp;cancelFileTransferWithRemotePeerId:forSending:callback:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1801,12 +3423,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Cancel the existing on going transfer at anytime.</p>
+				<p>Cancel the existing on going transfer at anytime</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)cancelFileTransfer:(null_unspecified NSString *)<em>filename</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)cancelFileTransferWithRemotePeerId:(null_unspecified NSString *)<em>remotePeerId</em> forSending:(BOOL)<em>forSending</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
@@ -1815,17 +3437,177 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>filename</code></th>
-						<td><p>The name of the file in request (optional).</p></td>
+						<th scope="row" class="argument-name"><code>forSending</code></th>
+						<td><p>The BOOL value indicates if you are to send the file</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the peer with whom file is being transmitted.</p></td>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
 					</tr>
 				
 				</table>
 			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If you are the sender, this is true, you can cancel the sending anytime(before or after it starts), if you are the receiver, this is false, you may also cancel the receiving anytime</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Room state" name="task_Room state"></a>
+						<h2 class="task-title">Room state</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/lockTheRoom:" title="lockTheRoom:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lockTheRoom:">&ndash;&nbsp;lockTheRoom:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Lock the room</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)lockTheRoom:(nullable ErrorBlock)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unlockTheRoom:" title="unlockTheRoom:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unlockTheRoom:">&ndash;&nbsp;unlockTheRoom:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unlock the room</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unlockTheRoom:(nullable ErrorBlock)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isRoomLocked" title="isRoomLocked"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isRoomLocked">&ndash;&nbsp;isRoomLocked</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if room is locked</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isRoomLocked</code></div>
+
+		    
 			
 
 			
@@ -1851,13 +3633,13 @@
 						</div>
 						
 
-						<a title="Miscellaneous" name="task_Miscellaneous"></a>
-						<h2 class="task-title">Miscellaneous</h2>
+						<a title="Room related" name="task_Room related"></a>
+						<h2 class="task-title">Room related</h2>
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/sendUserInfo:" title="sendUserInfo:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendUserInfo:">&ndash;&nbsp;sendUserInfo:</a></code>
+	<a name="//api/name/getRoomId" title="getRoomId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRoomId">&ndash;&nbsp;getRoomId</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1867,12 +3649,117 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Update user information for every other peer and triggers user info call back at all the other peer&rsquo;s end.</p>
+				<p>Get roomId</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)sendUserInfo:(null_unspecified id)<em>userInfo</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (nonnull NSString *)getRoomId</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>RoomId</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is generally not needed</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="User" name="task_User"></a>
+						<h2 class="task-title">User</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getPeerIdList" title="getPeerIdList"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPeerIdList">&ndash;&nbsp;getPeerIdList</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get list of Peers connected</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSArray&lt;NSString*&gt; *)getPeerIdList</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The array of connected remote peers</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendLocalUserData:callback:" title="sendLocalUserData:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendLocalUserData:callback:">&ndash;&nbsp;sendLocalUserData:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update user information for every other peer and triggers user info call back at all the other peer&rsquo;s end</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendLocalUserData:(null_unspecified id)<em>localUserData</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
@@ -1881,8 +3768,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>userInfo</code></th>
-						<td><p>User defined information. May be an NSString, NSDictionary or NSArray.</p></td>
+						<th scope="row" class="argument-name"><code>localUserData</code></th>
+						<td><p>User defined information. May be an NSString, NSDictionary or NSArray</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
 					</tr>
 				
 				</table>
@@ -1920,12 +3812,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get the cached user info for a particular peer.</p>
+				<p>Get the cached user info for a particular peer</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (nonnull id)getUserInfo:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (nonnull id)getUserInfo:(nullable NSString *)<em>peerId</em></code></div>
 
 		    
 			
@@ -1935,7 +3827,7 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the peer.</p></td>
+						<td><p>The unique id of the peer, if the peerId is inl, then get self userInfo</p></td>
 					</tr>
 				
 				</table>
@@ -1945,7 +3837,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>User defined information. May be an NSString, NSDictionary or NSArray.</p>
+				<p>User defined information. May be an NSString, NSDictionary or NSArray</p>
 			</div>
 			
 
@@ -1967,8 +3859,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/roomId" title="roomId"></a>
-	<h3 class="method-title"><code><a href="#//api/name/roomId">&ndash;&nbsp;roomId</a></code>
+	<a name="//api/name/refreshConnectionWithRemotePeerId:doIceRestart:callback:" title="refreshConnectionWithRemotePeerId:doIceRestart:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refreshConnectionWithRemotePeerId:doIceRestart:callback:">&ndash;&nbsp;refreshConnectionWithRemotePeerId:doIceRestart:callback:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1978,21 +3870,38 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get room ID.</p>
+				<p>Refresh peer connection with a specified peer</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (nonnull NSString *)roomId</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)refreshConnectionWithRemotePeerId:(nullable NSString *)<em>remotePeerId</em> doIceRestart:(BOOL)<em>doIceRestart</em> callback:(nullable ErrorBlock)<em>callback</em></code></div>
 
 		    
 			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Room ID.</p>
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer with whom the connection is being refreshed</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>doIceRestart</code></th>
+						<td><p>Is this restart an ICE restart</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>Skylink callback with an error message</p></td>
+					</tr>
+				
+				</table>
 			</div>
+			
+
 			
 
 			
@@ -2000,7 +3909,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>This is generally not needed.</p>
+				<p>This method is provided as a convenience method. So that one can call if a peer streams are not behaving correctly</p>
 			</div>
 			
 
@@ -2037,7 +3946,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get the version string of this Skylink SDK for iOS.</p>
+				<p>Get the version string of this Skylink SDK for iOS</p>
 			</div>
 			
 		    
@@ -2050,70 +3959,12 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Version string of this Skylink SDK for iOS.</p>
+				<p>Version string of this Skylink SDK for iOS</p>
 			</div>
 			
 
 			
 
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setVerbose:" title="setVerbose:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setVerbose:">+&nbsp;setVerbose:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Enable/disable verbose logs for all the connections.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>+ (void)setVerbose:(BOOL)<em>verbose</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>verbose</code></th>
-						<td><p>enable/disable verbose logs. Default is NO.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<div class="warning"><p><strong>Warning:</strong> You should always disable logs in RELEASE mode.</p></div>
-			</div>
 			
 
 			
@@ -2141,7 +3992,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Calculate credentials to be used by the connection.</p>
+				<p>Calculate credentials to be used by the connection</p>
 			</div>
 			
 		    
@@ -2156,22 +4007,22 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>roomName</code></th>
-						<td><p>Name of the room.</p></td>
+						<td><p>Name of the room</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>duration</code></th>
-						<td><p>Duration of the call in hours.</p></td>
+						<td><p>Duration of the call in hours</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>startTime</code></th>
-						<td><p>Start time of the call as per client application time zone.</p></td>
+						<td><p>Start time of the call as per client application time zone</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>secret</code></th>
-						<td><p>The shared secret.</p></td>
+						<td><p>The shared secret</p></td>
 					</tr>
 				
 				</table>
@@ -2181,7 +4032,65 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>The calculated credential string.</p>
+				<p>The calculated credential string</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getErrorFrom:" title="getErrorFrom:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getErrorFrom:">+&nbsp;getErrorFrom:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get NSError of SDK error list from Error code</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (null_unspecified NSError *)getErrorFrom:(int)<em>errorCode</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorCode</code></th>
+						<td><p>code of error</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The NSError</p>
 			</div>
 			
 
@@ -2217,10 +4126,10 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Temasys Communications. All rights reserved. Updated: 2018-09-21</p>
+						<p class="copyright">Copyright &copy; 2020 Temasys Communications. All rights reserved. Updated: 2020-06-14</p>
 						
 						
-						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>

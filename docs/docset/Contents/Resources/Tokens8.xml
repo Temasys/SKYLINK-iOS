@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/SKYLINKConnectionRecordingDelegate.html">
+	<File path="Protocols/SKYLINKConnectionMessagesDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionRecordingDelegate</TokenIdentifier>
-			<Abstract type="html">Protocol to receive backend events related to room recording (BETA).</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionMessagesDelegate</TokenIdentifier>
+			<Abstract type="html">Protocol to receive events related to remote peer messages.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
             
 			
 			<NodeRef refid="8"/>
@@ -13,91 +13,77 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRecordingDelegate/connection:recordingDidStartWithID:</TokenIdentifier>
-			<Abstract type="html">Called upon recording start event.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMessagesDelegate/connection:didReceiveServerMessage:isPublic:timeStamp:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called upon receiving a socket message (Signalling).</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection recordingDidStartWithID:(null_unspecified NSString *)recordingID</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveServerMessage:(null_unspecified id)message isPublic:(BOOL)isPublic timeStamp:(long long)timeStamp remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>recordingID</Name>
-					<Abstract type="html">The id of the generated recording.</Abstract>
+					<Name>message</Name>
+					<Abstract type="html">User defined message. May be an NSString, NSDictionary or NSArray.</Abstract>
+				</Parameter><Parameter>
+					<Name>isPublic</Name>
+					<Abstract type="html">Flag to specify whether the message was a broadcast.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the peer.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:recordingDidStartWithID:</Anchor>
+			<Anchor>//api/name/connection:didReceiveServerMessage:isPublic:timeStamp:remotePeerId:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRecordingDelegate/connection:recordingDidStopWithID:</TokenIdentifier>
-			<Abstract type="html">Called upon recording stop event.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMessagesDelegate/connection:didReceiveP2PMessage:isPublic:timeStamp:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called upon receiving a P2P message (DataChannel).</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection recordingDidStopWithID:(null_unspecified NSString *)recordingID</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveP2PMessage:(null_unspecified id)message isPublic:(BOOL)isPublic timeStamp:(long long)timeStamp remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>recordingID</Name>
-					<Abstract type="html">The id of the recording.</Abstract>
+					<Name>message</Name>
+					<Abstract type="html">User defined message. May be an NSString, NSDictionary or NSArray.</Abstract>
+				</Parameter><Parameter>
+					<Name>isPublic</Name>
+					<Abstract type="html">Flag to specify whether the message was a broadcast.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the peer.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:recordingDidStopWithID:</Anchor>
+			<Anchor>//api/name/connection:didReceiveP2PMessage:isPublic:timeStamp:remotePeerId:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRecordingDelegate/connection:recording:didError:</TokenIdentifier>
-			<Abstract type="html">Called upon recording error event.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMessagesDelegate/connection:didReceiveData:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called upon receiving binary data on data channel.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection recording:(null_unspecified NSString *)recordingID didError:(null_unspecified NSString *)errorMessage</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveData:(null_unspecified NSData *)data remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>recordingID</Name>
-					<Abstract type="html">The id of the recording (might be nil if unknown).</Abstract>
+					<Name>data</Name>
+					<Abstract type="html">Binary data.</Abstract>
 				</Parameter><Parameter>
-					<Name>errorMessage</Name>
-					<Abstract type="html">The error description as a string.</Abstract>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the remote peer.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:recording:didError:</Anchor>
-            <NodeRef refid="8"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRecordingDelegate/connection:recordingVideoLink:peerId:recordingId:</TokenIdentifier>
-			<Abstract type="html">Called upon recording completion event.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection recordingVideoLink:(null_unspecified NSString *)videoLink peerId:(null_unspecified NSString *)peerId recordingId:(null_unspecified NSString *)recordingId</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>connection</Name>
-					<Abstract type="html">The underlying connection object.</Abstract>
-				</Parameter><Parameter>
-					<Name>videoLink</Name>
-					<Abstract type="html">The mixing recording URL as a string.</Abstract>
-				</Parameter><Parameter>
-					<Name>peerId</Name>
-					<Abstract type="html">The peerId who&apos;s recording the link is for. If nil then the URL is a mixin recording link.</Abstract>
-				</Parameter><Parameter>
-					<Name>recordingId</Name>
-					<Abstract type="html">The id of the recording.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/connection:recordingVideoLink:peerId:recordingId:</Anchor>
+			<Anchor>//api/name/connection:didReceiveData:remotePeerId:</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		

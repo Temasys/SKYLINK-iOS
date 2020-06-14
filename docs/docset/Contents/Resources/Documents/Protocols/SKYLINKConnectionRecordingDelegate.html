@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
 </head>
 <body class="appledoc">
 	<header>
@@ -60,13 +60,11 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/connection:recording:didError:">- connection:recording:didError:</option>
+		<option value="//api/name/connection:didReceiveRecordingError:recordingId:">- connection:didReceiveRecordingError:recordingId:</option>
 		
-		<option value="//api/name/connection:recordingDidStartWithID:">- connection:recordingDidStartWithID:</option>
+		<option value="//api/name/connection:didStartRecordingWithID:">- connection:didStartRecordingWithID:</option>
 		
-		<option value="//api/name/connection:recordingDidStopWithID:">- connection:recordingDidStopWithID:</option>
-		
-		<option value="//api/name/connection:recordingVideoLink:peerId:recordingId:">- connection:recordingVideoLink:peerId:recordingId:</option>
+		<option value="//api/name/connection:didStopRecordingWithID:">- connection:didStopRecordingWithID:</option>
 		
 	</optgroup>
 	
@@ -92,7 +90,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>SKYLINKConnection.h</td>
+	<td>SKYLINKProtocol.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -118,8 +116,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/connection:recordingDidStartWithID:" title="connection:recordingDidStartWithID:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:recordingDidStartWithID:">&ndash;&nbsp;connection:recordingDidStartWithID:</a></code>
+	<a name="//api/name/connection:didStartRecordingWithID:" title="connection:didStartRecordingWithID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didStartRecordingWithID:">&ndash;&nbsp;connection:didStartRecordingWithID:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -134,7 +132,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> recordingDidStartWithID:(null_unspecified NSString *)<em>recordingID</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didStartRecordingWithID:(null_unspecified NSString *)<em>recordingID</em></code></div>
 
 		    
 			
@@ -174,15 +172,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/connection:recordingDidStopWithID:" title="connection:recordingDidStopWithID:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:recordingDidStopWithID:">&ndash;&nbsp;connection:recordingDidStopWithID:</a></code>
+	<a name="//api/name/connection:didStopRecordingWithID:" title="connection:didStopRecordingWithID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didStopRecordingWithID:">&ndash;&nbsp;connection:didStopRecordingWithID:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -197,7 +195,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> recordingDidStopWithID:(null_unspecified NSString *)<em>recordingID</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didStopRecordingWithID:(null_unspecified NSString *)<em>recordingID</em></code></div>
 
 		    
 			
@@ -226,7 +224,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<div class="warning"><p><strong>Warning:</strong> This feature is in BETA.</p></div><p>This will be triggered after you call stopRecording successfully or if the backend notifies of recording stoped.</p>
+				<p>This will be triggered after you call stopRecording successfully or if the backend notifies of recording stoped.</p><div class="warning"><p><strong>Warning:</strong> This feature is in BETA.</p></div>
 			</div>
 			
 
@@ -237,15 +235,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/connection:recording:didError:" title="connection:recording:didError:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:recording:didError:">&ndash;&nbsp;connection:recording:didError:</a></code>
+	<a name="//api/name/connection:didReceiveRecordingError:recordingId:" title="connection:didReceiveRecordingError:recordingId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveRecordingError:recordingId:">&ndash;&nbsp;connection:didReceiveRecordingError:recordingId:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -260,7 +258,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> recording:(null_unspecified NSString *)<em>recordingID</em> didError:(null_unspecified NSString *)<em>errorMessage</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveRecordingError:(nullable NSError *)<em>error</em> recordingId:(null_unspecified NSString *)<em>recordingId</em></code></div>
 
 		    
 			
@@ -274,13 +272,13 @@
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>recordingID</code></th>
-						<td><p>The id of the recording (might be nil if unknown).</p></td>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error in case the connection is unsuccessful.</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>errorMessage</code></th>
-						<td><p>The error description as a string.</p></td>
+						<th scope="row" class="argument-name"><code>recordingId</code></th>
+						<td><p>The id of the recording (might be nil if unknown).</p></td>
 					</tr>
 				
 				</table>
@@ -305,80 +303,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/connection:recordingVideoLink:peerId:recordingId:" title="connection:recordingVideoLink:peerId:recordingId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:recordingVideoLink:peerId:recordingId:">&ndash;&nbsp;connection:recordingVideoLink:peerId:recordingId:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Called upon recording completion event.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> recordingVideoLink:(null_unspecified NSString *)<em>videoLink</em> peerId:(null_unspecified NSString *)<em>peerId</em> recordingId:(null_unspecified NSString *)<em>recordingId</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>connection</code></th>
-						<td><p>The underlying connection object.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>videoLink</code></th>
-						<td><p>The mixing recording URL as a string.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The peerId who&rsquo;s recording the link is for. If nil then the URL is a mixin recording link.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>recordingId</code></th>
-						<td><p>The id of the recording.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<div class="warning"><p><strong>Warning:</strong> This feature is in BETA.</p></div><p>For this to be called you need to make sure the app key used is configured for recording.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
@@ -399,10 +324,10 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Temasys Communications. All rights reserved. Updated: 2018-09-21</p>
+						<p class="copyright">Copyright &copy; 2020 Temasys Communications. All rights reserved. Updated: 2020-06-14</p>
 						
 						
-						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>

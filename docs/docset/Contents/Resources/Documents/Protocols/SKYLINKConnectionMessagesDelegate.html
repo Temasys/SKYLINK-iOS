@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
 </head>
 <body class="appledoc">
 	<header>
@@ -60,11 +60,11 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/connection:didReceiveBinaryData:peerId:">- connection:didReceiveBinaryData:peerId:</option>
+		<option value="//api/name/connection:didReceiveData:remotePeerId:">- connection:didReceiveData:remotePeerId:</option>
 		
-		<option value="//api/name/connection:didReceiveCustomMessage:public:peerId:">- connection:didReceiveCustomMessage:public:peerId:</option>
+		<option value="//api/name/connection:didReceiveP2PMessage:isPublic:timeStamp:remotePeerId:">- connection:didReceiveP2PMessage:isPublic:timeStamp:remotePeerId:</option>
 		
-		<option value="//api/name/connection:didReceiveDCMessage:public:peerId:">- connection:didReceiveDCMessage:public:peerId:</option>
+		<option value="//api/name/connection:didReceiveServerMessage:isPublic:timeStamp:remotePeerId:">- connection:didReceiveServerMessage:isPublic:timeStamp:remotePeerId:</option>
 		
 	</optgroup>
 	
@@ -90,7 +90,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>SKYLINKConnection.h</td>
+	<td>SKYLINKProtocol.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -116,8 +116,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/connection:didReceiveCustomMessage:public:peerId:" title="connection:didReceiveCustomMessage:public:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveCustomMessage:public:peerId:">&ndash;&nbsp;connection:didReceiveCustomMessage:public:peerId:</a></code>
+	<a name="//api/name/connection:didReceiveServerMessage:isPublic:timeStamp:remotePeerId:" title="connection:didReceiveServerMessage:isPublic:timeStamp:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveServerMessage:isPublic:timeStamp:remotePeerId:">&ndash;&nbsp;connection:didReceiveServerMessage:isPublic:timeStamp:remotePeerId:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -127,12 +127,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Called upon receiving a private or public message.</p>
+				<p>Called upon receiving a socket message (Signalling).</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveCustomMessage:(null_unspecified id)<em>message</em> public:(BOOL)<em>isPublic</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveServerMessage:(null_unspecified id)<em>message</em> isPublic:(BOOL)<em>isPublic</em> timeStamp:(long long)<em>timeStamp</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
 
 		    
 			
@@ -156,7 +156,7 @@
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
 						<td><p>The unique id of the peer.</p></td>
 					</tr>
 				
@@ -177,15 +177,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/connection:didReceiveDCMessage:public:peerId:" title="connection:didReceiveDCMessage:public:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveDCMessage:public:peerId:">&ndash;&nbsp;connection:didReceiveDCMessage:public:peerId:</a></code>
+	<a name="//api/name/connection:didReceiveP2PMessage:isPublic:timeStamp:remotePeerId:" title="connection:didReceiveP2PMessage:isPublic:timeStamp:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveP2PMessage:isPublic:timeStamp:remotePeerId:">&ndash;&nbsp;connection:didReceiveP2PMessage:isPublic:timeStamp:remotePeerId:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -195,12 +195,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Called upon receiving a data channel chat message.</p>
+				<p>Called upon receiving a P2P message (DataChannel).</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveDCMessage:(null_unspecified id)<em>message</em> public:(BOOL)<em>isPublic</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveP2PMessage:(null_unspecified id)<em>message</em> isPublic:(BOOL)<em>isPublic</em> timeStamp:(long long)<em>timeStamp</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
 
 		    
 			
@@ -224,7 +224,7 @@
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
 						<td><p>The unique id of the peer.</p></td>
 					</tr>
 				
@@ -245,15 +245,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/connection:didReceiveBinaryData:peerId:" title="connection:didReceiveBinaryData:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveBinaryData:peerId:">&ndash;&nbsp;connection:didReceiveBinaryData:peerId:</a></code>
+	<a name="//api/name/connection:didReceiveData:remotePeerId:" title="connection:didReceiveData:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveData:remotePeerId:">&ndash;&nbsp;connection:didReceiveData:remotePeerId:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -268,7 +268,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveBinaryData:(null_unspecified NSData *)<em>data</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveData:(null_unspecified NSData *)<em>data</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
 
 		    
 			
@@ -287,8 +287,8 @@
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the peer.</p></td>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the remote peer.</p></td>
 					</tr>
 				
 				</table>
@@ -308,7 +308,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
@@ -329,10 +329,10 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Temasys Communications. All rights reserved. Updated: 2018-09-21</p>
+						<p class="copyright">Copyright &copy; 2020 Temasys Communications. All rights reserved. Updated: 2020-06-14</p>
 						
 						
-						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>

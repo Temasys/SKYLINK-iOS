@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SKYLINKConnectionRemotePeerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionRemotePeerDelegate</TokenIdentifier>
+			<Abstract type="html">Protocol to receive events related to remote peers.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didReceiveRemotePeerInRoomWithRemotePeerId:userInfo:</TokenIdentifier>
+			<Abstract type="html">Called when receive info about remote Peer that just joined the room.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveRemotePeerInRoomWithRemotePeerId:(nonnull NSString *)remotePeerId userInfo:(null_unspecified id)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the joining peer.</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">User defined information. May be an NSString, NSDictionary or NSArray.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didReceiveRemotePeerInRoomWithRemotePeerId:userInfo:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didConnectWithRemotePeer:userInfo:hasDataChannel:</TokenIdentifier>
+			<Abstract type="html">Called when a remote peer joins the room.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didConnectWithRemotePeer:(null_unspecified NSString *)remotePeerId userInfo:(null_unspecified id)userInfo hasDataChannel:(BOOL)hasDataChannel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the joining peer.</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">User defined information. May be an NSString, NSDictionary or NSArray.</Abstract>
+				</Parameter><Parameter>
+					<Name>hasDataChannel</Name>
+					<Abstract type="html">In case the peer enable data channel?</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didConnectWithRemotePeer:userInfo:hasDataChannel:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didRefreshRemotePeerConnection:userInfo:hasDataChannel:isIceRestarted:</TokenIdentifier>
+			<Abstract type="html">Called when receive info about a remote Peer that just refreshed its connection with us.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didRefreshRemotePeerConnection:(null_unspecified NSString *)remotePeerId userInfo:(null_unspecified id)userInfo hasDataChannel:(BOOL)hasDataChannel isIceRestarted:(BOOL)isIceRestarted</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the joining peer.</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">User defined information. May be an NSString, NSDictionary or NSArray.</Abstract>
+				</Parameter><Parameter>
+					<Name>isIceRestarted</Name>
+					<Abstract type="html">Inccase the peer enable iceRestart?</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didRefreshRemotePeerConnection:userInfo:hasDataChannel:isIceRestarted:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didReceiveRemotePeerUserData:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called upon receiving an update about a user Data.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveRemotePeerUserData:(null_unspecified id)userData remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>userData</Name>
+					<Abstract type="html">User data. May be user name.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the remote peer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didReceiveRemotePeerUserData:remotePeerId:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didOpenRemotePeerDataConnection:</TokenIdentifier>
+			<Abstract type="html">Called upon receiving an update about a user info.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didOpenRemotePeerDataConnection:(null_unspecified NSString *)remotePeerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the remote peer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didOpenRemotePeerDataConnection:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didDisconnectWithRemotePeer:userInfo:hasDataChannel:</TokenIdentifier>
+			<Abstract type="html">Receive info about remote Peer that just disconnected with us.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didDisconnectWithRemotePeer:(nonnull NSString *)remotePeerId userInfo:(null_unspecified id)userInfo hasDataChannel:(BOOL)hasDataChannel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the peer.</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">User defined information. May be an NSString, NSDictionary or NSArray.</Abstract>
+				</Parameter><Parameter>
+					<Name>hasDataChannel</Name>
+					<Abstract type="html">In case the peer enable data channel?</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didDisconnectWithRemotePeer:userInfo:hasDataChannel:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didReceiveRemotePeerLeaveRoom:userInfo:skylinkInfo:</TokenIdentifier>
+			<Abstract type="html">Receive info about remote Peer that just left the room.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveRemotePeerLeaveRoom:(null_unspecified NSString *)remotePeerId userInfo:(null_unspecified id)userInfo skylinkInfo:(nullable NSDictionary *)skylinkInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the remote peer.</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">User info.</Abstract>
+				</Parameter><Parameter>
+					<Name>skylinkInfo</Name>
+					<Abstract type="html">SkylinkInfo dictionary contains a code and a message from the underlying system.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didReceiveRemotePeerLeaveRoom:userInfo:skylinkInfo:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didErrorForRemotePeerConnection:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called when receive info about remote Peer whose connection with us has broken. This allows user the opportunity to decide how to respond, for e.g. user could choose to reconnect to room or refresh connection with remote Peer.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didErrorForRemotePeerConnection:(nullable NSError *)error remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Error in case the connection is unsuccessful.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the remote peer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didErrorForRemotePeerConnection:remotePeerId:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

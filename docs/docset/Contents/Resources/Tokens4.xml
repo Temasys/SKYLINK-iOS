@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/SKYLINKConnectionFileTransferDelegate.html">
+	<File path="Classes/SKYLINKPeerMediaProperties.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionFileTransferDelegate</TokenIdentifier>
-			<Abstract type="html">Protocol to receive events related to file transfer.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SKYLINKPeerMediaProperties</TokenIdentifier>
+			<Abstract type="html">Class representing the handshaking peer properties.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
             
 			
 			<NodeRef refid="4"/>
@@ -13,135 +13,290 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didReceiveRequest:peerId:</TokenIdentifier>
-			<Abstract type="html">Called upon receiving a file transfer request from a peer.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setHasAudio:</TokenIdentifier>
+			<Abstract type="html">whether the peer has audio.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveRequest:(null_unspecified NSString *)filename peerId:(null_unspecified NSString *)peerId</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>connection</Name>
-					<Abstract type="html">The underlying connection object.</Abstract>
-				</Parameter><Parameter>
-					<Name>filename</Name>
-					<Abstract type="html">The name of the file in request.</Abstract>
-				</Parameter><Parameter>
-					<Name>peerId</Name>
-					<Abstract type="html">The unique id of the peer.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, assign) BOOL hasAudio</Declaration>
 			
-			<Anchor>//api/name/connection:didReceiveRequest:peerId:</Anchor>
+			
+			<Anchor>//api/name/hasAudio</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didReceivePermission:filename:peerId:</TokenIdentifier>
-			<Abstract type="html">Called upon receiving a file transfer permission from a peer.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/hasAudio</TokenIdentifier>
+			<Abstract type="html">whether the peer has audio.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceivePermission:(BOOL)isPermitted filename:(null_unspecified NSString *)filename peerId:(null_unspecified NSString *)peerId</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>connection</Name>
-					<Abstract type="html">The underlying connection object.</Abstract>
-				</Parameter><Parameter>
-					<Name>isPermitted</Name>
-					<Abstract type="html">Flag to specify whether the request was accepted.</Abstract>
-				</Parameter><Parameter>
-					<Name>filename</Name>
-					<Abstract type="html">The name of the file in request.</Abstract>
-				</Parameter><Parameter>
-					<Name>peerId</Name>
-					<Abstract type="html">The unique id of the peer.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, assign) BOOL hasAudio</Declaration>
 			
-			<Anchor>//api/name/connection:didReceivePermission:filename:peerId:</Anchor>
+			
+			<Anchor>//api/name/hasAudio</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didDropTransfer:reason:isExplicit:peerId:</TokenIdentifier>
-			<Abstract type="html">Called when the file being transferred is halted.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/hasAudio</TokenIdentifier>
+			<Abstract type="html">whether the peer has audio.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didDropTransfer:(null_unspecified NSString *)filename reason:(null_unspecified NSString *)message isExplicit:(BOOL)isExplicit peerId:(null_unspecified NSString *)peerId</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>connection</Name>
-					<Abstract type="html">The underlying connection object.</Abstract>
-				</Parameter><Parameter>
-					<Name>filename</Name>
-					<Abstract type="html">The name of the file in request.</Abstract>
-				</Parameter><Parameter>
-					<Name>message</Name>
-					<Abstract type="html">The message specifying reason for the file transfer drop.</Abstract>
-				</Parameter><Parameter>
-					<Name>isExplicit</Name>
-					<Abstract type="html">Flag to specify whether the transfer was halted explicity by the sender.</Abstract>
-				</Parameter><Parameter>
-					<Name>peerId</Name>
-					<Abstract type="html">The unique id of the peer.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, assign) BOOL hasAudio</Declaration>
 			
-			<Anchor>//api/name/connection:didDropTransfer:reason:isExplicit:peerId:</Anchor>
+			
+			<Anchor>//api/name/hasAudio</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didUpdateProgress:isOutgoing:filename:peerId:</TokenIdentifier>
-			<Abstract type="html">Called upon every file transfer progress update.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setHasAudioStereo:</TokenIdentifier>
+			<Abstract type="html">is audio stereo.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didUpdateProgress:(CGFloat)percentage isOutgoing:(BOOL)isOutgoing filename:(null_unspecified NSString *)filename peerId:(null_unspecified NSString *)peerId</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>connection</Name>
-					<Abstract type="html">The underlying connection object.</Abstract>
-				</Parameter><Parameter>
-					<Name>percentage</Name>
-					<Abstract type="html">The perccentage representing the progress of the transfer (CGFloat from 0 to 1).</Abstract>
-				</Parameter><Parameter>
-					<Name>isOutgoing</Name>
-					<Abstract type="html">Boolean to specify if the transfer is a file beign sent (value would be YES) or received (value would be NO).</Abstract>
-				</Parameter><Parameter>
-					<Name>filename</Name>
-					<Abstract type="html">The name of the file in transmission.</Abstract>
-				</Parameter><Parameter>
-					<Name>peerId</Name>
-					<Abstract type="html">The unique id of the peer thie file is sent to or received from.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, assign) BOOL hasAudioStereo</Declaration>
 			
-			<Anchor>//api/name/connection:didUpdateProgress:isOutgoing:filename:peerId:</Anchor>
+			
+			<Anchor>//api/name/hasAudioStereo</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didCompleteTransfer:fileData:peerId:</TokenIdentifier>
-			<Abstract type="html">Called upon file transfer completion.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/hasAudioStereo</TokenIdentifier>
+			<Abstract type="html">is audio stereo.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didCompleteTransfer:(null_unspecified NSString *)filename fileData:(null_unspecified NSData *)fileData peerId:(null_unspecified NSString *)peerId</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>connection</Name>
-					<Abstract type="html">The underlying connection object.</Abstract>
-				</Parameter><Parameter>
-					<Name>filename</Name>
-					<Abstract type="html">The name of the file in request.</Abstract>
-				</Parameter><Parameter>
-					<Name>fileData</Name>
-					<Abstract type="html">NSData object holding the data transferred.</Abstract>
-				</Parameter><Parameter>
-					<Name>peerId</Name>
-					<Abstract type="html">The unique id of the peer.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, assign) BOOL hasAudioStereo</Declaration>
 			
-			<Anchor>//api/name/connection:didCompleteTransfer:fileData:peerId:</Anchor>
+			
+			<Anchor>//api/name/hasAudioStereo</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/hasAudioStereo</TokenIdentifier>
+			<Abstract type="html">is audio stereo.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL hasAudioStereo</Declaration>
+			
+			
+			<Anchor>//api/name/hasAudioStereo</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setIsAudioMuted:</TokenIdentifier>
+			<Abstract type="html">is audio muted.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isAudioMuted</Declaration>
+			
+			
+			<Anchor>//api/name/isAudioMuted</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/isAudioMuted</TokenIdentifier>
+			<Abstract type="html">is audio muted.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isAudioMuted</Declaration>
+			
+			
+			<Anchor>//api/name/isAudioMuted</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/isAudioMuted</TokenIdentifier>
+			<Abstract type="html">is audio muted.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isAudioMuted</Declaration>
+			
+			
+			<Anchor>//api/name/isAudioMuted</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setHasVideo:</TokenIdentifier>
+			<Abstract type="html">whether the peer has video</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL hasVideo</Declaration>
+			
+			
+			<Anchor>//api/name/hasVideo</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/hasVideo</TokenIdentifier>
+			<Abstract type="html">whether the peer has video</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL hasVideo</Declaration>
+			
+			
+			<Anchor>//api/name/hasVideo</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/hasVideo</TokenIdentifier>
+			<Abstract type="html">whether the peer has video</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL hasVideo</Declaration>
+			
+			
+			<Anchor>//api/name/hasVideo</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setIsVideoMuted:</TokenIdentifier>
+			<Abstract type="html">is video muted.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isVideoMuted</Declaration>
+			
+			
+			<Anchor>//api/name/isVideoMuted</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/isVideoMuted</TokenIdentifier>
+			<Abstract type="html">is video muted.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isVideoMuted</Declaration>
+			
+			
+			<Anchor>//api/name/isVideoMuted</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/isVideoMuted</TokenIdentifier>
+			<Abstract type="html">is video muted.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isVideoMuted</Declaration>
+			
+			
+			<Anchor>//api/name/isVideoMuted</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setVideoWidth:</TokenIdentifier>
+			<Abstract type="html">width of the video frame.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoWidth</Declaration>
+			
+			
+			<Anchor>//api/name/videoWidth</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/videoWidth</TokenIdentifier>
+			<Abstract type="html">width of the video frame.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoWidth</Declaration>
+			
+			
+			<Anchor>//api/name/videoWidth</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/videoWidth</TokenIdentifier>
+			<Abstract type="html">width of the video frame.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoWidth</Declaration>
+			
+			
+			<Anchor>//api/name/videoWidth</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setVideoHeight:</TokenIdentifier>
+			<Abstract type="html">height of the video frame.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoHeight</Declaration>
+			
+			
+			<Anchor>//api/name/videoHeight</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/videoHeight</TokenIdentifier>
+			<Abstract type="html">height of the video frame.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoHeight</Declaration>
+			
+			
+			<Anchor>//api/name/videoHeight</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/videoHeight</TokenIdentifier>
+			<Abstract type="html">height of the video frame.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoHeight</Declaration>
+			
+			
+			<Anchor>//api/name/videoHeight</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setVideoFrameRate:</TokenIdentifier>
+			<Abstract type="html">frame rate of the video.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoFrameRate</Declaration>
+			
+			
+			<Anchor>//api/name/videoFrameRate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/videoFrameRate</TokenIdentifier>
+			<Abstract type="html">frame rate of the video.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoFrameRate</Declaration>
+			
+			
+			<Anchor>//api/name/videoFrameRate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/videoFrameRate</TokenIdentifier>
+			<Abstract type="html">frame rate of the video.</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger videoFrameRate</Declaration>
+			
+			
+			<Anchor>//api/name/videoFrameRate</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		

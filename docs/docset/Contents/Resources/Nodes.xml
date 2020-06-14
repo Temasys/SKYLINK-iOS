@@ -14,6 +14,7 @@
 						<NodeRef refid="1"/>
 						<NodeRef refid="2"/>
 						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
 						
 					</Subnodes>
 				</Node>
@@ -24,17 +25,27 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="4"/>
 						<NodeRef refid="5"/>
 						<NodeRef refid="6"/>
 						<NodeRef refid="7"/>
 						<NodeRef refid="8"/>
 						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
 						
 					</Subnodes>
 				</Node>
 				
                 
+                
+                <Node>
+                    <Name>Blocks</Name>
+                    <Path>index.html</Path>
+                    <Subnodes>
+                        <NodeRef refid="11"/>
+                        <NodeRef refid="12"/>
+                        
+                    </Subnodes>
+                </Node>
                 
 			</Subnodes>
         </Node>
@@ -114,6 +125,33 @@
             
         </Node>
 		<Node id="3" type="file" documentType="reference">
+            <Name>SKYLINKMedia</Name>
+            <Path>Classes/SKYLINKMedia.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/SKYLINKMedia.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/SKYLINKMedia.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/SKYLINKMedia.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
             <Name>SKYLINKPeerMediaProperties</Name>
             <Path>Classes/SKYLINKPeerMediaProperties.html</Path>
             
@@ -142,7 +180,7 @@
         </Node>
 		
 		
-        <Node id="4" type="file" documentType="reference">
+        <Node id="5" type="file" documentType="reference">
             <Name>SKYLINKConnectionFileTransferDelegate</Name>
             <Path>Protocols/SKYLINKConnectionFileTransferDelegate.html</Path>
             
@@ -169,7 +207,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="5" type="file" documentType="reference">
+		<Node id="6" type="file" documentType="reference">
             <Name>SKYLINKConnectionLifeCycleDelegate</Name>
             <Path>Protocols/SKYLINKConnectionLifeCycleDelegate.html</Path>
             
@@ -196,7 +234,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="6" type="file" documentType="reference">
+		<Node id="7" type="file" documentType="reference">
             <Name>SKYLINKConnectionMediaDelegate</Name>
             <Path>Protocols/SKYLINKConnectionMediaDelegate.html</Path>
             
@@ -223,7 +261,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="7" type="file" documentType="reference">
+		<Node id="8" type="file" documentType="reference">
             <Name>SKYLINKConnectionMessagesDelegate</Name>
             <Path>Protocols/SKYLINKConnectionMessagesDelegate.html</Path>
             
@@ -250,7 +288,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="8" type="file" documentType="reference">
+		<Node id="9" type="file" documentType="reference">
             <Name>SKYLINKConnectionRecordingDelegate</Name>
             <Path>Protocols/SKYLINKConnectionRecordingDelegate.html</Path>
             
@@ -277,7 +315,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="9" type="file" documentType="reference">
+		<Node id="10" type="file" documentType="reference">
             <Name>SKYLINKConnectionRemotePeerDelegate</Name>
             <Path>Protocols/SKYLINKConnectionRemotePeerDelegate.html</Path>
             
@@ -306,6 +344,16 @@
         </Node>
 		
         
+        <Node id="11" type="file" documentType="reference">
+            <Name>ErrorBlock</Name>
+            <Path>Blocks/ErrorBlock.html</Path>
+            
+        </Node>
+        <Node id="12" type="file" documentType="reference">
+            <Name>ResolutionResultBlock</Name>
+            <Path>Blocks/ResolutionResultBlock.html</Path>
+            
+        </Node>
         
 	</Library>
 </DocSetNodes>

@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SKYLINKPeerMediaProperties.html">
+	<File path="Classes/SKYLINKMedia.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SKYLINKPeerMediaProperties</TokenIdentifier>
-			<Abstract type="html">Class representing the handshaking peer properties.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SKYLINKMedia</TokenIdentifier>
+			<Abstract type="html">SKYLINKMediaDevice
+@description The device type when you create a new media
+@constant Microphone
+@constant Front camera
+@constant Back camera
+@constant Screen
+@constant Custom camera</Abstract>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
             
 			
 			<NodeRef refid="3"/>
@@ -13,290 +19,134 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setHasAudio:</TokenIdentifier>
-			<Abstract type="html">whether the peer has audio.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkMediaID</TokenIdentifier>
+			<Abstract type="html">Get the mediaID of the SkylinkMedia object.</Abstract>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL hasAudio</Declaration>
+			<Declaration>- (nonnull NSString *)skylinkMediaID</Declaration>
 			
-			
-			<Anchor>//api/name/hasAudio</Anchor>
+			<ReturnValue><Abstract type="html">The mediaID</Abstract></ReturnValue>
+			<Anchor>//api/name/skylinkMediaID</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/hasAudio</TokenIdentifier>
-			<Abstract type="html">whether the peer has audio.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkMediaType</TokenIdentifier>
+			<Abstract type="html">Get the media type.</Abstract>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL hasAudio</Declaration>
+			<Declaration>- (SKYLINKMediaType)skylinkMediaType</Declaration>
 			
-			
-			<Anchor>//api/name/hasAudio</Anchor>
+			<ReturnValue><Abstract type="html">The media type</Abstract></ReturnValue>
+			<Anchor>//api/name/skylinkMediaType</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/hasAudio</TokenIdentifier>
-			<Abstract type="html">whether the peer has audio.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkMediaState</TokenIdentifier>
+			<Abstract type="html">Gte the current media state.</Abstract>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL hasAudio</Declaration>
+			<Declaration>- (SKYLINKMediaState)skylinkMediaState</Declaration>
 			
-			
-			<Anchor>//api/name/hasAudio</Anchor>
+			<ReturnValue><Abstract type="html">The media state</Abstract></ReturnValue>
+			<Anchor>//api/name/skylinkMediaState</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setIsAudioStereo:</TokenIdentifier>
-			<Abstract type="html">is audio stereo.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkPreviousMediaState</TokenIdentifier>
+			<Abstract type="html">Get the previous media state.</Abstract>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL isAudioStereo</Declaration>
+			<Declaration>- (SKYLINKMediaState)skylinkPreviousMediaState</Declaration>
 			
-			
-			<Anchor>//api/name/isAudioStereo</Anchor>
+			<ReturnValue><Abstract type="html">The previous media state</Abstract></ReturnValue>
+			<Anchor>//api/name/skylinkPreviousMediaState</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/isAudioStereo</TokenIdentifier>
-			<Abstract type="html">is audio stereo.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkVideoTrack</TokenIdentifier>
+			<Abstract type="html">Get the video track if this media is an video.</Abstract>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL isAudioStereo</Declaration>
+			<Declaration>- (nullable RTCVideoTrack *)skylinkVideoTrack</Declaration>
 			
-			
-			<Anchor>//api/name/isAudioStereo</Anchor>
+			<ReturnValue><Abstract type="html">The video track, if this is media is a video</Abstract></ReturnValue>
+			<Anchor>//api/name/skylinkVideoTrack</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/isAudioStereo</TokenIdentifier>
-			<Abstract type="html">is audio stereo.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkAudioTrack</TokenIdentifier>
+			<Abstract type="html">Get the audio track if this media is an audio.</Abstract>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL isAudioStereo</Declaration>
+			<Declaration>- (nullable RTCAudioTrack *)skylinkAudioTrack</Declaration>
 			
-			
-			<Anchor>//api/name/isAudioStereo</Anchor>
+			<ReturnValue><Abstract type="html">The audio track, if this is media is an audio</Abstract></ReturnValue>
+			<Anchor>//api/name/skylinkAudioTrack</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setIsAudioMuted:</TokenIdentifier>
-			<Abstract type="html">is audio muted.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkVideoView</TokenIdentifier>
+			<Abstract type="html">The video view contained in the media.</Abstract>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL isAudioMuted</Declaration>
+			<Declaration>- (nullable UIView *)skylinkVideoView</Declaration>
 			
-			
-			<Anchor>//api/name/isAudioMuted</Anchor>
+			<ReturnValue><Abstract type="html">The video view</Abstract></ReturnValue>
+			<Anchor>//api/name/skylinkVideoView</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/isAudioMuted</TokenIdentifier>
-			<Abstract type="html">is audio muted.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/isVideo</TokenIdentifier>
+			<Abstract type="html">Check if this SkylinkMedia represents a video.</Abstract>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL isAudioMuted</Declaration>
+			<Declaration>- (BOOL)isVideo</Declaration>
 			
-			
-			<Anchor>//api/name/isAudioMuted</Anchor>
+			<ReturnValue><Abstract type="html">If this media is a video</Abstract></ReturnValue>
+			<Anchor>//api/name/isVideo</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/isAudioMuted</TokenIdentifier>
-			<Abstract type="html">is audio muted.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/isCustom</TokenIdentifier>
+			<Abstract type="html">Check if this SkylinkMedia is a custom video.</Abstract>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL isAudioMuted</Declaration>
+			<Declaration>- (BOOL)isCustom</Declaration>
 			
-			
-			<Anchor>//api/name/isAudioMuted</Anchor>
+			<ReturnValue><Abstract type="html">If this media is a custom video</Abstract></ReturnValue>
+			<Anchor>//api/name/isCustom</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setHasVideo:</TokenIdentifier>
-			<Abstract type="html">whether the peer has video</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkMediaMetaData</TokenIdentifier>
+			<Abstract type="html">This is a decription of the local media.</Abstract>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL hasVideo</Declaration>
+			<Declaration>- (nullable id)skylinkMediaMetaData</Declaration>
 			
-			
-			<Anchor>//api/name/hasVideo</Anchor>
+			<ReturnValue><Abstract type="html">The label string</Abstract></ReturnValue>
+			<Anchor>//api/name/skylinkMediaMetaData</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/hasVideo</TokenIdentifier>
-			<Abstract type="html">whether the peer has video</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/getCustomVideoCapturer</TokenIdentifier>
+			<Abstract type="html">Get the custom video capturer.</Abstract>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) BOOL hasVideo</Declaration>
+			<Declaration>- (nullable RTCCameraVideoCapturer *)getCustomVideoCapturer</Declaration>
 			
-			
-			<Anchor>//api/name/hasVideo</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/hasVideo</TokenIdentifier>
-			<Abstract type="html">whether the peer has video</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL hasVideo</Declaration>
-			
-			
-			<Anchor>//api/name/hasVideo</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setIsVideoMuted:</TokenIdentifier>
-			<Abstract type="html">is video muted.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL isVideoMuted</Declaration>
-			
-			
-			<Anchor>//api/name/isVideoMuted</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/isVideoMuted</TokenIdentifier>
-			<Abstract type="html">is video muted.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL isVideoMuted</Declaration>
-			
-			
-			<Anchor>//api/name/isVideoMuted</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/isVideoMuted</TokenIdentifier>
-			<Abstract type="html">is video muted.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL isVideoMuted</Declaration>
-			
-			
-			<Anchor>//api/name/isVideoMuted</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setVideoWidth:</TokenIdentifier>
-			<Abstract type="html">width of the video frame.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSInteger videoWidth</Declaration>
-			
-			
-			<Anchor>//api/name/videoWidth</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/videoWidth</TokenIdentifier>
-			<Abstract type="html">width of the video frame.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSInteger videoWidth</Declaration>
-			
-			
-			<Anchor>//api/name/videoWidth</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/videoWidth</TokenIdentifier>
-			<Abstract type="html">width of the video frame.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSInteger videoWidth</Declaration>
-			
-			
-			<Anchor>//api/name/videoWidth</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setVideoHeight:</TokenIdentifier>
-			<Abstract type="html">height of the video frame.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSInteger videoHeight</Declaration>
-			
-			
-			<Anchor>//api/name/videoHeight</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/videoHeight</TokenIdentifier>
-			<Abstract type="html">height of the video frame.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSInteger videoHeight</Declaration>
-			
-			
-			<Anchor>//api/name/videoHeight</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/videoHeight</TokenIdentifier>
-			<Abstract type="html">height of the video frame.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSInteger videoHeight</Declaration>
-			
-			
-			<Anchor>//api/name/videoHeight</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/setVideoFrameRate:</TokenIdentifier>
-			<Abstract type="html">frame rate of the video.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSInteger videoFrameRate</Declaration>
-			
-			
-			<Anchor>//api/name/videoFrameRate</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKPeerMediaProperties/videoFrameRate</TokenIdentifier>
-			<Abstract type="html">frame rate of the video.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSInteger videoFrameRate</Declaration>
-			
-			
-			<Anchor>//api/name/videoFrameRate</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKPeerMediaProperties/videoFrameRate</TokenIdentifier>
-			<Abstract type="html">frame rate of the video.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) NSInteger videoFrameRate</Declaration>
-			
-			
-			<Anchor>//api/name/videoFrameRate</Anchor>
+			<ReturnValue><Abstract type="html">The custom video capturer or nil</Abstract></ReturnValue>
+			<Anchor>//api/name/getCustomVideoCapturer</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		

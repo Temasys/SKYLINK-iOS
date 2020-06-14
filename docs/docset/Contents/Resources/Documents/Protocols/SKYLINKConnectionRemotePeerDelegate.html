@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
 </head>
 <body class="appledoc">
 	<header>
@@ -60,13 +60,21 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/connection:didJoinPeer:mediaProperties:peerId:">- connection:didJoinPeer:mediaProperties:peerId:</option>
+		<option value="//api/name/connection:didConnectWithRemotePeer:userInfo:hasDataChannel:">- connection:didConnectWithRemotePeer:userInfo:hasDataChannel:</option>
 		
-		<option value="//api/name/connection:didLeavePeerWithMessage:peerId:">- connection:didLeavePeerWithMessage:peerId:</option>
+		<option value="//api/name/connection:didDisconnectWithRemotePeer:userInfo:hasDataChannel:">- connection:didDisconnectWithRemotePeer:userInfo:hasDataChannel:</option>
 		
-		<option value="//api/name/connection:didReceiveUserInfo:peerId:">- connection:didReceiveUserInfo:peerId:</option>
+		<option value="//api/name/connection:didErrorForRemotePeerConnection:remotePeerId:">- connection:didErrorForRemotePeerConnection:remotePeerId:</option>
 		
-		<option value="//api/name/connection:didRenderPeerVideo:peerId:">- connection:didRenderPeerVideo:peerId:</option>
+		<option value="//api/name/connection:didOpenRemotePeerDataConnection:">- connection:didOpenRemotePeerDataConnection:</option>
+		
+		<option value="//api/name/connection:didReceiveRemotePeerInRoomWithRemotePeerId:userInfo:">- connection:didReceiveRemotePeerInRoomWithRemotePeerId:userInfo:</option>
+		
+		<option value="//api/name/connection:didReceiveRemotePeerLeaveRoom:userInfo:skylinkInfo:">- connection:didReceiveRemotePeerLeaveRoom:userInfo:skylinkInfo:</option>
+		
+		<option value="//api/name/connection:didReceiveRemotePeerUserData:remotePeerId:">- connection:didReceiveRemotePeerUserData:remotePeerId:</option>
+		
+		<option value="//api/name/connection:didRefreshRemotePeerConnection:userInfo:hasDataChannel:isIceRestarted:">- connection:didRefreshRemotePeerConnection:userInfo:hasDataChannel:isIceRestarted:</option>
 		
 	</optgroup>
 	
@@ -92,7 +100,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>SKYLINKConnection.h</td>
+	<td>SKYLINKProtocol.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -118,8 +126,71 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/connection:didJoinPeer:mediaProperties:peerId:" title="connection:didJoinPeer:mediaProperties:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:didJoinPeer:mediaProperties:peerId:">&ndash;&nbsp;connection:didJoinPeer:mediaProperties:peerId:</a></code>
+	<a name="//api/name/connection:didReceiveRemotePeerInRoomWithRemotePeerId:userInfo:" title="connection:didReceiveRemotePeerInRoomWithRemotePeerId:userInfo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveRemotePeerInRoomWithRemotePeerId:userInfo:">&ndash;&nbsp;connection:didReceiveRemotePeerInRoomWithRemotePeerId:userInfo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when receive info about remote Peer that just joined the room.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveRemotePeerInRoomWithRemotePeerId:(nonnull NSString *)<em>remotePeerId</em> userInfo:(null_unspecified id)<em>userInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the joining peer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>User defined information. May be an NSString, NSDictionary or NSArray.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didConnectWithRemotePeer:userInfo:hasDataChannel:" title="connection:didConnectWithRemotePeer:userInfo:hasDataChannel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didConnectWithRemotePeer:userInfo:hasDataChannel:">&ndash;&nbsp;connection:didConnectWithRemotePeer:userInfo:hasDataChannel:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -134,7 +205,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didJoinPeer:(null_unspecified id)<em>userInfo</em> mediaProperties:(null_unspecified SKYLINKPeerMediaProperties *)<em>pmProperties</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didConnectWithRemotePeer:(null_unspecified NSString *)<em>remotePeerId</em> userInfo:(null_unspecified id)<em>userInfo</em> hasDataChannel:(BOOL)<em>hasDataChannel</em></code></div>
 
 		    
 			
@@ -148,18 +219,18 @@
 					</tr>
 				
 					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the joining peer.</p></td>
+					</tr>
+				
+					<tr>
 						<th scope="row" class="argument-name"><code>userInfo</code></th>
 						<td><p>User defined information. May be an NSString, NSDictionary or NSArray.</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>pmProperties</code></th>
-						<td><p>An object defining peer media properties of the joining peer.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the joining peer.</p></td>
+						<th scope="row" class="argument-name"><code>hasDataChannel</code></th>
+						<td><p>In case the peer enable data channel?</p></td>
 					</tr>
 				
 				</table>
@@ -179,15 +250,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/connection:didRenderPeerVideo:peerId:" title="connection:didRenderPeerVideo:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:didRenderPeerVideo:peerId:">&ndash;&nbsp;connection:didRenderPeerVideo:peerId:</a></code>
+	<a name="//api/name/connection:didRefreshRemotePeerConnection:userInfo:hasDataChannel:isIceRestarted:" title="connection:didRefreshRemotePeerConnection:userInfo:hasDataChannel:isIceRestarted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didRefreshRemotePeerConnection:userInfo:hasDataChannel:isIceRestarted:">&ndash;&nbsp;connection:didRefreshRemotePeerConnection:userInfo:hasDataChannel:isIceRestarted:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -197,12 +268,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Called upon receiving a remote video stream.</p>
+				<p>Called when receive info about a remote Peer that just refreshed its connection with us.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didRenderPeerVideo:(null_unspecified UIView *)<em>peerVideoView</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didRefreshRemotePeerConnection:(null_unspecified NSString *)<em>remotePeerId</em> userInfo:(null_unspecified id)<em>userInfo</em> hasDataChannel:(BOOL)<em>hasDataChannel</em> isIceRestarted:(BOOL)<em>isIceRestarted</em></code></div>
 
 		    
 			
@@ -216,13 +287,18 @@
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerVideoView</code></th>
-						<td><p>The video view of the joining peer.</p></td>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the joining peer.</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the peer.</p></td>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>User defined information. May be an NSString, NSDictionary or NSArray.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isIceRestarted</code></th>
+						<td><p>Inccase the peer enable iceRestart?</p></td>
 					</tr>
 				
 				</table>
@@ -242,15 +318,78 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/connection:didReceiveUserInfo:peerId:" title="connection:didReceiveUserInfo:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveUserInfo:peerId:">&ndash;&nbsp;connection:didReceiveUserInfo:peerId:</a></code>
+	<a name="//api/name/connection:didReceiveRemotePeerUserData:remotePeerId:" title="connection:didReceiveRemotePeerUserData:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveRemotePeerUserData:remotePeerId:">&ndash;&nbsp;connection:didReceiveRemotePeerUserData:remotePeerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called upon receiving an update about a user Data.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveRemotePeerUserData:(null_unspecified id)<em>userData</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userData</code></th>
+						<td><p>User data. May be user name.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the remote peer.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didOpenRemotePeerDataConnection:" title="connection:didOpenRemotePeerDataConnection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didOpenRemotePeerDataConnection:">&ndash;&nbsp;connection:didOpenRemotePeerDataConnection:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -265,7 +404,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveUserInfo:(null_unspecified id)<em>userInfo</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didOpenRemotePeerDataConnection:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
 
 		    
 			
@@ -279,13 +418,8 @@
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>userInfo</code></th>
-						<td><p>User defined information. May be an NSString, NSDictionary or NSArray.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the peer.</p></td>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the remote peer.</p></td>
 					</tr>
 				
 				</table>
@@ -305,15 +439,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/connection:didLeavePeerWithMessage:peerId:" title="connection:didLeavePeerWithMessage:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:didLeavePeerWithMessage:peerId:">&ndash;&nbsp;connection:didLeavePeerWithMessage:peerId:</a></code>
+	<a name="//api/name/connection:didDisconnectWithRemotePeer:userInfo:hasDataChannel:" title="connection:didDisconnectWithRemotePeer:userInfo:hasDataChannel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didDisconnectWithRemotePeer:userInfo:hasDataChannel:">&ndash;&nbsp;connection:didDisconnectWithRemotePeer:userInfo:hasDataChannel:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -323,12 +457,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Called when a peer has left the room implictly or explicitly.</p>
+				<p>Receive info about remote Peer that just disconnected with us.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didLeavePeerWithMessage:(null_unspecified NSString *)<em>errorMessage</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didDisconnectWithRemotePeer:(nonnull NSString *)<em>remotePeerId</em> userInfo:(null_unspecified id)<em>userInfo</em> hasDataChannel:(BOOL)<em>hasDataChannel</em></code></div>
 
 		    
 			
@@ -342,13 +476,18 @@
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>errorMessage</code></th>
-						<td><p>Error message in case the peer is left due to some error.</p></td>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the peer.</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>peerId</code></th>
-						<td><p>The unique id of the leaving peer.</p></td>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>User defined information. May be an NSString, NSDictionary or NSArray.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hasDataChannel</code></th>
+						<td><p>In case the peer enable data channel?</p></td>
 					</tr>
 				
 				</table>
@@ -368,7 +507,138 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didReceiveRemotePeerLeaveRoom:userInfo:skylinkInfo:" title="connection:didReceiveRemotePeerLeaveRoom:userInfo:skylinkInfo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didReceiveRemotePeerLeaveRoom:userInfo:skylinkInfo:">&ndash;&nbsp;connection:didReceiveRemotePeerLeaveRoom:userInfo:skylinkInfo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Receive info about remote Peer that just left the room.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didReceiveRemotePeerLeaveRoom:(null_unspecified NSString *)<em>remotePeerId</em> userInfo:(null_unspecified id)<em>userInfo</em> skylinkInfo:(nullable NSDictionary *)<em>skylinkInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the remote peer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>User info.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>skylinkInfo</code></th>
+						<td><p>SkylinkInfo dictionary contains a code and a message from the underlying system.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connection:didErrorForRemotePeerConnection:remotePeerId:" title="connection:didErrorForRemotePeerConnection:remotePeerId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didErrorForRemotePeerConnection:remotePeerId:">&ndash;&nbsp;connection:didErrorForRemotePeerConnection:remotePeerId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when receive info about remote Peer whose connection with us has broken. This allows user the opportunity to decide how to respond, for e.g. user could choose to reconnect to room or refresh connection with remote Peer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didErrorForRemotePeerConnection:(nullable NSError *)<em>error</em> remotePeerId:(null_unspecified NSString *)<em>remotePeerId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>connection</code></th>
+						<td><p>The underlying connection object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Error in case the connection is unsuccessful.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePeerId</code></th>
+						<td><p>The unique id of the remote peer.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
@@ -389,10 +659,10 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Temasys Communications. All rights reserved. Updated: 2018-09-21</p>
+						<p class="copyright">Copyright &copy; 2020 Temasys Communications. All rights reserved. Updated: 2020-06-14</p>
 						
 						
-						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/SKYLINKConnectionLifeCycleDelegate.html">
+	<File path="Protocols/SKYLINKConnectionFileTransferDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionLifeCycleDelegate</TokenIdentifier>
-			<Abstract type="html">Protocol to receive events related to the lifecycle of the connection.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionFileTransferDelegate</TokenIdentifier>
+			<Abstract type="html">Protocol to receive events related to file transfer.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
             
 			
 			<NodeRef refid="5"/>
@@ -13,108 +13,187 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didConnectWithMessage:success:</TokenIdentifier>
-			<Abstract type="html">First delegate method called on the delegate upon successful or unsuccessful connection.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didReceiveFileTransferRequest:isPublic:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called upon receiving a request to accept a File from remote Peer.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didConnectWithMessage:(null_unspecified NSString *)errorMessage success:(BOOL)isSuccess</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveFileTransferRequest:(null_unspecified NSString *)fileName isPublic:(BOOL)isPublic remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>errorMessage</Name>
-					<Abstract type="html">Error message in case the connection is unsuccessful.</Abstract>
+					<Name>fileName</Name>
+					<Abstract type="html">The name of the file in request.</Abstract>
 				</Parameter><Parameter>
-					<Name>isSuccess</Name>
-					<Abstract type="html">Flag to specify whether the connection was successful.</Abstract>
+					<Name>isPublic</Name>
+					<Abstract type="html">accessibility of file.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the peer.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:didConnectWithMessage:success:</Anchor>
+			<Anchor>//api/name/connection:didReceiveFileTransferRequest:isPublic:remotePeerId:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didRenderUserVideo:</TokenIdentifier>
-			<Abstract type="html">Called upon successful capturing and rendering of the local front camera.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didReceiveFileTransferResponse:fileName:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called upon receiving a response to our request to send a File to remote Peer.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didRenderUserVideo:(null_unspecified UIView *)userVideoView</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveFileTransferResponse:(BOOL)wasAccepted fileName:(null_unspecified NSString *)fileName remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>userVideoView</Name>
-					<Abstract type="html">The video view of the connecting client.</Abstract>
+					<Name>wasAccepted</Name>
+					<Abstract type="html">Flag to specify whether the request was accepted.</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The name of the file in request.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the peer.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:didRenderUserVideo:</Anchor>
+			<Anchor>//api/name/connection:didReceiveFileTransferResponse:fileName:remotePeerId:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didLockTheRoom:peerId:</TokenIdentifier>
-			<Abstract type="html">Called when a remote peer locks/unlocks the room.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didDropFileTransfer:message:isExplicit:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called when receive signal that File transfer was stopped before completing.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didLockTheRoom:(BOOL)lockStatus peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didDropFileTransfer:(null_unspecified NSString *)fileName message:(null_unspecified NSString *)message isExplicit:(BOOL)isExplicit remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>lockStatus</Name>
-					<Abstract type="html">The status of the lock.</Abstract>
-				</Parameter><Parameter>
-					<Name>peerId</Name>
-					<Abstract type="html">The unique id of the peer who originated the action.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/connection:didLockTheRoom:peerId:</Anchor>
-            <NodeRef refid="5"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didReceiveWarning:</TokenIdentifier>
-			<Abstract type="html">Called when a warning is received from the underlying system.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveWarning:(null_unspecified NSString *)message</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>connection</Name>
-					<Abstract type="html">The underlying connection object.</Abstract>
+					<Name>fileName</Name>
+					<Abstract type="html">The name of the file in request.</Abstract>
 				</Parameter><Parameter>
 					<Name>message</Name>
-					<Abstract type="html">Warning message from the underlying system.</Abstract>
+					<Abstract type="html">The message specifying reason for the file transfer drop.</Abstract>
+				</Parameter><Parameter>
+					<Name>isExplicit</Name>
+					<Abstract type="html">Flag to specify whether the transfer was halted explicity by the sender.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the peer.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:didReceiveWarning:</Anchor>
+			<Anchor>//api/name/connection:didDropFileTransfer:message:isExplicit:remotePeerId:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didDisconnectWithMessage:</TokenIdentifier>
-			<Abstract type="html">Called when the client is disconnected from the server.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didUpdateFileTransferSendingProgress:fileName:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called upon every file transfer progress update.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didDisconnectWithMessage:(null_unspecified NSString *)errorMessage</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didUpdateFileTransferSendingProgress:(CGFloat)percentage fileName:(null_unspecified NSString *)fileName remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>errorMessage</Name>
-					<Abstract type="html">Message specifying the reason of disconnection.</Abstract>
+					<Name>percentage</Name>
+					<Abstract type="html">The perccentage representing the progress of the transfer (CGFloat from 0 to 1).</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The name of the file in transmission.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the peer thie file is sent to or received from.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:didDisconnectWithMessage:</Anchor>
+			<Anchor>//api/name/connection:didUpdateFileTransferSendingProgress:fileName:remotePeerId:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didUpdateFileTransferReceivingProgress:fileName:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called upon every file transfer progress update.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didUpdateFileTransferReceivingProgress:(CGFloat)percentage fileName:(null_unspecified NSString *)fileName remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>percentage</Name>
+					<Abstract type="html">The perccentage representing the progress of the transfer (CGFloat from 0 to 1).</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The name of the file in transmission.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the peer thie file is sent to or received from.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didUpdateFileTransferReceivingProgress:fileName:remotePeerId:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didCompleteFileTransferSending:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called upon receiving signal that our sending of a File to remote Peer is complete.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didCompleteFileTransferSending:(null_unspecified NSString *)fileName remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object.</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The name of the file in request.</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the peer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didCompleteFileTransferSending:remotePeerId:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didCompleteFileTransferReceiving:fileData:fileSavePath:remotePeerId:</TokenIdentifier>
+			<Abstract type="html">Called upon receiving signal that our receipt of a File from remote Peer is complete</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didCompleteFileTransferReceiving:(null_unspecified NSString *)fileName fileData:(null_unspecified NSData *)fileData fileSavePath:(null_unspecified NSString *)fileSavePath remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connection</Name>
+					<Abstract type="html">The underlying connection object</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The name of the file in request</Abstract>
+				</Parameter><Parameter>
+					<Name>fileData</Name>
+					<Abstract type="html">The data of the received file</Abstract>
+				</Parameter><Parameter>
+					<Name>fileSavePath</Name>
+					<Abstract type="html">The path where the file is saved, it is in the sandbox /tmp folder</Abstract>
+				</Parameter><Parameter>
+					<Name>remotePeerId</Name>
+					<Abstract type="html">The unique id of the peer</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connection:didCompleteFileTransferReceiving:fileData:fileSavePath:remotePeerId:</Anchor>
             <NodeRef refid="5"/>
 		</Token>
 		

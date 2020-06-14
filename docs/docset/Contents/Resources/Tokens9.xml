@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/SKYLINKConnectionRemotePeerDelegate.html">
+	<File path="Protocols/SKYLINKConnectionRecordingDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionRemotePeerDelegate</TokenIdentifier>
-			<Abstract type="html">Protocol to receive events related to remote peers.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionRecordingDelegate</TokenIdentifier>
+			<Abstract type="html">Protocol to receive backend events related to room recording (BETA).</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
             
 			
 			<NodeRef refid="9"/>
@@ -13,97 +13,65 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didJoinPeer:mediaProperties:peerId:</TokenIdentifier>
-			<Abstract type="html">Called when a remote peer joins the room.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRecordingDelegate/connection:didStartRecordingWithID:</TokenIdentifier>
+			<Abstract type="html">Called upon recording start event.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didJoinPeer:(null_unspecified id)userInfo mediaProperties:(null_unspecified SKYLINKPeerMediaProperties *)pmProperties peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didStartRecordingWithID:(null_unspecified NSString *)recordingID</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>userInfo</Name>
-					<Abstract type="html">User defined information. May be an NSString, NSDictionary or NSArray.</Abstract>
-				</Parameter><Parameter>
-					<Name>pmProperties</Name>
-					<Abstract type="html">An object defining peer media properties of the joining peer.</Abstract>
-				</Parameter><Parameter>
-					<Name>peerId</Name>
-					<Abstract type="html">The unique id of the joining peer.</Abstract>
+					<Name>recordingID</Name>
+					<Abstract type="html">The id of the generated recording.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:didJoinPeer:mediaProperties:peerId:</Anchor>
+			<Anchor>//api/name/connection:didStartRecordingWithID:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didRenderPeerVideo:peerId:</TokenIdentifier>
-			<Abstract type="html">Called upon receiving a remote video stream.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRecordingDelegate/connection:didStopRecordingWithID:</TokenIdentifier>
+			<Abstract type="html">Called upon recording stop event.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didRenderPeerVideo:(null_unspecified UIView *)peerVideoView peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didStopRecordingWithID:(null_unspecified NSString *)recordingID</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>peerVideoView</Name>
-					<Abstract type="html">The video view of the joining peer.</Abstract>
-				</Parameter><Parameter>
-					<Name>peerId</Name>
-					<Abstract type="html">The unique id of the peer.</Abstract>
+					<Name>recordingID</Name>
+					<Abstract type="html">The id of the recording.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:didRenderPeerVideo:peerId:</Anchor>
+			<Anchor>//api/name/connection:didStopRecordingWithID:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didReceiveUserInfo:peerId:</TokenIdentifier>
-			<Abstract type="html">Called upon receiving an update about a user info.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRecordingDelegate/connection:didReceiveRecordingError:recordingId:</TokenIdentifier>
+			<Abstract type="html">Called upon recording error event.</Abstract>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveUserInfo:(null_unspecified id)userInfo peerId:(null_unspecified NSString *)peerId</Declaration>
+			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveRecordingError:(nullable NSError *)error recordingId:(null_unspecified NSString *)recordingId</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connection</Name>
 					<Abstract type="html">The underlying connection object.</Abstract>
 				</Parameter><Parameter>
-					<Name>userInfo</Name>
-					<Abstract type="html">User defined information. May be an NSString, NSDictionary or NSArray.</Abstract>
+					<Name>error</Name>
+					<Abstract type="html">Error in case the connection is unsuccessful.</Abstract>
 				</Parameter><Parameter>
-					<Name>peerId</Name>
-					<Abstract type="html">The unique id of the peer.</Abstract>
+					<Name>recordingId</Name>
+					<Abstract type="html">The id of the recording (might be nil if unknown).</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/connection:didReceiveUserInfo:peerId:</Anchor>
-            <NodeRef refid="9"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didLeavePeerWithMessage:peerId:</TokenIdentifier>
-			<Abstract type="html">Called when a peer has left the room implictly or explicitly.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
-			
-			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didLeavePeerWithMessage:(null_unspecified NSString *)errorMessage peerId:(null_unspecified NSString *)peerId</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>connection</Name>
-					<Abstract type="html">The underlying connection object.</Abstract>
-				</Parameter><Parameter>
-					<Name>errorMessage</Name>
-					<Abstract type="html">Error message in case the peer is left due to some error.</Abstract>
-				</Parameter><Parameter>
-					<Name>peerId</Name>
-					<Abstract type="html">The unique id of the leaving peer.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/connection:didLeavePeerWithMessage:peerId:</Anchor>
+			<Anchor>//api/name/connection:didReceiveRecordingError:recordingId:</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		
