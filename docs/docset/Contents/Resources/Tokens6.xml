@@ -5,7 +5,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionLifeCycleDelegate</TokenIdentifier>
 			<Abstract type="html">Protocol to receive events related to the lifecycle of the connection.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
             
 			
 			<NodeRef refid="6"/>
@@ -15,7 +15,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connectionDidConnectToRoomSuccessful:</TokenIdentifier>
 			<Abstract type="html">First delegate method called on the delegate upon successful connection.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connectionDidConnectToRoomSuccessful:(nonnull SKYLINKConnection *)connection</Declaration>
 			<Parameters>
@@ -32,7 +32,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didConnectToRoomFailed:</TokenIdentifier>
 			<Abstract type="html">First delegate method called on the delegate upon unsuccessful connection.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didConnectToRoomFailed:(null_unspecified NSString *)errorMessage</Declaration>
 			<Parameters>
@@ -52,7 +52,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didLockTheRoom:remotePeerId:</TokenIdentifier>
 			<Abstract type="html">Called when a remote peer locks/unlocks the room.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didLockTheRoom:(BOOL)lockStatus remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
@@ -75,7 +75,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didReceiveInfoWithSkylinkInfo:</TokenIdentifier>
 			<Abstract type="html">Called when an info is received from the underlying system.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveInfoWithSkylinkInfo:(null_unspecified NSDictionary *)skylinkInfo</Declaration>
 			<Parameters>
@@ -95,7 +95,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didReceiveWarningWithError:</TokenIdentifier>
 			<Abstract type="html">Called when a warning is received from the underlying system.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveWarningWithError:(null_unspecified NSError *)error</Declaration>
 			<Parameters>
@@ -115,7 +115,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didReceiveError:</TokenIdentifier>
 			<Abstract type="html">Called when a error is received from the underlying system.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveError:(null_unspecified NSError *)error</Declaration>
 			<Parameters>
@@ -135,7 +135,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionLifeCycleDelegate/connection:didDisconnectFromRoomWithSkylinkEvent:contextDescription:</TokenIdentifier>
 			<Abstract type="html">Called when the client is disconnected from the server.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didDisconnectFromRoomWithSkylinkEvent:(nullable NSDictionary *)skylinkEvent contextDescription:(nullable NSString *)contextDescription</Declaration>
 			<Parameters>

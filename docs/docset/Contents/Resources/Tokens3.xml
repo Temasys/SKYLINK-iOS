@@ -11,7 +11,7 @@
 @constant Back camera
 @constant Screen
 @constant Custom camera</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
             
 			
 			<NodeRef refid="3"/>
@@ -21,7 +21,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkMediaID</TokenIdentifier>
 			<Abstract type="html">Get the mediaID of the SkylinkMedia object.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
 			<Declaration>- (nonnull NSString *)skylinkMediaID</Declaration>
 			
@@ -33,7 +33,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkMediaType</TokenIdentifier>
 			<Abstract type="html">Get the media type.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
 			<Declaration>- (SKYLINKMediaType)skylinkMediaType</Declaration>
 			
@@ -45,7 +45,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkMediaState</TokenIdentifier>
 			<Abstract type="html">Gte the current media state.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
 			<Declaration>- (SKYLINKMediaState)skylinkMediaState</Declaration>
 			
@@ -57,7 +57,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkPreviousMediaState</TokenIdentifier>
 			<Abstract type="html">Get the previous media state.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
 			<Declaration>- (SKYLINKMediaState)skylinkPreviousMediaState</Declaration>
 			
@@ -69,7 +69,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkVideoTrack</TokenIdentifier>
 			<Abstract type="html">Get the video track if this media is an video.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
 			<Declaration>- (nullable RTCVideoTrack *)skylinkVideoTrack</Declaration>
 			
@@ -81,7 +81,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkAudioTrack</TokenIdentifier>
 			<Abstract type="html">Get the audio track if this media is an audio.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
 			<Declaration>- (nullable RTCAudioTrack *)skylinkAudioTrack</Declaration>
 			
@@ -93,7 +93,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkVideoView</TokenIdentifier>
 			<Abstract type="html">The video view contained in the media.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
 			<Declaration>- (nullable UIView *)skylinkVideoView</Declaration>
 			
@@ -105,7 +105,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/isVideo</TokenIdentifier>
 			<Abstract type="html">Check if this SkylinkMedia represents a video.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
 			<Declaration>- (BOOL)isVideo</Declaration>
 			
@@ -117,7 +117,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/isCustom</TokenIdentifier>
 			<Abstract type="html">Check if this SkylinkMedia is a custom video.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
 			<Declaration>- (BOOL)isCustom</Declaration>
 			
@@ -129,7 +129,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/skylinkMediaMetaData</TokenIdentifier>
 			<Abstract type="html">This is a decription of the local media.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
 			<Declaration>- (nullable id)skylinkMediaMetaData</Declaration>
 			
@@ -141,7 +141,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKMedia/getCustomVideoCapturer</TokenIdentifier>
 			<Abstract type="html">Get the custom video capturer.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKMedia.h</DeclaredIn>
 			
 			<Declaration>- (nullable RTCCameraVideoCapturer *)getCustomVideoCapturer</Declaration>
 			

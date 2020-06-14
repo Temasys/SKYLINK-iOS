@@ -42,6 +42,7 @@
                     <Path>index.html</Path>
                     <Subnodes>
                         <NodeRef refid="11"/>
+                        <NodeRef refid="12"/>
                         
                     </Subnodes>
                 </Node>
@@ -346,6 +347,11 @@
         <Node id="11" type="file" documentType="reference">
             <Name>ErrorBlock</Name>
             <Path>Blocks/ErrorBlock.html</Path>
+            
+        </Node>
+        <Node id="12" type="file" documentType="reference">
+            <Name>ResolutionResultBlock</Name>
+            <Path>Blocks/ResolutionResultBlock.html</Path>
             
         </Node>
         

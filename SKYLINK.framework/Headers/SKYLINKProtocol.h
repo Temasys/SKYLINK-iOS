@@ -215,8 +215,9 @@
  @param videoSize The size of the respective video.
  @param videoView The video view for which the size was sent.
  @param peerId The unique id of peer.
+ @param mediaId The unique id of video media.
  */
-- (void)connection:(nonnull SKYLINKConnection *)connection didChangeVideoSize:(CGSize)videoSize videoView:(null_unspecified UIView *)videoView peerId:(null_unspecified NSString *)peerId;
+- (void)connection:(nonnull SKYLINKConnection *)connection didChangeVideoSize:(CGSize)videoSize videoView:(null_unspecified UIView *)videoView peerId:(null_unspecified NSString *)peerId mediaId:(null_unspecified NSString *)mediaId;
 
 /*!
  @method
