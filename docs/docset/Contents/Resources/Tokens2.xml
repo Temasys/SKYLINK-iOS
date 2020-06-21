@@ -5,7 +5,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/SKYLINKConnectionConfig</TokenIdentifier>
 			<Abstract type="html">@class</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
             
 			
 			<NodeRef refid="2"/>
@@ -15,7 +15,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setSendAudio:</TokenIdentifier>
 			<Abstract type="html">enable/disable sending audio.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL sendAudio</Declaration>
 			
@@ -27,7 +27,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/sendAudio</TokenIdentifier>
 			<Abstract type="html">enable/disable sending audio.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL sendAudio</Declaration>
 			
@@ -39,7 +39,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/sendAudio</TokenIdentifier>
 			<Abstract type="html">enable/disable sending audio.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL sendAudio</Declaration>
 			
@@ -51,7 +51,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setReceiveAudio:</TokenIdentifier>
 			<Abstract type="html">enable/disable receive audio.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL receiveAudio</Declaration>
 			
@@ -63,7 +63,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/receiveAudio</TokenIdentifier>
 			<Abstract type="html">enable/disable receive audio.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL receiveAudio</Declaration>
 			
@@ -75,7 +75,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/receiveAudio</TokenIdentifier>
 			<Abstract type="html">enable/disable receive audio.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL receiveAudio</Declaration>
 			
@@ -87,7 +87,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setSendVideo:</TokenIdentifier>
 			<Abstract type="html">enable/disable sending video.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL sendVideo</Declaration>
 			
@@ -99,7 +99,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/sendVideo</TokenIdentifier>
 			<Abstract type="html">enable/disable sending video.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL sendVideo</Declaration>
 			
@@ -111,7 +111,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/sendVideo</TokenIdentifier>
 			<Abstract type="html">enable/disable sending video.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL sendVideo</Declaration>
 			
@@ -123,7 +123,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setReceiveVideo:</TokenIdentifier>
 			<Abstract type="html">enable/disable receiving video.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL receiveVideo</Declaration>
 			
@@ -135,7 +135,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/receiveVideo</TokenIdentifier>
 			<Abstract type="html">enable/disable receiving video.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL receiveVideo</Declaration>
 			
@@ -147,7 +147,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/receiveVideo</TokenIdentifier>
 			<Abstract type="html">enable/disable receiving video.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL receiveVideo</Declaration>
 			
@@ -159,7 +159,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setIsEnableDataChannel:</TokenIdentifier>
 			<Abstract type="html">Check if dataChennel is enabled</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL isEnableDataChannel</Declaration>
 			
@@ -171,7 +171,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/isEnableDataChannel</TokenIdentifier>
 			<Abstract type="html">Check if dataChennel is enabled</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL isEnableDataChannel</Declaration>
 			
@@ -183,7 +183,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/isEnableDataChannel</TokenIdentifier>
 			<Abstract type="html">Check if dataChennel is enabled</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly) BOOL isEnableDataChannel</Declaration>
 			
@@ -195,7 +195,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setHasP2PMessaging:</TokenIdentifier>
 			<Abstract type="html">enable/disable messaging.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasP2PMessaging</Declaration>
 			
@@ -207,7 +207,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/hasP2PMessaging</TokenIdentifier>
 			<Abstract type="html">enable/disable messaging.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasP2PMessaging</Declaration>
 			
@@ -219,7 +219,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/hasP2PMessaging</TokenIdentifier>
 			<Abstract type="html">enable/disable messaging.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasP2PMessaging</Declaration>
 			
@@ -231,7 +231,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setHasFileTransfer:</TokenIdentifier>
 			<Abstract type="html">enable/disable file transfer.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasFileTransfer</Declaration>
 			
@@ -243,7 +243,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/hasFileTransfer</TokenIdentifier>
 			<Abstract type="html">enable/disable file transfer.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasFileTransfer</Declaration>
 			
@@ -255,7 +255,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/hasFileTransfer</TokenIdentifier>
 			<Abstract type="html">enable/disable file transfer.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasFileTransfer</Declaration>
 			
@@ -267,7 +267,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setHasDataTransfer:</TokenIdentifier>
 			<Abstract type="html">enable/disable data transfer.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasDataTransfer</Declaration>
 			
@@ -279,7 +279,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/hasDataTransfer</TokenIdentifier>
 			<Abstract type="html">enable/disable data transfer.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasDataTransfer</Declaration>
 			
@@ -291,7 +291,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/hasDataTransfer</TokenIdentifier>
 			<Abstract type="html">enable/disable data transfer.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasDataTransfer</Declaration>
 			
@@ -303,7 +303,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setIsMultiTrackCreateEnable:</TokenIdentifier>
 			<Abstract type="html">enable/disable multitrack support for creating.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isMultiTrackCreateEnable</Declaration>
 			
@@ -315,7 +315,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/isMultiTrackCreateEnable</TokenIdentifier>
 			<Abstract type="html">enable/disable multitrack support for creating.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isMultiTrackCreateEnable</Declaration>
 			
@@ -327,7 +327,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/isMultiTrackCreateEnable</TokenIdentifier>
 			<Abstract type="html">enable/disable multitrack support for creating.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isMultiTrackCreateEnable</Declaration>
 			
@@ -339,7 +339,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setMaxAudioBitrate:</TokenIdentifier>
 			<Abstract type="html">Used to limit remote peers audio media bitrate.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger maxAudioBitrate</Declaration>
 			
@@ -351,7 +351,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/maxAudioBitrate</TokenIdentifier>
 			<Abstract type="html">Used to limit remote peers audio media bitrate.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger maxAudioBitrate</Declaration>
 			
@@ -363,7 +363,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/maxAudioBitrate</TokenIdentifier>
 			<Abstract type="html">Used to limit remote peers audio media bitrate.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger maxAudioBitrate</Declaration>
 			
@@ -375,7 +375,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setMaxVideoBitrate:</TokenIdentifier>
 			<Abstract type="html">Used to limit remote peers video media bitrate.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger maxVideoBitrate</Declaration>
 			
@@ -387,7 +387,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/maxVideoBitrate</TokenIdentifier>
 			<Abstract type="html">Used to limit remote peers video media bitrate.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger maxVideoBitrate</Declaration>
 			
@@ -399,7 +399,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/maxVideoBitrate</TokenIdentifier>
 			<Abstract type="html">Used to limit remote peers video media bitrate.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger maxVideoBitrate</Declaration>
 			
@@ -411,7 +411,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setMaxDataBitrate:</TokenIdentifier>
 			<Abstract type="html">Used to limit remote peers data bitrate.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger maxDataBitrate</Declaration>
 			
@@ -423,7 +423,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/maxDataBitrate</TokenIdentifier>
 			<Abstract type="html">Used to limit remote peers data bitrate.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger maxDataBitrate</Declaration>
 			
@@ -435,7 +435,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/maxDataBitrate</TokenIdentifier>
 			<Abstract type="html">Used to limit remote peers data bitrate.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger maxDataBitrate</Declaration>
 			
@@ -448,7 +448,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setDefaultVideoDevice:</TokenIdentifier>
 			<Abstract type="html">Default camera device
 @description Get the default camera device, whether it&apos;s front or back</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SKYLINKVideoDevice defaultVideoDevice</Declaration>
 			
@@ -461,7 +461,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/defaultVideoDevice</TokenIdentifier>
 			<Abstract type="html">Default camera device
 @description Get the default camera device, whether it&apos;s front or back</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SKYLINKVideoDevice defaultVideoDevice</Declaration>
 			
@@ -474,7 +474,7 @@
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/defaultVideoDevice</TokenIdentifier>
 			<Abstract type="html">Default camera device
 @description Get the default camera device, whether it&apos;s front or back</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SKYLINKVideoDevice defaultVideoDevice</Declaration>
 			
@@ -487,7 +487,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setHasAudioAutoGainControl:</TokenIdentifier>
 			<Abstract type="html">Check/set if audio auto gain control by WebRTC is enabled.
 @description Enabled by default</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasAudioAutoGainControl</Declaration>
 			
@@ -500,7 +500,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/hasAudioAutoGainControl</TokenIdentifier>
 			<Abstract type="html">Check/set if audio auto gain control by WebRTC is enabled.
 @description Enabled by default</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasAudioAutoGainControl</Declaration>
 			
@@ -513,7 +513,7 @@
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/hasAudioAutoGainControl</TokenIdentifier>
 			<Abstract type="html">Check/set if audio auto gain control by WebRTC is enabled.
 @description Enabled by default</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasAudioAutoGainControl</Declaration>
 			
@@ -526,7 +526,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setHasAudioEchoCancellation:</TokenIdentifier>
 			<Abstract type="html">Check/set if audio echo cancellation by WebRTC is enabled.
 @description Enabled by default</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasAudioEchoCancellation</Declaration>
 			
@@ -539,7 +539,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/hasAudioEchoCancellation</TokenIdentifier>
 			<Abstract type="html">Check/set if audio echo cancellation by WebRTC is enabled.
 @description Enabled by default</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasAudioEchoCancellation</Declaration>
 			
@@ -552,7 +552,7 @@
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/hasAudioEchoCancellation</TokenIdentifier>
 			<Abstract type="html">Check/set if audio echo cancellation by WebRTC is enabled.
 @description Enabled by default</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasAudioEchoCancellation</Declaration>
 			
@@ -565,7 +565,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setHasAudioHighPassFilter:</TokenIdentifier>
 			<Abstract type="html">Check/set if audio high pass filter by WebRTC is enabled.
 @description Enabled by default</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasAudioHighPassFilter</Declaration>
 			
@@ -578,7 +578,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/hasAudioHighPassFilter</TokenIdentifier>
 			<Abstract type="html">Check/set if audio high pass filter by WebRTC is enabled.
 @description Enabled by default</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasAudioHighPassFilter</Declaration>
 			
@@ -591,7 +591,7 @@
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/hasAudioHighPassFilter</TokenIdentifier>
 			<Abstract type="html">Check/set if audio high pass filter by WebRTC is enabled.
 @description Enabled by default</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasAudioHighPassFilter</Declaration>
 			
@@ -604,7 +604,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setHasAudioNoiseSuppression:</TokenIdentifier>
 			<Abstract type="html">Check if audio noise suppression by WebRTC is enabled.
 @description Enabled by default</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasAudioNoiseSuppression</Declaration>
 			
@@ -617,7 +617,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/hasAudioNoiseSuppression</TokenIdentifier>
 			<Abstract type="html">Check if audio noise suppression by WebRTC is enabled.
 @description Enabled by default</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasAudioNoiseSuppression</Declaration>
 			
@@ -630,7 +630,7 @@
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/hasAudioNoiseSuppression</TokenIdentifier>
 			<Abstract type="html">Check if audio noise suppression by WebRTC is enabled.
 @description Enabled by default</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL hasAudioNoiseSuppression</Declaration>
 			
@@ -643,7 +643,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setRoomSize:</TokenIdentifier>
 			<Abstract type="html">Set the room size when creating a new room
 @description The size of the new room, if not specified, the default size will be small.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SKYLINKRoomSize roomSize</Declaration>
 			
@@ -656,7 +656,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/roomSize</TokenIdentifier>
 			<Abstract type="html">Set the room size when creating a new room
 @description The size of the new room, if not specified, the default size will be small.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SKYLINKRoomSize roomSize</Declaration>
 			
@@ -669,7 +669,7 @@
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/roomSize</TokenIdentifier>
 			<Abstract type="html">Set the room size when creating a new room
 @description The size of the new room, if not specified, the default size will be small.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SKYLINKRoomSize roomSize</Declaration>
 			
@@ -682,7 +682,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setIsAllowTurn:</TokenIdentifier>
 			<Abstract type="html">Whether to allow the TURN server
 @description Default is YES</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isAllowTurn</Declaration>
 			
@@ -695,7 +695,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/isAllowTurn</TokenIdentifier>
 			<Abstract type="html">Whether to allow the TURN server
 @description Default is YES</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isAllowTurn</Declaration>
 			
@@ -708,7 +708,7 @@
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/isAllowTurn</TokenIdentifier>
 			<Abstract type="html">Whether to allow the TURN server
 @description Default is YES</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isAllowTurn</Declaration>
 			
@@ -721,7 +721,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setIsAllowStun:</TokenIdentifier>
 			<Abstract type="html">Whether to allow the TURN server
 @description Default is YES</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isAllowStun</Declaration>
 			
@@ -734,7 +734,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/isAllowStun</TokenIdentifier>
 			<Abstract type="html">Whether to allow the TURN server
 @description Default is YES</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isAllowStun</Declaration>
 			
@@ -747,7 +747,7 @@
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/isAllowStun</TokenIdentifier>
 			<Abstract type="html">Whether to allow the TURN server
 @description Default is YES</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isAllowStun</Declaration>
 			
@@ -760,7 +760,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setIsAllowHost:</TokenIdentifier>
 			<Abstract type="html">Whether to allow the HOST
 @description Default is YES</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isAllowHost</Declaration>
 			
@@ -773,7 +773,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/isAllowHost</TokenIdentifier>
 			<Abstract type="html">Whether to allow the HOST
 @description Default is YES</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isAllowHost</Declaration>
 			
@@ -786,7 +786,7 @@
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/isAllowHost</TokenIdentifier>
 			<Abstract type="html">Whether to allow the HOST
 @description Default is YES</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isAllowHost</Declaration>
 			
@@ -799,7 +799,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setEnableDNSPreSolving:</TokenIdentifier>
 			<Abstract type="html">Whether to apply the ICE filters
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL enableDNSPreSolving</Declaration>
 			
@@ -812,7 +812,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/enableDNSPreSolving</TokenIdentifier>
 			<Abstract type="html">Whether to apply the ICE filters
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL enableDNSPreSolving</Declaration>
 			
@@ -825,7 +825,7 @@
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/enableDNSPreSolving</TokenIdentifier>
 			<Abstract type="html">Whether to apply the ICE filters
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL enableDNSPreSolving</Declaration>
 			
@@ -838,7 +838,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setEnableIPv6Filter:</TokenIdentifier>
 			<Abstract type="html">Whether to filer out all the IPv6 servers
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL enableIPv6Filter</Declaration>
 			
@@ -851,7 +851,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/enableIPv6Filter</TokenIdentifier>
 			<Abstract type="html">Whether to filer out all the IPv6 servers
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL enableIPv6Filter</Declaration>
 			
@@ -864,7 +864,7 @@
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/enableIPv6Filter</TokenIdentifier>
 			<Abstract type="html">Whether to filer out all the IPv6 servers
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL enableIPv6Filter</Declaration>
 			
@@ -877,7 +877,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setIsMirrorLocalFrontCameraView:</TokenIdentifier>
 			<Abstract type="html">Mirror local front camera view
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isMirrorLocalFrontCameraView</Declaration>
 			
@@ -890,7 +890,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/isMirrorLocalFrontCameraView</TokenIdentifier>
 			<Abstract type="html">Mirror local front camera view
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isMirrorLocalFrontCameraView</Declaration>
 			
@@ -903,7 +903,7 @@
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/isMirrorLocalFrontCameraView</TokenIdentifier>
 			<Abstract type="html">Mirror local front camera view
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isMirrorLocalFrontCameraView</Declaration>
 			
@@ -916,7 +916,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setDefaultCameraVideoFps:</TokenIdentifier>
 			<Abstract type="html">Default values at which to obtain camera video fps when video device is started
 @description Default is DEFAULTVIDEOFPS</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger defaultCameraVideoFps</Declaration>
 			
@@ -929,7 +929,7 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/defaultCameraVideoFps</TokenIdentifier>
 			<Abstract type="html">Default values at which to obtain camera video fps when video device is started
 @description Default is DEFAULTVIDEOFPS</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger defaultCameraVideoFps</Declaration>
 			
@@ -942,7 +942,7 @@
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/defaultCameraVideoFps</TokenIdentifier>
 			<Abstract type="html">Default values at which to obtain camera video fps when video device is started
 @description Default is DEFAULTVIDEOFPS</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger defaultCameraVideoFps</Declaration>
 			
@@ -955,15 +955,15 @@
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setCaptureSessionPreset:</TokenIdentifier>
 			<Abstract type="html">Default values at which to obtain video, when video device is started
 @description Available values
-AVCaptureSessionPresetLow,
-AVCaptureSessionPreset640x480,
-AVCaptureSessionPreset352x288,
-AVCaptureSessionPreset1280x720,
-AVCaptureSessionPresetHigh,
-AVCaptureSessionPresetPhoto,
-AVCaptureSessionPreset1920x1080
-Default is AVCaptureSessionPreset640x480</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+              AVCaptureSessionPresetLow,
+              AVCaptureSessionPreset640x480,
+              AVCaptureSessionPreset352x288,
+              AVCaptureSessionPreset1280x720,
+              AVCaptureSessionPresetHigh,
+              AVCaptureSessionPresetPhoto,
+              AVCaptureSessionPreset1920x1080
+              Default is AVCaptureSessionPreset640x480</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, copy) AVCaptureSessionPreset _Nullable captureSessionPreset</Declaration>
 			
@@ -976,15 +976,15 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/captureSessionPreset</TokenIdentifier>
 			<Abstract type="html">Default values at which to obtain video, when video device is started
 @description Available values
-AVCaptureSessionPresetLow,
-AVCaptureSessionPreset640x480,
-AVCaptureSessionPreset352x288,
-AVCaptureSessionPreset1280x720,
-AVCaptureSessionPresetHigh,
-AVCaptureSessionPresetPhoto,
-AVCaptureSessionPreset1920x1080
-Default is AVCaptureSessionPreset640x480</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+              AVCaptureSessionPresetLow,
+              AVCaptureSessionPreset640x480,
+              AVCaptureSessionPreset352x288,
+              AVCaptureSessionPreset1280x720,
+              AVCaptureSessionPresetHigh,
+              AVCaptureSessionPresetPhoto,
+              AVCaptureSessionPreset1920x1080
+              Default is AVCaptureSessionPreset640x480</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, copy) AVCaptureSessionPreset _Nullable captureSessionPreset</Declaration>
 			
@@ -997,15 +997,15 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/captureSessionPreset</TokenIdentifier>
 			<Abstract type="html">Default values at which to obtain video, when video device is started
 @description Available values
-AVCaptureSessionPresetLow,
-AVCaptureSessionPreset640x480,
-AVCaptureSessionPreset352x288,
-AVCaptureSessionPreset1280x720,
-AVCaptureSessionPresetHigh,
-AVCaptureSessionPresetPhoto,
-AVCaptureSessionPreset1920x1080
-Default is AVCaptureSessionPreset640x480</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+              AVCaptureSessionPresetLow,
+              AVCaptureSessionPreset640x480,
+              AVCaptureSessionPreset352x288,
+              AVCaptureSessionPreset1280x720,
+              AVCaptureSessionPresetHigh,
+              AVCaptureSessionPresetPhoto,
+              AVCaptureSessionPreset1920x1080
+              Default is AVCaptureSessionPreset640x480</Abstract>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, copy) AVCaptureSessionPreset _Nullable captureSessionPreset</Declaration>
 			
@@ -1018,7 +1018,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setVideoResNumWaitMs:</TokenIdentifier>
 			<Abstract type="html">Automatic video resolution
 @description ms to wait before checking again</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger videoResNumWaitMs</Declaration>
 			
@@ -1031,7 +1031,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/videoResNumWaitMs</TokenIdentifier>
 			<Abstract type="html">Automatic video resolution
 @description ms to wait before checking again</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger videoResNumWaitMs</Declaration>
 			
@@ -1044,7 +1044,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/videoResNumWaitMs</TokenIdentifier>
 			<Abstract type="html">Automatic video resolution
 @description ms to wait before checking again</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger videoResNumWaitMs</Declaration>
 			
@@ -1057,7 +1057,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setIsReportVideoResolutionOnVideoChange:</TokenIdentifier>
 			<Abstract type="html">Automatic video resolution
 @description Will report when video changes</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isReportVideoResolutionOnVideoChange</Declaration>
 			
@@ -1070,7 +1070,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/isReportVideoResolutionOnVideoChange</TokenIdentifier>
 			<Abstract type="html">Automatic video resolution
 @description Will report when video changes</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isReportVideoResolutionOnVideoChange</Declaration>
 			
@@ -1083,7 +1083,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/isReportVideoResolutionOnVideoChange</TokenIdentifier>
 			<Abstract type="html">Automatic video resolution
 @description Will report when video changes</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isReportVideoResolutionOnVideoChange</Declaration>
 			
@@ -1096,7 +1096,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setIsAllowIceRestart:</TokenIdentifier>
 			<Abstract type="html">Whether to allow the ICE server restart
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isAllowIceRestart</Declaration>
 			
@@ -1109,7 +1109,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/isAllowIceRestart</TokenIdentifier>
 			<Abstract type="html">Whether to allow the ICE server restart
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isAllowIceRestart</Declaration>
 			
@@ -1122,7 +1122,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/isAllowIceRestart</TokenIdentifier>
 			<Abstract type="html">Whether to allow the ICE server restart
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL isAllowIceRestart</Declaration>
 			
@@ -1135,7 +1135,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setNetworkTransport:</TokenIdentifier>
 			<Abstract type="html">Custom transport values for ICE candidates
 @description If any invalid value is set, networkTransport will be set to empty</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NetworkTransport networkTransport</Declaration>
 			
@@ -1148,7 +1148,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/networkTransport</TokenIdentifier>
 			<Abstract type="html">Custom transport values for ICE candidates
 @description If any invalid value is set, networkTransport will be set to empty</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NetworkTransport networkTransport</Declaration>
 			
@@ -1161,7 +1161,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/networkTransport</TokenIdentifier>
 			<Abstract type="html">Custom transport values for ICE candidates
 @description If any invalid value is set, networkTransport will be set to empty</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NetworkTransport networkTransport</Declaration>
 			
@@ -1174,7 +1174,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setPreferredAudioCodec:</TokenIdentifier>
 			<Abstract type="html">Preferred audio codec used
 @description Default is OPUS</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SKYLINKAudioCodec preferredAudioCodec</Declaration>
 			
@@ -1187,7 +1187,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/preferredAudioCodec</TokenIdentifier>
 			<Abstract type="html">Preferred audio codec used
 @description Default is OPUS</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SKYLINKAudioCodec preferredAudioCodec</Declaration>
 			
@@ -1200,7 +1200,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/preferredAudioCodec</TokenIdentifier>
 			<Abstract type="html">Preferred audio codec used
 @description Default is OPUS</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SKYLINKAudioCodec preferredAudioCodec</Declaration>
 			
@@ -1213,7 +1213,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setPreferredVideoCodec:</TokenIdentifier>
 			<Abstract type="html">Preferred video codec info used
 @description Default is info with name kRTCVideoCodecVp8Name</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SkylinkVideoCodec preferredVideoCodec</Declaration>
 			
@@ -1226,7 +1226,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/preferredVideoCodec</TokenIdentifier>
 			<Abstract type="html">Preferred video codec info used
 @description Default is info with name kRTCVideoCodecVp8Name</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SkylinkVideoCodec preferredVideoCodec</Declaration>
 			
@@ -1239,7 +1239,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/preferredVideoCodec</TokenIdentifier>
 			<Abstract type="html">Preferred video codec info used
 @description Default is info with name kRTCVideoCodecVp8Name</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SkylinkVideoCodec preferredVideoCodec</Declaration>
 			
@@ -1252,7 +1252,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setReconnectAttempts:</TokenIdentifier>
 			<Abstract type="html">xxx
 @description Default is -1 which is infinite, if you don&apos;t want to reconnect, set it to 0</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger reconnectAttempts</Declaration>
 			
@@ -1265,7 +1265,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/reconnectAttempts</TokenIdentifier>
 			<Abstract type="html">xxx
 @description Default is -1 which is infinite, if you don&apos;t want to reconnect, set it to 0</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger reconnectAttempts</Declaration>
 			
@@ -1278,7 +1278,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/reconnectAttempts</TokenIdentifier>
 			<Abstract type="html">xxx
 @description Default is -1 which is infinite, if you don&apos;t want to reconnect, set it to 0</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) NSInteger reconnectAttempts</Declaration>
 			
@@ -1291,7 +1291,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setReconnectionDelay:</TokenIdentifier>
 			<Abstract type="html">xxx
 @description This should be positive value, otherwise it will be set to 0</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) CGFloat reconnectionDelay</Declaration>
 			
@@ -1304,7 +1304,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/reconnectionDelay</TokenIdentifier>
 			<Abstract type="html">xxx
 @description This should be positive value, otherwise it will be set to 0</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) CGFloat reconnectionDelay</Declaration>
 			
@@ -1317,7 +1317,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/reconnectionDelay</TokenIdentifier>
 			<Abstract type="html">xxx
 @description This should be positive value, otherwise it will be set to 0</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) CGFloat reconnectionDelay</Declaration>
 			
@@ -1330,7 +1330,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setPreferredTransport:</TokenIdentifier>
 			<Abstract type="html">xxx
 @description xxx</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SocketIOTransport preferredTransport</Declaration>
 			
@@ -1343,7 +1343,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/preferredTransport</TokenIdentifier>
 			<Abstract type="html">xxx
 @description xxx</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SocketIOTransport preferredTransport</Declaration>
 			
@@ -1356,7 +1356,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/preferredTransport</TokenIdentifier>
 			<Abstract type="html">xxx
 @description xxx</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) SocketIOTransport preferredTransport</Declaration>
 			
@@ -1369,7 +1369,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setUseSpeaker:</TokenIdentifier>
 			<Abstract type="html">When start the SDK, use loudspeaker or not
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL useSpeaker</Declaration>
 			
@@ -1382,7 +1382,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/useSpeaker</TokenIdentifier>
 			<Abstract type="html">When start the SDK, use loudspeaker or not
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL useSpeaker</Declaration>
 			
@@ -1395,7 +1395,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 			<TokenIdentifier>//apple_ref/occ/instp/SKYLINKConnectionConfig/useSpeaker</TokenIdentifier>
 			<Abstract type="html">When start the SDK, use loudspeaker or not
 @description Default is NO</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL useSpeaker</Declaration>
 			
@@ -1407,7 +1407,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/getTimeoutWithEventType:</TokenIdentifier>
 			<Abstract type="html">Get the timeout value for an action</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>- (CGFloat)getTimeoutWithEventType:(SkylinkAction)skylinkAction</Declaration>
 			<Parameters>
@@ -1424,7 +1424,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setTimeout:skylinkAction:</TokenIdentifier>
 			<Abstract type="html">Set the timeout value for an action</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>- (void)setTimeout:(CGFloat)timeout skylinkAction:(SkylinkAction)skylinkAction</Declaration>
 			<Parameters>
@@ -1444,7 +1444,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setAudioVideoReceiveConfig:</TokenIdentifier>
 			<Abstract type="html">Set config for receive media</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>- (void)setAudioVideoReceiveConfig:(AudioVideoConfig)audioVideoConfig</Declaration>
 			<Parameters>
@@ -1461,7 +1461,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setAudioVideoSendConfig:</TokenIdentifier>
 			<Abstract type="html">Set config for send media</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>- (void)setAudioVideoSendConfig:(AudioVideoConfig)audioVideoConfig</Declaration>
 			<Parameters>
@@ -1478,7 +1478,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/getMaxRemotePeersConnectedWithAudioVideoConfig:</TokenIdentifier>
 			<Abstract type="html">Get max allowed peers in a room by the config</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>- (NSInteger)getMaxRemotePeersConnectedWithAudioVideoConfig:(AudioVideoConfig)audioVideoConfig</Declaration>
 			<Parameters>
@@ -1495,7 +1495,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setMaxRemotePeersConnected:audioVideoConfig:</TokenIdentifier>
 			<Abstract type="html">Set max allowed peers in a room by the config</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>- (void)setMaxRemotePeersConnected:(NSInteger)maxPeersConnected audioVideoConfig:(AudioVideoConfig)audioVideoConfig</Declaration>
 			<Parameters>
@@ -1515,7 +1515,7 @@ Default is AVCaptureSessionPreset640x480</Abstract>
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnectionConfig/setAdvancedOptionWithKey:value:</TokenIdentifier>
 			<Abstract type="html">Optional configuration for advanced users.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnectionConfig.h</DeclaredIn>
 			
 			<Declaration>- (void)setAdvancedOptionWithKey:(null_unspecified NSString *)key value:(null_unspecified id)value</Declaration>
 			<Parameters>

@@ -428,7 +428,7 @@ typedef void (^ResolutionResultBlock)(NSInteger width, NSInteger height, NSInteg
  @abstract Get the full WebRTC stats
  @param mediaId The unique mediaId of a Skylink media object
  @param remotePeerId The remote peer id
- @param callback Skylink callback with an object containing the transfer speed and an error, the error can be nil if everything is fine
+ @param callback Skylink callback with an object containing the transfer speed (Kbps) and an error, the error can be nil if everything is fine
 */
 - (void)getSentTransferSpeedByMediaId:(nonnull NSString *)mediaId remotePeerId:(null_unspecified NSString *)remotePeerId callback:(void (^ _Null_unspecified) (CGFloat speed, NSError * _Nullable error))callback;
 
@@ -436,7 +436,7 @@ typedef void (^ResolutionResultBlock)(NSInteger width, NSInteger height, NSInteg
  @method
  @abstract Get the full WebRTC stats
  @param mediaId The unique mediaId of a Skylink media object
- @param callback Skylink callback with an object containing the transfer speed and an error, the error can be nil if everything is fine
+ @param callback Skylink callback with an object containing the transfer speed (Kbps) and an error, the error can be nil if everything is fine
 */
 - (void)getReceivedTransferSpeedByMediaId:(nonnull NSString *)mediaId callback:(void (^ _Null_unspecified) (CGFloat speed, NSError * _Nullable error))callback;
 

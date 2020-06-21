@@ -1020,7 +1020,7 @@
 					<Abstract type="html">The remote peer id</Abstract>
 				</Parameter><Parameter>
 					<Name>callback</Name>
-					<Abstract type="html">Skylink callback with an object containing the transfer speed and an error, the error can be nil if everything is fine</Abstract>
+					<Abstract type="html">Skylink callback with an object containing the transfer speed (Kbps) and an error, the error can be nil if everything is fine</Abstract>
 				</Parameter>
 			</Parameters>
 			
@@ -1040,7 +1040,7 @@
 					<Abstract type="html">The unique mediaId of a Skylink media object</Abstract>
 				</Parameter><Parameter>
 					<Name>callback</Name>
-					<Abstract type="html">Skylink callback with an object containing the transfer speed and an error, the error can be nil if everything is fine</Abstract>
+					<Abstract type="html">Skylink callback with an object containing the transfer speed (Kbps) and an error, the error can be nil if everything is fine</Abstract>
 				</Parameter>
 			</Parameters>
 			

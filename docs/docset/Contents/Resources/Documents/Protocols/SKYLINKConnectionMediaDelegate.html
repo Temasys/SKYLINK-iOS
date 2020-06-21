@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
 </head>
 <body class="appledoc">
 	<header>
@@ -64,7 +64,7 @@
 		
 		<option value="//api/name/connection:didChangeRemoteMedia:remotePeerId:">- connection:didChangeRemoteMedia:remotePeerId:</option>
 		
-		<option value="//api/name/connection:didChangeVideoSize:videoView:peerId:">- connection:didChangeVideoSize:videoView:peerId:</option>
+		<option value="//api/name/connection:didChangeVideoSize:videoView:peerId:mediaId:">- connection:didChangeVideoSize:videoView:peerId:mediaId:</option>
 		
 		<option value="//api/name/connection:didCreateLocalMedia:">- connection:didCreateLocalMedia:</option>
 		
@@ -102,7 +102,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>SKYLINKConnection.h</td>
+	<td>SKYLINKProtocol.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -179,7 +179,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
@@ -242,7 +242,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
@@ -300,7 +300,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
@@ -363,15 +363,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/connection:didChangeVideoSize:videoView:peerId:" title="connection:didChangeVideoSize:videoView:peerId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connection:didChangeVideoSize:videoView:peerId:">&ndash;&nbsp;connection:didChangeVideoSize:videoView:peerId:</a></code>
+	<a name="//api/name/connection:didChangeVideoSize:videoView:peerId:mediaId:" title="connection:didChangeVideoSize:videoView:peerId:mediaId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connection:didChangeVideoSize:videoView:peerId:mediaId:">&ndash;&nbsp;connection:didChangeVideoSize:videoView:peerId:mediaId:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -386,7 +386,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didChangeVideoSize:(CGSize)<em>videoSize</em> videoView:(null_unspecified UIView *)<em>videoView</em> peerId:(null_unspecified NSString *)<em>peerId</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connection:(nonnull SKYLINKConnection *)<em>connection</em> didChangeVideoSize:(CGSize)<em>videoSize</em> videoView:(null_unspecified UIView *)<em>videoView</em> peerId:(null_unspecified NSString *)<em>peerId</em> mediaId:(null_unspecified NSString *)<em>mediaId</em></code></div>
 
 		    
 			
@@ -414,6 +414,11 @@
 						<td><p>The unique id of peer.</p></td>
 					</tr>
 				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaId</code></th>
+						<td><p>The unique id of video media.</p></td>
+					</tr>
+				
 				</table>
 			</div>
 			
@@ -431,7 +436,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
@@ -509,7 +514,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
@@ -582,7 +587,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
@@ -655,7 +660,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
@@ -713,7 +718,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYLINKConnection.h</code></p>
+				<p><code class="declared-in-ref">SKYLINKProtocol.h</code></p>
 			</div>
 			
 			
@@ -734,10 +739,10 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2020 Temasys Communications. All rights reserved. Updated: 2020-04-29</p>
+						<p class="copyright">Copyright &copy; 2020 Temasys Communications. All rights reserved. Updated: 2020-06-14</p>
 						
 						
-						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>

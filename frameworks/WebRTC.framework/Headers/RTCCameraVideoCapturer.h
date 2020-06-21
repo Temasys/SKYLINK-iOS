@@ -13,7 +13,6 @@
 
 #import "RTCMacros.h"
 #import "RTCVideoCapturer.h"
-@class RTCVideoCapturer;
 
 NS_ASSUME_NONNULL_BEGIN
 

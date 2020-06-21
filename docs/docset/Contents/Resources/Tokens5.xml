@@ -5,7 +5,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionFileTransferDelegate</TokenIdentifier>
 			<Abstract type="html">Protocol to receive events related to file transfer.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
             
 			
 			<NodeRef refid="5"/>
@@ -15,7 +15,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didReceiveFileTransferRequest:isPublic:remotePeerId:</TokenIdentifier>
 			<Abstract type="html">Called upon receiving a request to accept a File from remote Peer.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveFileTransferRequest:(null_unspecified NSString *)fileName isPublic:(BOOL)isPublic remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
@@ -41,7 +41,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didReceiveFileTransferResponse:fileName:remotePeerId:</TokenIdentifier>
 			<Abstract type="html">Called upon receiving a response to our request to send a File to remote Peer.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveFileTransferResponse:(BOOL)wasAccepted fileName:(null_unspecified NSString *)fileName remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
@@ -67,7 +67,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didDropFileTransfer:message:isExplicit:remotePeerId:</TokenIdentifier>
 			<Abstract type="html">Called when receive signal that File transfer was stopped before completing.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didDropFileTransfer:(null_unspecified NSString *)fileName message:(null_unspecified NSString *)message isExplicit:(BOOL)isExplicit remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
@@ -96,7 +96,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didUpdateFileTransferSendingProgress:fileName:remotePeerId:</TokenIdentifier>
 			<Abstract type="html">Called upon every file transfer progress update.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didUpdateFileTransferSendingProgress:(CGFloat)percentage fileName:(null_unspecified NSString *)fileName remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
@@ -122,7 +122,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didUpdateFileTransferReceivingProgress:fileName:remotePeerId:</TokenIdentifier>
 			<Abstract type="html">Called upon every file transfer progress update.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didUpdateFileTransferReceivingProgress:(CGFloat)percentage fileName:(null_unspecified NSString *)fileName remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
@@ -148,7 +148,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didCompleteFileTransferSending:remotePeerId:</TokenIdentifier>
 			<Abstract type="html">Called upon receiving signal that our sending of a File to remote Peer is complete.</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didCompleteFileTransferSending:(null_unspecified NSString *)fileName remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
@@ -171,7 +171,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionFileTransferDelegate/connection:didCompleteFileTransferReceiving:fileData:fileSavePath:remotePeerId:</TokenIdentifier>
 			<Abstract type="html">Called upon receiving signal that our receipt of a File from remote Peer is complete</Abstract>
-			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didCompleteFileTransferReceiving:(null_unspecified NSString *)fileName fileData:(null_unspecified NSData *)fileData fileSavePath:(null_unspecified NSString *)fileSavePath remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
