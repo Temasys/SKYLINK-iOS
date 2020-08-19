@@ -417,6 +417,12 @@ typedef void (^ResolutionResultBlock)(NSInteger width, NSInteger height, NSInteg
 */
 - (BOOL)isMultiTrackEnable;
 
+/*!
+ @method
+ @abstract set audio output to speaker
+ @discussion This value does not change once set
+*/
+- (void)setAudioOutput:(BOOL)isSpeaker;
 
 #pragma mark - Statistics
 /*!
