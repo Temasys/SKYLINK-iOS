@@ -335,6 +335,12 @@ extern NSInteger const MAX_PEERS_NO_AUDIO_NO_VIDEO; // = 16
  @description xxx
 */
 @property(nonatomic, assign) SocketIOTransport preferredTransport;
+/*!
+ @property
+ @abstract xxx
+ @description xxx
+*/
+@property(nonatomic, assign) NSInteger maxVideoUser;
 
 /*!
  @method
