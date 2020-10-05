@@ -341,7 +341,12 @@ extern NSInteger const MAX_PEERS_NO_AUDIO_NO_VIDEO; // = 16
  @description xxx
 */
 @property(nonatomic, assign) NSInteger maxVideoUser;
-
+/*!
+ @property
+ @abstract enable/disable high quality of local video
+ @description default value is NO
+*/
+@property(nonatomic, assign) BOOL enableHighQualityLocalVideo;
 /*!
  @method
  @abstract Get the timeout value for an action
