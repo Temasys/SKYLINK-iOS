@@ -5,7 +5,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionRecordingDelegate</TokenIdentifier>
 			<Abstract type="html">Protocol to receive backend events related to room recording (BETA).</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
             
 			
 			<NodeRef refid="9"/>
@@ -15,7 +15,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRecordingDelegate/connection:didStartRecordingWithID:</TokenIdentifier>
 			<Abstract type="html">Called upon recording start event.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didStartRecordingWithID:(null_unspecified NSString *)recordingID</Declaration>
 			<Parameters>
@@ -35,7 +35,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRecordingDelegate/connection:didStopRecordingWithID:</TokenIdentifier>
 			<Abstract type="html">Called upon recording stop event.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didStopRecordingWithID:(null_unspecified NSString *)recordingID</Declaration>
 			<Parameters>
@@ -55,7 +55,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRecordingDelegate/connection:didReceiveRecordingError:recordingId:</TokenIdentifier>
 			<Abstract type="html">Called upon recording error event.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveRecordingError:(nullable NSError *)error recordingId:(null_unspecified NSString *)recordingId</Declaration>
 			<Parameters>

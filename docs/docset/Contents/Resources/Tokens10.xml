@@ -5,7 +5,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionRemotePeerDelegate</TokenIdentifier>
 			<Abstract type="html">Protocol to receive events related to remote peers.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
             
 			
 			<NodeRef refid="10"/>
@@ -15,7 +15,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didReceiveRemotePeerInRoomWithRemotePeerId:userInfo:</TokenIdentifier>
 			<Abstract type="html">Called when receive info about remote Peer that just joined the room.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveRemotePeerInRoomWithRemotePeerId:(nonnull NSString *)remotePeerId userInfo:(null_unspecified id)userInfo</Declaration>
 			<Parameters>
@@ -38,7 +38,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didConnectWithRemotePeer:userInfo:hasDataChannel:</TokenIdentifier>
 			<Abstract type="html">Called when a remote peer joins the room.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didConnectWithRemotePeer:(null_unspecified NSString *)remotePeerId userInfo:(null_unspecified id)userInfo hasDataChannel:(BOOL)hasDataChannel</Declaration>
 			<Parameters>
@@ -64,7 +64,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didRefreshRemotePeerConnection:userInfo:hasDataChannel:isIceRestarted:</TokenIdentifier>
 			<Abstract type="html">Called when receive info about a remote Peer that just refreshed its connection with us.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didRefreshRemotePeerConnection:(null_unspecified NSString *)remotePeerId userInfo:(null_unspecified id)userInfo hasDataChannel:(BOOL)hasDataChannel isIceRestarted:(BOOL)isIceRestarted</Declaration>
 			<Parameters>
@@ -90,7 +90,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didReceiveRemotePeerUserData:remotePeerId:</TokenIdentifier>
 			<Abstract type="html">Called upon receiving an update about a user Data.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveRemotePeerUserData:(null_unspecified id)userData remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
@@ -113,7 +113,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didOpenRemotePeerDataConnection:</TokenIdentifier>
 			<Abstract type="html">Called upon receiving an update about a user info.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didOpenRemotePeerDataConnection:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
@@ -133,7 +133,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didDisconnectWithRemotePeer:userInfo:hasDataChannel:</TokenIdentifier>
 			<Abstract type="html">Receive info about remote Peer that just disconnected with us.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didDisconnectWithRemotePeer:(nonnull NSString *)remotePeerId userInfo:(null_unspecified id)userInfo hasDataChannel:(BOOL)hasDataChannel</Declaration>
 			<Parameters>
@@ -159,7 +159,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didReceiveRemotePeerLeaveRoom:userInfo:skylinkInfo:</TokenIdentifier>
 			<Abstract type="html">Receive info about remote Peer that just left the room.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveRemotePeerLeaveRoom:(null_unspecified NSString *)remotePeerId userInfo:(null_unspecified id)userInfo skylinkInfo:(nullable NSDictionary *)skylinkInfo</Declaration>
 			<Parameters>
@@ -185,7 +185,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionRemotePeerDelegate/connection:didErrorForRemotePeerConnection:remotePeerId:</TokenIdentifier>
 			<Abstract type="html">Called when receive info about remote Peer whose connection with us has broken. This allows user the opportunity to decide how to respond, for e.g. user could choose to reconnect to room or refresh connection with remote Peer.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didErrorForRemotePeerConnection:(nullable NSError *)error remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>

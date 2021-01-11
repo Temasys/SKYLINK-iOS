@@ -1006,6 +1006,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/setAudioOutput:</TokenIdentifier>
+			<Abstract type="html">set audio output to speaker</Abstract>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)setAudioOutput:(BOOL)isSpeaker</Declaration>
+			
+			
+			<Anchor>//api/name/setAudioOutput:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SKYLINKConnection/getSentTransferSpeedByMediaId:remotePeerId:callback:</TokenIdentifier>
 			<Abstract type="html">Get the full WebRTC stats</Abstract>
 			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>

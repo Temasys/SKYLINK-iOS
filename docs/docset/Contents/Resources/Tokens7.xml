@@ -5,7 +5,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intf/SKYLINKConnectionMediaDelegate</TokenIdentifier>
 			<Abstract type="html">Protocol to receive events related to media i.e. audio/video.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
             
 			
 			<NodeRef refid="7"/>
@@ -15,7 +15,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didCreateLocalMedia:</TokenIdentifier>
 			<Abstract type="html">Called when receive a local Media. Applies for all media type. Including audio and video.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didCreateLocalMedia:(nonnull SKYLINKMedia *)localMedia</Declaration>
 			<Parameters>
@@ -35,7 +35,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didReceiveRemoteMedia:remotePeerId:</TokenIdentifier>
 			<Abstract type="html">Called when receive a Media from remote peer. Applies for all media type. Including audio and video.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didReceiveRemoteMedia:(nonnull SKYLINKMedia *)remoteMedia remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
@@ -58,7 +58,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didChangeLocalMedia:</TokenIdentifier>
 			<Abstract type="html">Called when local media changed.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didChangeLocalMedia:(nonnull SKYLINKMedia *)localMedia</Declaration>
 			<Parameters>
@@ -78,7 +78,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didChangeRemoteMedia:remotePeerId:</TokenIdentifier>
 			<Abstract type="html">Called when remote media changed.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didChangeRemoteMedia:(nonnull SKYLINKMedia *)remoteMedia remotePeerId:(null_unspecified NSString *)remotePeerId</Declaration>
 			<Parameters>
@@ -101,7 +101,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didChangeVideoSize:videoView:peerId:mediaId:</TokenIdentifier>
 			<Abstract type="html">Called when the dimensions of the video view are changed.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didChangeVideoSize:(CGSize)videoSize videoView:(null_unspecified UIView *)videoView peerId:(null_unspecified NSString *)peerId mediaId:(null_unspecified NSString *)mediaId</Declaration>
 			<Parameters>
@@ -130,7 +130,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didObtainInputVideoResolutionWidth:height:fps:captureFormatDict:mediaId:</TokenIdentifier>
 			<Abstract type="html">Called when the local peer&apos;s input stats are changed</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didObtainInputVideoResolutionWidth:(NSInteger)width height:(NSInteger)height fps:(NSInteger)fps captureFormatDict:(nonnull NSDictionary&lt;NSString*,id&gt; *)captureFormatDict mediaId:(nonnull NSString *)mediaId</Declaration>
 			<Parameters>
@@ -162,7 +162,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didObtainReceivedVideoResolutionWidth:height:fps:remotePeerID:</TokenIdentifier>
 			<Abstract type="html">Called when the received stats are changed from a remote peer</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didObtainReceivedVideoResolutionWidth:(NSInteger)width height:(NSInteger)height fps:(NSInteger)fps remotePeerID:(nonnull NSString *)remotePeerID</Declaration>
 			<Parameters>
@@ -191,7 +191,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didObtainSentVideoResolutionWidth:height:fps:mediaId:remotePeerId:</TokenIdentifier>
 			<Abstract type="html">Called when the sent stats are changed to a remote peer</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didObtainSentVideoResolutionWidth:(NSInteger)width height:(NSInteger)height fps:(NSInteger)fps mediaId:(nonnull)mediaId remotePeerId:(nonnull NSString *)remotePeerId</Declaration>
 			<Parameters>
@@ -220,7 +220,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/SKYLINKConnectionMediaDelegate/connection:didDestroyLocalMedia:</TokenIdentifier>
 			<Abstract type="html">Called when local Media was destroyed.</Abstract>
-			<DeclaredIn>SKYLINKProtocol.h</DeclaredIn>
+			<DeclaredIn>SKYLINKConnection.h</DeclaredIn>
 			
 			<Declaration>- (void)connection:(nonnull SKYLINKConnection *)connection didDestroyLocalMedia:(nonnull SKYLINKMedia *)localMedia</Declaration>
 			<Parameters>
