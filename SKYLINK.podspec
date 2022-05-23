@@ -23,8 +23,9 @@ Pod::Spec.new do |s|
   s.frameworks = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'CoreAudio', 'CoreGraphics', 'CoreMedia', 'Foundation', 'GLKit', 'UIKit', 'VideoToolbox'
   s.libraries = 'c', 'icucore', 'sqlite3', 'stdc++'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
-  s.vendored_frameworks = 'SKYLINK.framework', 'frameworks/WebRTC.framework', 'frameworks/SocketIO.framework', 'frameworks/Starscream.framework'
+  s.vendored_frameworks = 'SKYLINK.framework', 'frameworks/WebRTC.framework'
   s.preserve_paths = 'frameworks/*'
+  s.dependency "Socket.IO-Client-Swift", "~> 15.2.0"
 
   # I think this is needed because on the new arm Macs. Now you can have arm64 simulators, which we don't support today
   # Additional note: this is not how I would like things to be...
