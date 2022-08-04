@@ -348,6 +348,18 @@ extern NSInteger const MAX_PEERS_NO_AUDIO_NO_VIDEO; // = 16
 */
 @property(nonatomic, assign) NSInteger localVideoQuality;
 /*!
+ @property
+ @abstract Is message caching feature enabled?
+ @discussion if 'isMessageCacheEnabled' returns true then message caching is enabled; if not disabled.
+ */
+@property (nonatomic, assign) BOOL isMessageCacheEnabled;
+/*!
+ @property
+ @abstract Maximum number of messages that will be cached per Skylink Room.
+ @discussion The maximum number of messages that will be cached per Skylink Room.
+ */
+@property (nonatomic, assign) NSInteger messageCacheLimit;
+/*!
  @method
  @abstract Get the timeout value for an action
  @param skylinkAction A pre-defined action like send file request action
