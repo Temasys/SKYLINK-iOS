@@ -2,7 +2,7 @@
 //  SkylinkMessageCache.h
 //  SKYLINK-MESSAGE-CACHE
 //
-//  Created by Lakindu Boteju on 2022-07-30.
+//  Created by Temasys on 2022-07-30.
 //
 
 #import <Foundation/Foundation.h>
@@ -53,14 +53,14 @@ NS_ASSUME_NONNULL_BEGIN
  @param roomName Skylink room name
  @return WritableCacheSession object that user can use to write to cache or delete from cache.
  */
-- (WritableCacheSession *) getWritableCacheSessionForRoomName:(NSString *)roomName;
+- (id<WritableCacheSession>) getWritableCacheSessionForRoomName:(NSString *)roomName;
 
 /**
  Gets readable cache session that user can use to read from cache.
  @param roomName Skylink Room name
  @return ReadableCacheSession object that user can use to read cached messages.
  */
-- (ReadableCacheSession *) getReadableCacheSessionForRoomName:(NSString *)roomName;
+- (id<ReadableCacheSession>) getReadableCacheSessionForRoomName:(NSString *)roomName;
 
 /**
  Clears the cached room information and the cached messages of the room.

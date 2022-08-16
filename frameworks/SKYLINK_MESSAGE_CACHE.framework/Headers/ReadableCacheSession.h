@@ -2,16 +2,14 @@
 //  ReadableCacheSession.h
 //  SKYLINK-MESSAGE-CACHE
 //
-//  Created by Lakindu Boteju on 2022-08-01.
+//  Created by Temasys on 2022-08-16.
 //
 
-#import "CacheSession.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ReadableCacheSession : CacheSession
-
-- (id) initWithRoomName:(NSString *)roomName managedObjectContext:(NSManagedObjectContext *)context;
+@protocol ReadableCacheSession
 
 /**
  Gets cached messages in a NSArray object.

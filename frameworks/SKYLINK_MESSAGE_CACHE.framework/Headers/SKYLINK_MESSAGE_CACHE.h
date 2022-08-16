@@ -2,7 +2,7 @@
 //  SKYLINK_MESSAGE_CACHE.h
 //  SKYLINK-MESSAGE-CACHE
 //
-//  Created by Lakindu Boteju on 2022-07-28.
+//  Created by Temasys on 2022-07-28.
 //
 
 #import <Foundation/Foundation.h>

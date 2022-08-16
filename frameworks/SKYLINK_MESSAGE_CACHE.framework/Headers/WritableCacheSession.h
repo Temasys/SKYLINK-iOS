@@ -2,18 +2,14 @@
 //  WritableCacheSession.h
 //  SKYLINK-MESSAGE-CACHE
 //
-//  Created by Lakindu Boteju on 2022-07-31.
+//  Created by Temasys on 2022-08-16.
 //
 
-#import "CacheSession.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WritableCacheSession : CacheSession
-
-- (id) initWithRoomName:(NSString *)roomName
-   managedObjectContext:(NSManagedObjectContext *)context
-    maxNumbOfMessagesToCachePerRoom:(NSInteger)maxNumbOfMessagesToCachePerRoom;
+@protocol WritableCacheSession
 
 - (void) cacheMessageWithMsgId:(NSString *)msgId data:(NSString *)data timestamp:(long)timestamp;
 - (void) saveIfHasChanges;
