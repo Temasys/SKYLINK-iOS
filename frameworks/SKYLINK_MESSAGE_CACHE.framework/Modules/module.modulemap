@@ -1,6 +1,0 @@
-framework module SKYLINK_MESSAGE_CACHE {
-  umbrella header "SKYLINK_MESSAGE_CACHE.h"
-
-  export *
-  module * { export * }
-}
