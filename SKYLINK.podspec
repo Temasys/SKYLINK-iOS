@@ -9,13 +9,13 @@
 
 Pod::Spec.new do |s|
   s.name             = "SKYLINK"
-  s.version          = "2.3.0-beta"
+  s.version          = "2.3.0"
   s.summary          = "SKYLINK.framework distribution"
   s.description      = "SKYLINK.framework distribution for iOS"
   s.homepage         = "https://github.com/Temasys/SKYLINK-iOS"
   s.license          = 'MIT'
   s.author           = { "Temasys Communications" => "xiangrong@temasys.io", "Temasys Communications" => "yuxi.liu@temasys.io", "Temasys Communications" => "hungcuong.hoang@temasys.io", "Temasys Communications" => "chickchick.ce@gmail.com"}
-  s.source           = { :git => "https://github.com/lakinduboteju/SKYLINK-iOS.git", :branch => 'persistent-message-cache' }
+  s.source           = { :git => "https://github.com/Temasys/SKYLINK-iOS.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '10.0'
   s.requires_arc = true
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'SKYLINK.framework', 'frameworks/WebRTC.framework'
   s.preserve_paths = 'frameworks/*'
   s.dependency "Socket.IO-Client-Swift", "~> 15.2.0"
-  s.dependency "SKYLINK_MESSAGE_CACHE", "~> 1.0.1-beta"
+  s.dependency "SKYLINK_MESSAGE_CACHE", "~> 1.0.1"
 
   # I think this is needed because on the new arm Macs. Now you can have arm64 simulators, which we don't support today
   # Additional note: this is not how I would like things to be...
