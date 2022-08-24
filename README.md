@@ -1,5 +1,7 @@
 # SkylinkSDK for iOS
-[![Version](https://img.shields.io/cocoapods/v/MyLibrary.svg?style=flat)](http://cocoadocs.org/docsets/SKYLINK)  [![License](https://img.shields.io/cocoapods/l/MyLibrary.svg?style=flat)](http://cocoadocs.org/docsets/SKYLINK) [![Platform](https://img.shields.io/cocoapods/p/MyLibrary.svg?style=flat)](http://cocoadocs.org/docsets/SKYLINK)
+[![Version](https://img.shields.io/cocoapods/v/SKYLINK.svg?style=flat)](https://cocoapods.org/pods/SKYLINK)
+[![License](https://img.shields.io/cocoapods/l/SKYLINK.svg?style=flat)](https://cocoapods.org/pods/SKYLINK)
+[![Platform](https://img.shields.io/cocoapods/p/SKYLINK.svg?style=flat)](https://cocoapods.org/pods/SKYLINK)
 
 The **SkylinkSDK for iOS** lets you build real time webRTC applications with voice calling, video chat, P2P file sharing or data and messages exchange. Go multi-platform with our [Web](https://temasys.io/products/sdks/js/) and [Android](https://temasys.io/products/sdks/android/) SDKs.
 
@@ -8,7 +10,7 @@ The **SkylinkSDK for iOS** lets you build real time webRTC applications with voi
 Your project should use [ARC](https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html)  
 
 ## Minimum iOS version required
-iOS 9 or higher.
+iOS 10.0 or higher.
 
 ## How to install the SkylinkSDK for iOS on your app
 
@@ -45,12 +47,12 @@ To create a Swift project using Teamsys iOS SDK, follow these steps:
 Your Podfile should look like that:
 	
     project 'SampleApp_Swift.xcodeproj'
-    platform :ios, '9.0'
+    platform :ios, '10.0'
     target 'SampleApp_Swift' do
-    use_frameworks!
-    pod "SKYLINK"
-    #If facing issues with installation, please use:
-    #pod 'SKYLINK', :git => 'https://github.com/Temasys/SKYLINK-iOS.git'
+        use_frameworks!
+        pod "SKYLINK"
+        #If facing issues with installation, please use:
+        #pod 'SKYLINK', :git => 'https://github.com/Temasys/SKYLINK-iOS.git'
     end
 
 In the terminal, run `pod install`
