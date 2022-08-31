@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SKYLINK"
-  s.version          = "2.3.0"
+  s.version          = "2.3.1"
   s.summary          = "SKYLINK.framework distribution"
   s.description      = "SKYLINK.framework distribution for iOS"
   s.homepage         = "https://github.com/Temasys/SKYLINK-iOS"
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'SKYLINK.framework', 'frameworks/WebRTC.framework'
   s.preserve_paths = 'frameworks/*'
   s.dependency "Socket.IO-Client-Swift", "~> 15.2.0"
-  s.dependency "SKYLINK_MESSAGE_CACHE", "~> 1.0.1"
+  s.dependency "SKYLINK_MESSAGE_CACHE", "~> 1.0.2"
 
   # I think this is needed because on the new arm Macs. Now you can have arm64 simulators, which we don't support today
   # Additional note: this is not how I would like things to be...
